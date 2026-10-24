@@ -6,11 +6,11 @@ import com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration;
 
 import jakarta.servlet.http.HttpServletRequest;
 
-public final class OperatorBootstrapTransportSecurity {
+public final class PasswordLoginTransportSecurity {
     private static final String FORWARDED_PROTO_HEADER =
             "X-Forwarded-Proto";
 
-    private OperatorBootstrapTransportSecurity() {
+    private PasswordLoginTransportSecurity() {
     }
 
     public static boolean isAllowed(

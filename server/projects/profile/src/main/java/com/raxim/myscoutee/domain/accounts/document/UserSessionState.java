@@ -30,6 +30,9 @@ public class UserSessionState {
         private String createdAtIso;
         private String lastSeenAtIso;
         private String mediaTokenHash;
+        private String accessTokenHash;
+        private java.time.Instant accessTokenExpiresAt;
+        private boolean emailVerified;
 
     }
 }

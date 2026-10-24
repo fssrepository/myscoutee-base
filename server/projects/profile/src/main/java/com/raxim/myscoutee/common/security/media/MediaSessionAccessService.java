@@ -13,7 +13,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker;
+import com.raxim.myscoutee.domain.accounts.api.AccountCredentialMarker;
 import com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor;
 import com.raxim.myscoutee.common.config.mongo.MongoSessionMode;
 import com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext;
@@ -57,7 +57,7 @@ public class MediaSessionAccessService implements MediaSessionAccess {
         if (!"GET".equals(request.getMethod()) || !request.getRequestURI().endsWith("/auth/me")
                 || authentication == null || !authentication.isAuthenticated()
                 || (MongoSessionModeContext.currentMode() != MongoSessionMode.DEMO
-                    && !FirebaseCredentialMarker.isPresent(authentication))
+                    && !AccountCredentialMarker.isPresent(authentication))
                 || !(authentication.getPrincipal() instanceof AuthenticatedActor principal)) return;
         String sessionId = request.getHeader(AccountMediaSessions.SESSION_ID_HEADER);
         if (sessionId == null || sessionId.isBlank()) return;

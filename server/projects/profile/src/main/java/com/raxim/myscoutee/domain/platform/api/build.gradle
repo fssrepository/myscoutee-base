@@ -9,7 +9,6 @@ sourceSets {
         include 'com/raxim/myscoutee/domain/platform/api/FirebaseRuntime.java'
         include 'com/raxim/myscoutee/domain/platform/api/JobWorkspaceDirectory.java'
         include 'com/raxim/myscoutee/domain/platform/api/NotificationPolicy.java'
-        include 'com/raxim/myscoutee/domain/platform/api/OperatorBootstrapRequestSupport.java'
         include 'com/raxim/myscoutee/domain/platform/api/OperatorNotificationSettings.java'
         include 'com/raxim/myscoutee/domain/platform/api/ReleaseProtocol.java'
         include 'com/raxim/myscoutee/domain/platform/api/RuntimeConfiguration.java'

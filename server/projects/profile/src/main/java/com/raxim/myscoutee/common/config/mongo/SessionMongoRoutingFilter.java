@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport;
 import com.raxim.myscoutee.domain.platform.config.ConfigProperties;
 import com.raxim.myscoutee.common.security.media.MediaSessionAccessService;
 
@@ -46,40 +45,10 @@ public class SessionMongoRoutingFilter extends OncePerRequestFilter {
         if (com.raxim.myscoutee.domain.media.api.MediaSessionAccess.isPrivateRead(request)) {
             return MediaSessionAccessService.sessionMode(request);
         }
-        if (OperatorBootstrapRequestSupport.isLoginRequest(request)
-                || OperatorBootstrapRequestSupport
-                        .hasAuthorizationHeader(request)) {
-            return MongoSessionMode.REAL;
-        }
         if (requestUri != null && requestUri.endsWith(DEMO_USERS_ROUTE)) {
             return MongoSessionMode.DEMO;
         }
-        if (DemoSessionRequestSupport.isOperatorRequest(request)) {
-            if (DemoSessionRequestSupport.isDemoSessionRequest(request)
-                    || configProperties == null
-                    || !configProperties.isFirebaseEnabled()) {
-                return MongoSessionMode.DEMO;
-            }
-            return MongoSessionMode.REAL;
-        }
-        if (DemoSessionRequestSupport.isDemoSessionRequest(request)
-                && isAdminRequest(requestUri)) {
-            return MongoSessionMode.DEMO;
-        }
-        if (DemoSessionRequestSupport.isAllowedDemoSessionRequest(request)) {
-            return MongoSessionMode.DEMO;
-        }
-        if (configProperties != null && configProperties.isFirebaseEnabled()) {
-            return MongoSessionMode.REAL;
-        }
         return DemoSessionRequestSupport.isDemoSessionRequest(request)
-                ? MongoSessionMode.DEMO
-                : MongoSessionMode.REAL;
-    }
-
-    private boolean isAdminRequest(String requestUri) {
-        return requestUri != null
-                && (requestUri.startsWith("/admin")
-                        || requestUri.startsWith("/api/admin"));
+                ? MongoSessionMode.DEMO : MongoSessionMode.REAL;
     }
 }
