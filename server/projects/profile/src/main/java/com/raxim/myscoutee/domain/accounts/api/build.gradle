@@ -1,0 +1,36 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/accounts/api/AccountConsents.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/AccountDevices.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/AccountIntegrationAccess.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/AccountMediaSessions.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/AccountNotifications.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/AssetAffinityProfile.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/AuthenticatedActor.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/BootstrapAccounts.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/BootstrapLoginAudit.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/ChatCounters.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/EmailProfile.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/FirebaseCredentialMarker.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/FriendshipReads.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/ProfileStatusObserver.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/ScoringProfile.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/SelectedProfile.java'
+        include 'com/raxim/myscoutee/domain/accounts/api/WorkspaceIdentity.java'
+        include 'com/raxim/myscoutee/domain/accounts/dto/FeedCountersRecord.java'
+        include 'com/raxim/myscoutee/domain/accounts/dto/HostConfidenceFactsDto.java'
+        include 'com/raxim/myscoutee/domain/accounts/dto/ProfileIdentityDto.java'
+    }
+}
+
+dependencies {
+    api project(':common-mongo')
+    api project(':integrations-api')
+    api 'com.fasterxml.jackson.core:jackson-annotations'
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

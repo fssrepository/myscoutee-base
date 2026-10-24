@@ -1,0 +1,34 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/accounts/config/FirebaseConfig.java'
+        include 'com/raxim/myscoutee/domain/accounts/document/AccountPurgeJob.java'
+        include 'com/raxim/myscoutee/domain/accounts/document/PrivacyConsent.java'
+        include 'com/raxim/myscoutee/domain/accounts/document/UserFriendship.java'
+        include 'com/raxim/myscoutee/domain/accounts/document/UserLoginAudit.java'
+        include 'com/raxim/myscoutee/domain/accounts/document/UserSessionAction.java'
+        include 'com/raxim/myscoutee/domain/accounts/document/UserSessionState.java'
+        include 'com/raxim/myscoutee/domain/accounts/repository/AccountPurgeJobsRepository.java'
+        include 'com/raxim/myscoutee/domain/accounts/repository/PrivacyConsentsRepository.java'
+        include 'com/raxim/myscoutee/domain/accounts/repository/UserFriendshipsRepository.java'
+        include 'com/raxim/myscoutee/domain/accounts/repository/UserLoginAuditsRepository.java'
+        include 'com/raxim/myscoutee/domain/accounts/repository/UserSessionActionsRepository.java'
+        include 'com/raxim/myscoutee/domain/accounts/security/firebase/DefaultFirebaseTokenVerifier.java'
+        include 'com/raxim/myscoutee/domain/accounts/security/firebase/DevelopmentIdentityEmail.java'
+        include 'com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseTokenVerifier.java'
+        include 'com/raxim/myscoutee/domain/accounts/security/firebase/dto/FirebaseCredential.java'
+        include 'com/raxim/myscoutee/domain/accounts/security/firebase/exception/FirebaseTokenInvalidException.java'
+        include 'com/raxim/myscoutee/domain/accounts/service/AccountConsentService.java'
+    }
+}
+
+dependencies {
+    api project(':accounts-api')
+    api project(':platform-api')
+    api 'com.google.firebase:firebase-admin:9.10.0'
+    api 'jakarta.annotation:jakarta.annotation-api'
+    api 'org.mongodb:bson'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-context'
+}

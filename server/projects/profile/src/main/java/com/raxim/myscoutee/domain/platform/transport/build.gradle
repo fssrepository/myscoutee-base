@@ -1,0 +1,7 @@
+dependencies {
+    api project(':platform-api')
+    api project(':transport-read')
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework.security:spring-security-config'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+}

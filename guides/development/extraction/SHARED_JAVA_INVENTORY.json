@@ -1,0 +1,1987 @@
+{
+  "scope": "Current complete common production Java inventory; lexical dependency closure, compilation remains authoritative",
+  "identical": [
+    "com.raxim.myscoutee.Main",
+    "com.raxim.myscoutee.common.config.JsonConfig",
+    "com.raxim.myscoutee.common.config.MongoConverterConfig",
+    "com.raxim.myscoutee.common.config.MongoRoutingConfig",
+    "com.raxim.myscoutee.common.config.caching.MessageKeyGenerator",
+    "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+    "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+    "com.raxim.myscoutee.common.config.mongo.MongoPrivacyOperations",
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+    "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+    "com.raxim.myscoutee.common.config.mongo.SessionMongoRoutingFilter",
+    "com.raxim.myscoutee.common.config.mongo.SessionRoutingMongoDatabaseFactory",
+    "com.raxim.myscoutee.common.dto.MediaUrlsQueryDto",
+    "com.raxim.myscoutee.common.mongo.OwnerScopedQuery",
+    "com.raxim.myscoutee.common.redis.RedisStreamRetentionService",
+    "com.raxim.myscoutee.common.runtime.RuntimeStatusPublisher",
+    "com.raxim.myscoutee.common.security.crypto.CanonicalValues",
+    "com.raxim.myscoutee.common.security.crypto.Ed25519Signatures",
+    "com.raxim.myscoutee.common.security.http.HttpSecurityContribution",
+    "com.raxim.myscoutee.common.security.media.MediaSessionAccessService",
+    "com.raxim.myscoutee.common.security.policy.PolicyExpressionEvaluator",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyAdvisor",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyMethodInterceptor",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicySupport",
+    "com.raxim.myscoutee.common.util.JsonUtil",
+    "com.raxim.myscoutee.common.util.TextValues",
+    "com.raxim.myscoutee.common.util.TimeValues",
+    "com.raxim.myscoutee.domain.access.api.AccessGrantEffect",
+    "com.raxim.myscoutee.domain.access.api.ConsentAuthorization",
+    "com.raxim.myscoutee.domain.access.api.RegionSecurity",
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicies",
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicy",
+    "com.raxim.myscoutee.domain.access.config.RegionSecurityProperties",
+    "com.raxim.myscoutee.domain.access.document.AccessGrant",
+    "com.raxim.myscoutee.domain.access.document.AccessPolicyDefinition",
+    "com.raxim.myscoutee.domain.access.repository.AccessGrantsRepository",
+    "com.raxim.myscoutee.domain.access.repository.AccessPolicyDefinitionsRepository",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicy",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyConditionRegistry",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanAccessChatCondition",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanManageSupportChatCondition",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanReadMediaCondition",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorDiffersFromSubjectCondition",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorMatchesSubjectCondition",
+    "com.raxim.myscoutee.domain.access.security.condition.ExplicitAllowCondition",
+    "com.raxim.myscoutee.domain.access.security.condition.NoExplicitDenyCondition",
+    "com.raxim.myscoutee.domain.accounts.api.AccountConsents",
+    "com.raxim.myscoutee.domain.accounts.api.AccountDevices",
+    "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+    "com.raxim.myscoutee.domain.accounts.api.AccountIntegrationAccess",
+    "com.raxim.myscoutee.domain.accounts.api.AccountJobScopes",
+    "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions",
+    "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+    "com.raxim.myscoutee.domain.accounts.api.AssetAffinityProfile",
+    "com.raxim.myscoutee.domain.accounts.api.AssetProfile",
+    "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapAccounts",
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapLoginAudit",
+    "com.raxim.myscoutee.domain.accounts.api.ChatCounters",
+    "com.raxim.myscoutee.domain.accounts.api.CurrentProfile",
+    "com.raxim.myscoutee.domain.accounts.api.DiscoveryProfile",
+    "com.raxim.myscoutee.domain.accounts.api.EmailProfile",
+    "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker",
+    "com.raxim.myscoutee.domain.accounts.api.FriendshipReads",
+    "com.raxim.myscoutee.domain.accounts.api.ProfileAuthentication",
+    "com.raxim.myscoutee.domain.accounts.api.ProfileStatusObserver",
+    "com.raxim.myscoutee.domain.accounts.api.ScoringProfile",
+    "com.raxim.myscoutee.domain.accounts.api.SelectedProfile",
+    "com.raxim.myscoutee.domain.accounts.api.WorkspaceIdentity",
+    "com.raxim.myscoutee.domain.accounts.config.FirebaseConfig",
+    "com.raxim.myscoutee.domain.accounts.controller.FacebookDataDeletionController",
+    "com.raxim.myscoutee.domain.accounts.document.AccountPurgeJob",
+    "com.raxim.myscoutee.domain.accounts.document.PrivacyConsent",
+    "com.raxim.myscoutee.domain.accounts.document.UserFriendship",
+    "com.raxim.myscoutee.domain.accounts.document.UserLoginAudit",
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionAction",
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionState",
+    "com.raxim.myscoutee.domain.accounts.dto.FeedCountersRecord",
+    "com.raxim.myscoutee.domain.accounts.dto.HostConfidenceFactsDto",
+    "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto",
+    "com.raxim.myscoutee.domain.accounts.repository.AccountPurgeJobsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.PrivacyConsentsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.UserFriendshipsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.UserLoginAuditsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.UserSessionActionsRepository",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DefaultFirebaseTokenVerifier",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DevelopmentIdentityEmail",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationProvider",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseFilter",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseTokenVerifier",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.exception.FirebaseTokenInvalidException",
+    "com.raxim.myscoutee.domain.accounts.service.AccountConsentService",
+    "com.raxim.myscoutee.domain.accounts.service.AccountDeviceService",
+    "com.raxim.myscoutee.domain.accounts.service.AccountIntegrationAccessService",
+    "com.raxim.myscoutee.domain.accounts.service.AccountJobQueries",
+    "com.raxim.myscoutee.domain.accounts.service.AccountJobScopeService",
+    "com.raxim.myscoutee.domain.accounts.service.AccountNotificationService",
+    "com.raxim.myscoutee.domain.accounts.service.DeletedAccountWarningWorker",
+    "com.raxim.myscoutee.domain.accounts.service.FacebookDataDeletionService",
+    "com.raxim.myscoutee.domain.accounts.service.ProfileAuthenticationService",
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusValues",
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusWork",
+    "com.raxim.myscoutee.domain.accounts.service.SelectedProfileService",
+    "com.raxim.myscoutee.domain.accounts.service.UserLoginSessionService",
+    "com.raxim.myscoutee.domain.administration.api.AdminTelemetryEvent",
+    "com.raxim.myscoutee.domain.administration.config.AdminStatsProperties",
+    "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+    "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility",
+    "com.raxim.myscoutee.domain.chat.api.ChatPresence",
+    "com.raxim.myscoutee.domain.chat.api.ChatPrivacy",
+    "com.raxim.myscoutee.domain.chat.api.ChatQueries",
+    "com.raxim.myscoutee.domain.chat.api.ChatSessionAttributes",
+    "com.raxim.myscoutee.domain.chat.api.ContactPermissions",
+    "com.raxim.myscoutee.domain.chat.api.SupportMessages",
+    "com.raxim.myscoutee.domain.chat.config.ChatMediaIndexInitializer",
+    "com.raxim.myscoutee.domain.chat.document.Chat",
+    "com.raxim.myscoutee.domain.chat.document.ChatMessage",
+    "com.raxim.myscoutee.domain.chat.document.ContactChatAccess",
+    "com.raxim.myscoutee.domain.chat.dto.ChatDirectoryEntryDto",
+    "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto",
+    "com.raxim.myscoutee.domain.chat.dto.ChatSupportStatusDto",
+    "com.raxim.myscoutee.domain.chat.dto.ChatUnreadVersionDto",
+    "com.raxim.myscoutee.domain.chat.repository.ChatMessagesRepository",
+    "com.raxim.myscoutee.domain.chat.repository.ContactChatAccessRepository",
+    "com.raxim.myscoutee.domain.chat.service.ChatCallSignalingService",
+    "com.raxim.myscoutee.domain.chat.service.ChatDirectoryService",
+    "com.raxim.myscoutee.domain.chat.service.ChatMediaVisibilityService",
+    "com.raxim.myscoutee.domain.chat.service.ChatPrivacyService",
+    "com.raxim.myscoutee.domain.chat.service.ChatPushNotificationService",
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamConsumer",
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent",
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamPublisher",
+    "com.raxim.myscoutee.domain.chat.service.ContactPermissionService",
+    "com.raxim.myscoutee.domain.chat.websocket.ChatHandshakeInterceptor",
+    "com.raxim.myscoutee.domain.chat.websocket.ChatWebSocketHandler",
+    "com.raxim.myscoutee.domain.email.api.EmailLinks",
+    "com.raxim.myscoutee.domain.email.api.EmailRendering",
+    "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+    "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+    "com.raxim.myscoutee.domain.email.api.EmailSending",
+    "com.raxim.myscoutee.domain.email.controller.OperatorEmailConfigurationController",
+    "com.raxim.myscoutee.domain.email.controller.PublicEmailUnsubscribeController",
+    "com.raxim.myscoutee.domain.email.service.EmailPresentationService",
+    "com.raxim.myscoutee.domain.email.service.EmailProvider",
+    "com.raxim.myscoutee.domain.email.service.EmailProviderGateway",
+    "com.raxim.myscoutee.domain.email.service.EmailTemplateRenderer",
+    "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService",
+    "com.raxim.myscoutee.domain.email.service.NoopEmailProvider",
+    "com.raxim.myscoutee.domain.email.service.OperatorEmailConfigurationService",
+    "com.raxim.myscoutee.domain.email.service.SendGridEmailProvider",
+    "com.raxim.myscoutee.domain.help.api.HelpPrivacy",
+    "com.raxim.myscoutee.domain.help.document.HelpCenterGuideField",
+    "com.raxim.myscoutee.domain.help.document.HelpCenterRevision",
+    "com.raxim.myscoutee.domain.help.repository.HelpCenterGuideFieldsRepository",
+    "com.raxim.myscoutee.domain.help.service.HelpPrivacyService",
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationClientIdentity",
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationPrivacy",
+    "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents",
+    "com.raxim.myscoutee.domain.integrations.config.AdminClientAuthenticationFilter",
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientController",
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientSettingsController",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationCommunicationReadController",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationReadSupport",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationSettingsController",
+    "com.raxim.myscoutee.domain.integrations.controller.McpEventsController",
+    "com.raxim.myscoutee.domain.integrations.controller.McpOAuthController",
+    "com.raxim.myscoutee.domain.integrations.controller.McpSettingsController",
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationToken",
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationWebhookDelivery",
+    "com.raxim.myscoutee.domain.integrations.document.McpAuthorization",
+    "com.raxim.myscoutee.domain.integrations.document.McpEventSubscription",
+    "com.raxim.myscoutee.domain.integrations.document.McpOAuthClient",
+    "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess",
+    "com.raxim.myscoutee.domain.integrations.dto.McpDtos",
+    "com.raxim.myscoutee.domain.integrations.dto.McpEventDtos",
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationTokensRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationWebhookDeliveriesRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.McpAuthorizationRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.McpEventSubscriptionsRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.McpOAuthClientsRepository",
+    "com.raxim.myscoutee.domain.integrations.service.AdminClientAccessService",
+    "com.raxim.myscoutee.domain.integrations.service.AdminModerationAttention",
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationProductCapabilities",
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationPublicEndpointResolver",
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationRoleAccessService",
+    "com.raxim.myscoutee.domain.integrations.service.McpAuthorizationService",
+    "com.raxim.myscoutee.domain.integrations.service.McpEventCallbackClient",
+    "com.raxim.myscoutee.domain.localization.api.TranslationBundles",
+    "com.raxim.myscoutee.domain.localization.controller.I18nMessageRestController",
+    "com.raxim.myscoutee.domain.localization.document.I18nBundle",
+    "com.raxim.myscoutee.domain.localization.document.I18nMessage",
+    "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto",
+    "com.raxim.myscoutee.domain.localization.repository.I18nBundleRepository",
+    "com.raxim.myscoutee.domain.localization.repository.I18nMessageRepository",
+    "com.raxim.myscoutee.domain.localization.service.DBMessageSource",
+    "com.raxim.myscoutee.domain.localization.service.I18nService",
+    "com.raxim.myscoutee.domain.media.api.ImageUploads",
+    "com.raxim.myscoutee.domain.media.api.MediaAccessPaths",
+    "com.raxim.myscoutee.domain.media.api.MediaCleanup",
+    "com.raxim.myscoutee.domain.media.api.MediaDeletionQueue",
+    "com.raxim.myscoutee.domain.media.api.MediaImageVariant",
+    "com.raxim.myscoutee.domain.media.api.MediaSessionAccess",
+    "com.raxim.myscoutee.domain.media.api.MediaStorage",
+    "com.raxim.myscoutee.domain.media.config.MediaSessionConfiguration",
+    "com.raxim.myscoutee.domain.media.config.MediaStorageProperties",
+    "com.raxim.myscoutee.domain.media.controller.MediaController",
+    "com.raxim.myscoutee.domain.media.dto.MediaDtos",
+    "com.raxim.myscoutee.domain.media.service.MediaObjectStoreClient",
+    "com.raxim.myscoutee.domain.media.service.MediaStorageService",
+    "com.raxim.myscoutee.domain.media.service.S3CompatibleMediaObjectStoreClient",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationReads",
+    "com.raxim.myscoutee.domain.notifications.controller.UserNotificationsController",
+    "com.raxim.myscoutee.domain.notifications.document.NotificationOutboxItem",
+    "com.raxim.myscoutee.domain.notifications.document.NotificationRuleConfig",
+    "com.raxim.myscoutee.domain.notifications.document.UserNotification",
+    "com.raxim.myscoutee.domain.notifications.dto.JobRuleDto",
+    "com.raxim.myscoutee.domain.notifications.mapper.UserNotificationMapper",
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationOutboxRepository",
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationRuleConfigsRepository",
+    "com.raxim.myscoutee.domain.notifications.repository.UserNotificationsRepository",
+    "com.raxim.myscoutee.domain.notifications.service.AdminNotificationSocketSessionRegistry",
+    "com.raxim.myscoutee.domain.notifications.service.NotificationPrivacyService",
+    "com.raxim.myscoutee.domain.platform.api.AdministratorSettings",
+    "com.raxim.myscoutee.domain.platform.api.AuthenticationMode",
+    "com.raxim.myscoutee.domain.platform.api.DeploymentBranding",
+    "com.raxim.myscoutee.domain.platform.api.DeploymentConfigurationManagement",
+    "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+    "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery",
+    "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime",
+    "com.raxim.myscoutee.domain.platform.api.JobAudience",
+    "com.raxim.myscoutee.domain.platform.api.JobWorkspaceDirectory",
+    "com.raxim.myscoutee.domain.platform.api.NotificationPolicy",
+    "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+    "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings",
+    "com.raxim.myscoutee.domain.platform.api.ReleaseProtocol",
+    "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration",
+    "com.raxim.myscoutee.domain.platform.api.SecretEncryption",
+    "com.raxim.myscoutee.domain.platform.config.ConfigProperties",
+    "com.raxim.myscoutee.domain.platform.config.OperatorConfigurationProperties",
+    "com.raxim.myscoutee.domain.platform.config.OperatorTlsProperties",
+    "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorBootstrapController",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorConfigurationController",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorTlsController",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorUpdateController",
+    "com.raxim.myscoutee.domain.platform.document.AppSettings",
+    "com.raxim.myscoutee.domain.platform.document.CountryPartition",
+    "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos",
+    "com.raxim.myscoutee.domain.platform.mapper.OperatorTlsMapper",
+    "com.raxim.myscoutee.domain.platform.repository.AppSettingsRepository",
+    "com.raxim.myscoutee.domain.platform.repository.CountryPartitionsRepository",
+    "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository",
+    "com.raxim.myscoutee.domain.platform.repository.OperatorTlsRepository",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationFilter",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationService",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTokenInvalidException",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTransportSecurity",
+    "com.raxim.myscoutee.domain.platform.service.AppSettingsService",
+    "com.raxim.myscoutee.domain.platform.service.DefaultFirebasePushDelivery",
+    "com.raxim.myscoutee.domain.platform.service.DefaultOperatorFirebaseCapabilityClient",
+    "com.raxim.myscoutee.domain.platform.service.DeploymentBrandingResolver",
+    "com.raxim.myscoutee.domain.platform.service.DeploymentFirebaseRuntime",
+    "com.raxim.myscoutee.domain.platform.service.DeploymentSettingsService",
+    "com.raxim.myscoutee.domain.platform.service.JobGroupScopeService",
+    "com.raxim.myscoutee.domain.platform.service.OperatorFirebaseCapabilityClient",
+    "com.raxim.myscoutee.domain.platform.service.OperatorTlsService",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateArtifactDownloader",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateHttpClient",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateReleaseService",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateService"
+  ],
+  "dependencyClosed": [
+    "com.raxim.myscoutee.Main",
+    "com.raxim.myscoutee.common.config.JsonConfig",
+    "com.raxim.myscoutee.common.config.MongoConverterConfig",
+    "com.raxim.myscoutee.common.config.MongoRoutingConfig",
+    "com.raxim.myscoutee.common.config.caching.MessageKeyGenerator",
+    "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+    "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+    "com.raxim.myscoutee.common.config.mongo.MongoPrivacyOperations",
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+    "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+    "com.raxim.myscoutee.common.config.mongo.SessionMongoRoutingFilter",
+    "com.raxim.myscoutee.common.config.mongo.SessionRoutingMongoDatabaseFactory",
+    "com.raxim.myscoutee.common.dto.MediaUrlsQueryDto",
+    "com.raxim.myscoutee.common.mongo.OwnerScopedQuery",
+    "com.raxim.myscoutee.common.redis.RedisStreamRetentionService",
+    "com.raxim.myscoutee.common.runtime.RuntimeStatusPublisher",
+    "com.raxim.myscoutee.common.security.crypto.CanonicalValues",
+    "com.raxim.myscoutee.common.security.crypto.Ed25519Signatures",
+    "com.raxim.myscoutee.common.security.http.HttpSecurityContribution",
+    "com.raxim.myscoutee.common.security.media.MediaSessionAccessService",
+    "com.raxim.myscoutee.common.security.policy.PolicyExpressionEvaluator",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicySupport",
+    "com.raxim.myscoutee.common.util.JsonUtil",
+    "com.raxim.myscoutee.common.util.TextValues",
+    "com.raxim.myscoutee.common.util.TimeValues",
+    "com.raxim.myscoutee.domain.access.api.AccessGrantEffect",
+    "com.raxim.myscoutee.domain.access.api.ConsentAuthorization",
+    "com.raxim.myscoutee.domain.access.api.RegionSecurity",
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicies",
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicy",
+    "com.raxim.myscoutee.domain.access.config.RegionSecurityProperties",
+    "com.raxim.myscoutee.domain.access.document.AccessGrant",
+    "com.raxim.myscoutee.domain.access.document.AccessPolicyDefinition",
+    "com.raxim.myscoutee.domain.access.repository.AccessGrantsRepository",
+    "com.raxim.myscoutee.domain.access.repository.AccessPolicyDefinitionsRepository",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+    "com.raxim.myscoutee.domain.accounts.api.AccountConsents",
+    "com.raxim.myscoutee.domain.accounts.api.AccountDevices",
+    "com.raxim.myscoutee.domain.accounts.api.AccountIntegrationAccess",
+    "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions",
+    "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+    "com.raxim.myscoutee.domain.accounts.api.AssetAffinityProfile",
+    "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapAccounts",
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapLoginAudit",
+    "com.raxim.myscoutee.domain.accounts.api.ChatCounters",
+    "com.raxim.myscoutee.domain.accounts.api.EmailProfile",
+    "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker",
+    "com.raxim.myscoutee.domain.accounts.api.FriendshipReads",
+    "com.raxim.myscoutee.domain.accounts.api.ProfileStatusObserver",
+    "com.raxim.myscoutee.domain.accounts.api.ScoringProfile",
+    "com.raxim.myscoutee.domain.accounts.api.SelectedProfile",
+    "com.raxim.myscoutee.domain.accounts.api.WorkspaceIdentity",
+    "com.raxim.myscoutee.domain.accounts.config.FirebaseConfig",
+    "com.raxim.myscoutee.domain.accounts.document.AccountPurgeJob",
+    "com.raxim.myscoutee.domain.accounts.document.PrivacyConsent",
+    "com.raxim.myscoutee.domain.accounts.document.UserFriendship",
+    "com.raxim.myscoutee.domain.accounts.document.UserLoginAudit",
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionAction",
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionState",
+    "com.raxim.myscoutee.domain.accounts.dto.FeedCountersRecord",
+    "com.raxim.myscoutee.domain.accounts.dto.HostConfidenceFactsDto",
+    "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto",
+    "com.raxim.myscoutee.domain.accounts.repository.AccountPurgeJobsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.PrivacyConsentsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.UserFriendshipsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.UserLoginAuditsRepository",
+    "com.raxim.myscoutee.domain.accounts.repository.UserSessionActionsRepository",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DefaultFirebaseTokenVerifier",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DevelopmentIdentityEmail",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseTokenVerifier",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.exception.FirebaseTokenInvalidException",
+    "com.raxim.myscoutee.domain.accounts.service.AccountConsentService",
+    "com.raxim.myscoutee.domain.administration.api.AdminTelemetryEvent",
+    "com.raxim.myscoutee.domain.administration.config.AdminStatsProperties",
+    "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+    "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility",
+    "com.raxim.myscoutee.domain.chat.api.ChatPresence",
+    "com.raxim.myscoutee.domain.chat.api.ChatPrivacy",
+    "com.raxim.myscoutee.domain.chat.api.ChatSessionAttributes",
+    "com.raxim.myscoutee.domain.chat.api.ContactPermissions",
+    "com.raxim.myscoutee.domain.chat.config.ChatMediaIndexInitializer",
+    "com.raxim.myscoutee.domain.chat.document.Chat",
+    "com.raxim.myscoutee.domain.chat.document.ChatMessage",
+    "com.raxim.myscoutee.domain.chat.document.ContactChatAccess",
+    "com.raxim.myscoutee.domain.chat.dto.ChatDirectoryEntryDto",
+    "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto",
+    "com.raxim.myscoutee.domain.chat.dto.ChatSupportStatusDto",
+    "com.raxim.myscoutee.domain.chat.dto.ChatUnreadVersionDto",
+    "com.raxim.myscoutee.domain.chat.repository.ChatMessagesRepository",
+    "com.raxim.myscoutee.domain.chat.repository.ContactChatAccessRepository",
+    "com.raxim.myscoutee.domain.chat.service.ChatMediaVisibilityService",
+    "com.raxim.myscoutee.domain.chat.service.ContactPermissionService",
+    "com.raxim.myscoutee.domain.chat.websocket.ChatHandshakeInterceptor",
+    "com.raxim.myscoutee.domain.email.api.EmailLinks",
+    "com.raxim.myscoutee.domain.email.api.EmailRendering",
+    "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+    "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+    "com.raxim.myscoutee.domain.email.api.EmailSending",
+    "com.raxim.myscoutee.domain.email.service.EmailTemplateRenderer",
+    "com.raxim.myscoutee.domain.help.api.HelpPrivacy",
+    "com.raxim.myscoutee.domain.help.document.HelpCenterGuideField",
+    "com.raxim.myscoutee.domain.help.document.HelpCenterRevision",
+    "com.raxim.myscoutee.domain.help.repository.HelpCenterGuideFieldsRepository",
+    "com.raxim.myscoutee.domain.help.service.HelpPrivacyService",
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationClientIdentity",
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationPrivacy",
+    "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationReadSupport",
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationToken",
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationWebhookDelivery",
+    "com.raxim.myscoutee.domain.integrations.document.McpAuthorization",
+    "com.raxim.myscoutee.domain.integrations.document.McpEventSubscription",
+    "com.raxim.myscoutee.domain.integrations.document.McpOAuthClient",
+    "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess",
+    "com.raxim.myscoutee.domain.integrations.dto.McpEventDtos",
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationTokensRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationWebhookDeliveriesRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.McpAuthorizationRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.McpEventSubscriptionsRepository",
+    "com.raxim.myscoutee.domain.integrations.repository.McpOAuthClientsRepository",
+    "com.raxim.myscoutee.domain.integrations.service.McpEventCallbackClient",
+    "com.raxim.myscoutee.domain.localization.api.TranslationBundles",
+    "com.raxim.myscoutee.domain.localization.controller.I18nMessageRestController",
+    "com.raxim.myscoutee.domain.localization.document.I18nBundle",
+    "com.raxim.myscoutee.domain.localization.document.I18nMessage",
+    "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto",
+    "com.raxim.myscoutee.domain.localization.repository.I18nBundleRepository",
+    "com.raxim.myscoutee.domain.localization.repository.I18nMessageRepository",
+    "com.raxim.myscoutee.domain.localization.service.DBMessageSource",
+    "com.raxim.myscoutee.domain.localization.service.I18nService",
+    "com.raxim.myscoutee.domain.media.api.ImageUploads",
+    "com.raxim.myscoutee.domain.media.api.MediaAccessPaths",
+    "com.raxim.myscoutee.domain.media.api.MediaCleanup",
+    "com.raxim.myscoutee.domain.media.api.MediaDeletionQueue",
+    "com.raxim.myscoutee.domain.media.api.MediaImageVariant",
+    "com.raxim.myscoutee.domain.media.api.MediaSessionAccess",
+    "com.raxim.myscoutee.domain.media.api.MediaStorage",
+    "com.raxim.myscoutee.domain.media.config.MediaSessionConfiguration",
+    "com.raxim.myscoutee.domain.media.config.MediaStorageProperties",
+    "com.raxim.myscoutee.domain.media.dto.MediaDtos",
+    "com.raxim.myscoutee.domain.media.service.MediaObjectStoreClient",
+    "com.raxim.myscoutee.domain.media.service.MediaStorageService",
+    "com.raxim.myscoutee.domain.media.service.S3CompatibleMediaObjectStoreClient",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy",
+    "com.raxim.myscoutee.domain.notifications.document.NotificationOutboxItem",
+    "com.raxim.myscoutee.domain.notifications.document.UserNotification",
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationOutboxRepository",
+    "com.raxim.myscoutee.domain.notifications.repository.UserNotificationsRepository",
+    "com.raxim.myscoutee.domain.notifications.service.NotificationPrivacyService",
+    "com.raxim.myscoutee.domain.platform.api.AdministratorSettings",
+    "com.raxim.myscoutee.domain.platform.api.AuthenticationMode",
+    "com.raxim.myscoutee.domain.platform.api.DeploymentBranding",
+    "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+    "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery",
+    "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime",
+    "com.raxim.myscoutee.domain.platform.api.JobWorkspaceDirectory",
+    "com.raxim.myscoutee.domain.platform.api.NotificationPolicy",
+    "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+    "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings",
+    "com.raxim.myscoutee.domain.platform.api.ReleaseProtocol",
+    "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration",
+    "com.raxim.myscoutee.domain.platform.api.SecretEncryption",
+    "com.raxim.myscoutee.domain.platform.config.ConfigProperties",
+    "com.raxim.myscoutee.domain.platform.config.OperatorConfigurationProperties",
+    "com.raxim.myscoutee.domain.platform.config.OperatorTlsProperties",
+    "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties",
+    "com.raxim.myscoutee.domain.platform.document.AppSettings",
+    "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos",
+    "com.raxim.myscoutee.domain.platform.mapper.OperatorTlsMapper",
+    "com.raxim.myscoutee.domain.platform.repository.AppSettingsRepository",
+    "com.raxim.myscoutee.domain.platform.repository.OperatorTlsRepository",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationService",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTokenInvalidException",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTransportSecurity",
+    "com.raxim.myscoutee.domain.platform.service.AppSettingsService",
+    "com.raxim.myscoutee.domain.platform.service.DefaultFirebasePushDelivery",
+    "com.raxim.myscoutee.domain.platform.service.DefaultOperatorFirebaseCapabilityClient",
+    "com.raxim.myscoutee.domain.platform.service.OperatorFirebaseCapabilityClient",
+    "com.raxim.myscoutee.domain.platform.service.OperatorTlsService",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateArtifactDownloader",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateHttpClient"
+  ],
+  "directNonidenticalDependencies": {
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyMethodInterceptor": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions"
+    ],
+    "com.raxim.myscoutee.domain.access.security.AccessPolicy": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanAccessChatCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanManageSupportChatCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanReadMediaCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData",
+      "com.raxim.myscoutee.domain.access.security.MediaPolicyFacts"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorDiffersFromSubjectCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorMatchesSubjectCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ExplicitAllowCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.NoExplicitDenyCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AccountIdentity": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AssetProfile": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummary"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.DiscoveryProfile": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummary"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.ProfileAuthentication": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile"
+    ],
+    "com.raxim.myscoutee.domain.accounts.controller.FacebookDataDeletionController": [
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseFilter": [
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseService"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountDeviceService": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountIntegrationAccessService": [
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountNotificationService": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.DeletedAccountWarningWorker": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.notifications.api.NotificationJobs",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.domain.platform.api.SchedulingPolicy"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.FacebookDataDeletionService": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository",
+      "com.raxim.myscoutee.domain.accounts.service.AccountLifecycleService"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.ProfileAuthenticationService": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusValues": [
+      "com.raxim.myscoutee.domain.accounts.document.Users"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusWork": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.SelectedProfileService": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.UserLoginSessionService": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatQueries": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.SupportMessages": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatCallSignalingService": [
+      "com.raxim.myscoutee.domain.chat.service.ChatService",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatDirectoryService": [
+      "com.raxim.myscoutee.domain.chat.repository.ChatsRepository"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatPrivacyService": [
+      "com.raxim.myscoutee.domain.chat.repository.ChatsRepository"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatPushNotificationService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummaries",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummary",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamConsumer": [
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.websocket.ChatWebSocketHandler": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos",
+      "com.raxim.myscoutee.domain.chat.service.ChatService",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry"
+    ],
+    "com.raxim.myscoutee.domain.email.service.EmailProviderGateway": [
+      "com.raxim.myscoutee.domain.email.config.EmailProperties"
+    ],
+    "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService": [
+      "com.raxim.myscoutee.domain.email.config.EmailProperties"
+    ],
+    "com.raxim.myscoutee.domain.email.service.SendGridEmailProvider": [
+      "com.raxim.myscoutee.domain.email.config.EmailProperties"
+    ],
+    "com.raxim.myscoutee.domain.integrations.config.AdminClientAuthenticationFilter": [
+      "com.raxim.myscoutee.domain.integrations.config.IntegrationTokenAuthenticationFilter",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientController": [
+      "com.raxim.myscoutee.domain.integrations.service.AdminClientService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientSettingsController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationSettingsService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationCommunicationReadController": [
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationCapabilitiesService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationSettingsController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationSettingsService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.McpEventsController": [
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationCapabilitiesService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService",
+      "com.raxim.myscoutee.domain.integrations.service.McpEventsService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.McpSettingsController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions"
+    ],
+    "com.raxim.myscoutee.domain.integrations.dto.McpDtos": [
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.AdminClientAccessService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileDirectory",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.administration.api.AdministratorClassification"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.AdminModerationAttention": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationProductCapabilities": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationPublicEndpointResolver": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentSettings"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationRoleAccessService": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.McpAuthorizationService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileDirectory",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService",
+      "com.raxim.myscoutee.domain.integrations.service.McpWorkspaceAccess"
+    ],
+    "com.raxim.myscoutee.domain.media.controller.MediaController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPolicyKeys"
+    ],
+    "com.raxim.myscoutee.domain.notifications.api.NotificationReads": [
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos"
+    ],
+    "com.raxim.myscoutee.domain.notifications.controller.UserNotificationsController": [
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos",
+      "com.raxim.myscoutee.domain.notifications.service.UserNotificationService"
+    ],
+    "com.raxim.myscoutee.domain.notifications.document.NotificationRuleConfig": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationJobs"
+    ],
+    "com.raxim.myscoutee.domain.notifications.dto.JobRuleDto": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationJobs"
+    ],
+    "com.raxim.myscoutee.domain.notifications.mapper.UserNotificationMapper": [
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos"
+    ],
+    "com.raxim.myscoutee.domain.notifications.service.AdminNotificationSocketSessionRegistry": [
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.DeploymentConfigurationManagement": [
+      "com.raxim.myscoutee.domain.platform.dto.OperatorConfigurationDtos"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.JobAudience": [
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.domain.platform.controller.OperatorBootstrapController": [
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos"
+    ],
+    "com.raxim.myscoutee.domain.platform.controller.OperatorConfigurationController": [
+      "com.raxim.myscoutee.domain.platform.dto.OperatorConfigurationDtos"
+    ],
+    "com.raxim.myscoutee.domain.platform.document.CountryPartition": [
+      "com.raxim.myscoutee.domain.platform.api.CountryDirectory"
+    ],
+    "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository": [
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.DeploymentBrandingResolver": [
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.DeploymentFirebaseRuntime": [
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration",
+      "com.raxim.myscoutee.domain.platform.service.DeploymentConfigurationCrypto",
+      "com.raxim.myscoutee.domain.platform.service.OperatorConfigurationService"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.DeploymentSettingsService": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentSettings",
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.JobGroupScopeService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileDirectory",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.domain.platform.api.JobTargetResolver"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateReleaseService": [
+      "com.raxim.myscoutee.domain.notifications.api.RoleNotifications"
+    ]
+  },
+  "dependencies": {
+    "com.raxim.myscoutee.domain.localization.controller.I18nMessageRestController": [
+      "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto",
+      "com.raxim.myscoutee.domain.localization.service.I18nService"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.JobWorkspaceDirectory": [],
+    "com.raxim.myscoutee.domain.media.api.MediaCleanup": [],
+    "com.raxim.myscoutee.domain.platform.service.DeploymentSettingsService": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentSettings",
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration",
+      "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository"
+    ],
+    "com.raxim.myscoutee.domain.integrations.repository.McpAuthorizationRepository": [
+      "com.raxim.myscoutee.domain.integrations.document.McpAuthorization"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AccountDevices": [],
+    "com.raxim.myscoutee.domain.email.api.EmailSendResult": [],
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionAction": [],
+    "com.raxim.myscoutee.domain.media.service.S3CompatibleMediaObjectStoreClient": [
+      "com.raxim.myscoutee.domain.media.api.MediaStorage",
+      "com.raxim.myscoutee.domain.media.config.MediaStorageProperties",
+      "com.raxim.myscoutee.domain.media.service.MediaObjectStoreClient"
+    ],
+    "com.raxim.myscoutee.domain.chat.repository.ChatMessagesRepository": [
+      "com.raxim.myscoutee.domain.chat.document.ChatMessage"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.McpEventsController": [
+      "com.raxim.myscoutee.domain.integrations.dto.McpEventDtos",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationCapabilitiesService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService",
+      "com.raxim.myscoutee.domain.integrations.service.McpEventsService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationReadSupport": [],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountJobQueries": [
+      "com.raxim.myscoutee.domain.platform.api.JobAudience"
+    ],
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicy": [],
+    "com.raxim.myscoutee.domain.platform.api.EmailSecrets": [
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret"
+    ],
+    "com.raxim.myscoutee.domain.media.api.ImageUploads": [
+      "com.raxim.myscoutee.domain.media.api.MediaStorage"
+    ],
+    "com.raxim.myscoutee.domain.accounts.repository.UserLoginAuditsRepository": [
+      "com.raxim.myscoutee.domain.accounts.document.UserLoginAudit"
+    ],
+    "com.raxim.myscoutee.common.config.mongo.SessionRoutingMongoDatabaseFactory": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ExplicitAllowCondition": [
+      "com.raxim.myscoutee.domain.access.api.AccessGrantEffect",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.media.config.MediaSessionConfiguration": [
+      "com.raxim.myscoutee.common.security.media.MediaSessionAccessService"
+    ],
+    "com.raxim.myscoutee.domain.accounts.config.FirebaseConfig": [
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.chat.dto.ChatDirectoryEntryDto": [
+      "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+      "com.raxim.myscoutee.domain.chat.dto.ChatSupportStatusDto"
+    ],
+    "com.raxim.myscoutee.common.config.MongoRoutingConfig": [
+      "com.raxim.myscoutee.common.config.mongo.SessionRoutingMongoDatabaseFactory"
+    ],
+    "com.raxim.myscoutee.domain.access.document.AccessPolicyDefinition": [],
+    "com.raxim.myscoutee.domain.email.service.EmailProviderGateway": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.config.EmailProperties",
+      "com.raxim.myscoutee.domain.email.service.EmailPresentationService",
+      "com.raxim.myscoutee.domain.email.service.EmailProvider",
+      "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService"
+    ],
+    "com.raxim.myscoutee.domain.localization.repository.I18nBundleRepository": [
+      "com.raxim.myscoutee.domain.localization.document.I18nBundle"
+    ],
+    "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery": [],
+    "com.raxim.myscoutee.domain.access.document.AccessGrant": [],
+    "com.raxim.myscoutee.domain.chat.service.ChatCallSignalingService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.chat.service.ChatService",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential": [
+      "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker"
+    ],
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationWebhookDelivery": [],
+    "com.raxim.myscoutee.domain.notifications.dto.JobRuleDto": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationJobs"
+    ],
+    "com.raxim.myscoutee.domain.email.service.NoopEmailProvider": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.service.EmailProvider"
+    ],
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyMethodInterceptor": [
+      "com.raxim.myscoutee.common.security.policy.PolicyExpressionEvaluator",
+      "com.raxim.myscoutee.common.security.policy.RequiresPolicySupport",
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions",
+      "com.raxim.myscoutee.domain.access.api.RequiresPolicies",
+      "com.raxim.myscoutee.domain.access.api.RequiresPolicy"
+    ],
+    "com.raxim.myscoutee.common.util.TimeValues": [
+      "com.raxim.myscoutee.common.util.TextValues"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatDirectory": [],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.exception.FirebaseTokenInvalidException": [],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseTokenVerifier": [
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential"
+    ],
+    "com.raxim.myscoutee.domain.notifications.api.NotificationReads": [
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.repository.ContactChatAccessRepository": [
+      "com.raxim.myscoutee.domain.chat.document.ContactChatAccess"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientController": [
+      "com.raxim.myscoutee.domain.integrations.service.AdminClientService"
+    ],
+    "com.raxim.myscoutee.domain.help.repository.HelpCenterGuideFieldsRepository": [
+      "com.raxim.myscoutee.domain.help.document.HelpCenterGuideField"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountNotificationService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AccountIntegrationAccess": [
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapLoginAudit": [],
+    "com.raxim.myscoutee.domain.chat.service.ChatPrivacyService": [
+      "com.raxim.myscoutee.domain.chat.api.ChatPrivacy",
+      "com.raxim.myscoutee.domain.chat.document.Chat",
+      "com.raxim.myscoutee.domain.chat.document.ChatMessage",
+      "com.raxim.myscoutee.domain.chat.repository.ChatMessagesRepository",
+      "com.raxim.myscoutee.domain.chat.repository.ChatsRepository",
+      "com.raxim.myscoutee.domain.media.api.MediaCleanup"
+    ],
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.email.api.EmailLinks": [],
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamConsumer": [
+      "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent",
+      "com.raxim.myscoutee.domain.chat.service.ChatStreamPublisher",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ContactPermissionService": [
+      "com.raxim.myscoutee.domain.chat.api.ContactPermissions",
+      "com.raxim.myscoutee.domain.chat.document.ContactChatAccess",
+      "com.raxim.myscoutee.domain.chat.repository.ContactChatAccessRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor": [
+      "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto"
+    ],
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicySupport": [
+      "com.raxim.myscoutee.domain.access.api.RequiresPolicies",
+      "com.raxim.myscoutee.domain.access.api.RequiresPolicy"
+    ],
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTransportSecurity": [
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.DefaultFirebasePushDelivery": [
+      "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery",
+      "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime"
+    ],
+    "com.raxim.myscoutee.domain.accounts.repository.UserSessionActionsRepository": [
+      "com.raxim.myscoutee.domain.accounts.document.UserSessionAction"
+    ],
+    "com.raxim.myscoutee.common.util.JsonUtil": [],
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationPublicEndpointResolver": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentSettings"
+    ],
+    "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext"
+    ],
+    "com.raxim.myscoutee.domain.email.api.EmailRendering": [],
+    "com.raxim.myscoutee.domain.platform.config.OperatorConfigurationProperties": [],
+    "com.raxim.myscoutee.domain.platform.service.DeploymentBrandingResolver": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentBranding",
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration",
+      "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanManageSupportChatCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AccountNotifications": [],
+    "com.raxim.myscoutee.domain.accounts.api.DiscoveryProfile": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummary",
+      "com.raxim.myscoutee.domain.accounts.api.ScoringProfile"
+    ],
+    "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents": [],
+    "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties": [],
+    "com.raxim.myscoutee.domain.media.dto.MediaDtos": [],
+    "com.raxim.myscoutee.domain.notifications.document.NotificationOutboxItem": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery"
+    ],
+    "com.raxim.myscoutee.domain.accounts.dto.HostConfidenceFactsDto": [],
+    "com.raxim.myscoutee.domain.platform.document.CountryPartition": [
+      "com.raxim.myscoutee.domain.platform.api.CountryDirectory"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatQueries": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatPresence": [],
+    "com.raxim.myscoutee.domain.integrations.repository.McpOAuthClientsRepository": [
+      "com.raxim.myscoutee.domain.integrations.document.McpOAuthClient"
+    ],
+    "com.raxim.myscoutee.common.security.media.MediaSessionAccessService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions",
+      "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+      "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker",
+      "com.raxim.myscoutee.domain.media.api.MediaSessionAccess"
+    ],
+    "com.raxim.myscoutee.domain.localization.service.I18nService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.domain.localization.api.TranslationBundles",
+      "com.raxim.myscoutee.domain.localization.document.I18nBundle",
+      "com.raxim.myscoutee.domain.localization.document.I18nMessage",
+      "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto",
+      "com.raxim.myscoutee.domain.localization.repository.I18nBundleRepository",
+      "com.raxim.myscoutee.domain.localization.repository.I18nMessageRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountJobScopeService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountJobScopes",
+      "com.raxim.myscoutee.domain.platform.api.JobAudience"
+    ],
+    "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.email.config.EmailProperties",
+      "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret"
+    ],
+    "com.raxim.myscoutee.domain.integrations.config.AdminClientAuthenticationFilter": [
+      "com.raxim.myscoutee.domain.integrations.config.IntegrationTokenAuthenticationFilter",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess",
+      "com.raxim.myscoutee.domain.integrations.service.AdminClientAccessService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorDiffersFromSubjectCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.AdminModerationAttention": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile"
+    ],
+    "com.raxim.myscoutee.domain.help.api.HelpPrivacy": [],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanReadMediaCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData",
+      "com.raxim.myscoutee.domain.access.security.MediaPolicyFacts"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.McpAuthorizationService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileDirectory",
+      "com.raxim.myscoutee.domain.integrations.document.IntegrationToken",
+      "com.raxim.myscoutee.domain.integrations.document.McpAuthorization",
+      "com.raxim.myscoutee.domain.integrations.document.McpOAuthClient",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos",
+      "com.raxim.myscoutee.domain.integrations.dto.McpDtos",
+      "com.raxim.myscoutee.domain.integrations.repository.IntegrationTokensRepository",
+      "com.raxim.myscoutee.domain.integrations.repository.McpAuthorizationRepository",
+      "com.raxim.myscoutee.domain.integrations.repository.McpOAuthClientsRepository",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationPublicEndpointResolver",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService",
+      "com.raxim.myscoutee.domain.integrations.service.McpWorkspaceAccess",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.DeletedAccountWarningWorker": [
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.service.AccountJobQueries",
+      "com.raxim.myscoutee.domain.email.api.EmailRendering",
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.api.EmailSending",
+      "com.raxim.myscoutee.domain.localization.api.TranslationBundles",
+      "com.raxim.myscoutee.domain.notifications.api.NotificationJobs",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.domain.platform.api.SchedulingPolicy"
+    ],
+    "com.raxim.myscoutee.domain.email.service.EmailTemplateRenderer": [
+      "com.raxim.myscoutee.domain.email.api.EmailRendering"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatSessionAttributes": [],
+    "com.raxim.myscoutee.domain.media.api.MediaAccessPaths": [
+      "com.raxim.myscoutee.domain.media.api.MediaImageVariant"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatPrivacy": [],
+    "com.raxim.myscoutee.domain.platform.config.OperatorTlsProperties": [],
+    "com.raxim.myscoutee.domain.platform.service.OperatorFirebaseCapabilityClient": [],
+    "com.raxim.myscoutee.domain.notifications.service.AdminNotificationSocketSessionRegistry": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.notifications.document.NotificationRuleConfig",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker": [],
+    "com.raxim.myscoutee.domain.accounts.repository.AccountPurgeJobsRepository": [
+      "com.raxim.myscoutee.domain.accounts.document.AccountPurgeJob"
+    ],
+    "com.raxim.myscoutee.common.config.mongo.MongoPrivacyOperations": [],
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationOutboxRepository": [
+      "com.raxim.myscoutee.domain.notifications.document.NotificationOutboxItem"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatPushNotificationService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummaries",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummary",
+      "com.raxim.myscoutee.domain.chat.document.Chat",
+      "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry",
+      "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.SecretEncryption": [
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret"
+    ],
+    "com.raxim.myscoutee.domain.media.config.MediaStorageProperties": [],
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationRuleConfigsRepository": [
+      "com.raxim.myscoutee.domain.notifications.document.NotificationRuleConfig"
+    ],
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationPrivacy": [],
+    "com.raxim.myscoutee.domain.platform.mapper.OperatorTlsMapper": [
+      "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos"
+    ],
+    "com.raxim.myscoutee.common.redis.RedisStreamRetentionService": [],
+    "com.raxim.myscoutee.domain.chat.document.Chat": [
+      "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+      "com.raxim.myscoutee.domain.chat.document.ChatMessage"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountConsentService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountConsents",
+      "com.raxim.myscoutee.domain.accounts.document.PrivacyConsent",
+      "com.raxim.myscoutee.domain.accounts.repository.PrivacyConsentsRepository"
+    ],
+    "com.raxim.myscoutee.domain.localization.document.I18nBundle": [],
+    "com.raxim.myscoutee.domain.integrations.document.McpOAuthClient": [],
+    "com.raxim.myscoutee.domain.platform.controller.OperatorConfigurationController": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentConfigurationManagement",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorConfigurationDtos"
+    ],
+    "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto": [],
+    "com.raxim.myscoutee.domain.accounts.service.UserLoginSessionService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions",
+      "com.raxim.myscoutee.domain.accounts.api.BootstrapLoginAudit",
+      "com.raxim.myscoutee.domain.accounts.document.UserLoginAudit",
+      "com.raxim.myscoutee.domain.accounts.document.UserSessionState",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos",
+      "com.raxim.myscoutee.domain.accounts.repository.UserLoginAuditsRepository",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal",
+      "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.ProfileAuthenticationService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileAuthentication",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal"
+    ],
+    "com.raxim.myscoutee.Main": [],
+    "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner"
+    ],
+    "com.raxim.myscoutee.domain.email.api.EmailSending": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.AdminClientAccessService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileDirectory",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.administration.api.AdministratorClassification"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.JobGroupScopeService": [
+      "com.raxim.myscoutee.domain.accounts.api.ProfileDirectory",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.platform.api.JobAudience",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.domain.platform.api.JobTargetResolver",
+      "com.raxim.myscoutee.domain.platform.api.JobWorkspaceDirectory"
+    ],
+    "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret": [],
+    "com.raxim.myscoutee.domain.notifications.mapper.UserNotificationMapper": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+      "com.raxim.myscoutee.domain.notifications.document.UserNotification",
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.dto.ChatSupportStatusDto": [
+      "com.raxim.myscoutee.domain.chat.api.ChatDirectory"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.McpEventCallbackClient": [],
+    "com.raxim.myscoutee.domain.accounts.api.ProfileAuthentication": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile"
+    ],
+    "com.raxim.myscoutee.domain.media.api.MediaDeletionQueue": [],
+    "com.raxim.myscoutee.domain.platform.service.DefaultOperatorFirebaseCapabilityClient": [
+      "com.raxim.myscoutee.domain.platform.service.OperatorFirebaseCapabilityClient"
+    ],
+    "com.raxim.myscoutee.domain.chat.service.ChatDirectoryService": [
+      "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+      "com.raxim.myscoutee.domain.chat.document.Chat",
+      "com.raxim.myscoutee.domain.chat.repository.ChatsRepository"
+    ],
+    "com.raxim.myscoutee.domain.email.service.OperatorEmailConfigurationService": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.api.EmailSending",
+      "com.raxim.myscoutee.domain.email.service.EmailProvider",
+      "com.raxim.myscoutee.domain.email.service.EmailProviderGateway",
+      "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret"
+    ],
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode"
+    ],
+    "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto": [],
+    "com.raxim.myscoutee.domain.localization.service.DBMessageSource": [
+      "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.localization.document.I18nMessage",
+      "com.raxim.myscoutee.domain.localization.repository.I18nMessageRepository"
+    ],
+    "com.raxim.myscoutee.domain.integrations.repository.McpEventSubscriptionsRepository": [
+      "com.raxim.myscoutee.domain.integrations.document.McpEventSubscription"
+    ],
+    "com.raxim.myscoutee.domain.media.api.MediaStorage": [
+      "com.raxim.myscoutee.domain.media.api.ImageUploads",
+      "com.raxim.myscoutee.domain.media.api.MediaCleanup"
+    ],
+    "com.raxim.myscoutee.domain.notifications.repository.UserNotificationsRepository": [
+      "com.raxim.myscoutee.domain.notifications.document.UserNotification"
+    ],
+    "com.raxim.myscoutee.domain.email.controller.OperatorEmailConfigurationController": [
+      "com.raxim.myscoutee.domain.email.service.OperatorEmailConfigurationService"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.AdministratorSettings": [],
+    "com.raxim.myscoutee.domain.access.security.AccessPolicy": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapAccounts": [],
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationFilter": [
+      "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileAuthentication",
+      "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration",
+      "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationService",
+      "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTokenInvalidException",
+      "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTransportSecurity"
+    ],
+    "com.raxim.myscoutee.domain.media.service.MediaStorageService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.media.api.MediaAccessPaths",
+      "com.raxim.myscoutee.domain.media.api.MediaImageVariant",
+      "com.raxim.myscoutee.domain.media.api.MediaStorage",
+      "com.raxim.myscoutee.domain.media.config.MediaStorageProperties",
+      "com.raxim.myscoutee.domain.media.service.MediaObjectStoreClient"
+    ],
+    "com.raxim.myscoutee.domain.administration.config.AdminStatsProperties": [],
+    "com.raxim.myscoutee.domain.administration.api.AdminTelemetryEvent": [],
+    "com.raxim.myscoutee.domain.localization.document.I18nMessage": [],
+    "com.raxim.myscoutee.domain.email.api.EmailSendRequest": [],
+    "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport": [],
+    "com.raxim.myscoutee.domain.accounts.api.CurrentProfile": [
+      "com.raxim.myscoutee.domain.accounts.api.DiscoveryProfile"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.security.crypto.CanonicalValues",
+      "com.raxim.myscoutee.domain.platform.api.ReleaseProtocol",
+      "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateArtifactDownloader",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateReleaseService"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.AuthenticationMode": [],
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationWebhookDeliveriesRepository": [
+      "com.raxim.myscoutee.domain.integrations.document.IntegrationWebhookDelivery"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseFilter": [
+      "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseService",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseTokenVerifier",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.exception.FirebaseTokenInvalidException",
+      "com.raxim.myscoutee.domain.accounts.service.UserLoginSessionService",
+      "com.raxim.myscoutee.domain.integrations.api.IntegrationClientIdentity",
+      "com.raxim.myscoutee.domain.media.api.MediaSessionAccess",
+      "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyConditionRegistry": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition"
+    ],
+    "com.raxim.myscoutee.domain.email.service.EmailProvider": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.service.OperatorEmailConfigurationService"
+    ],
+    "com.raxim.myscoutee.domain.access.api.AccessGrantEffect": [],
+    "com.raxim.myscoutee.domain.platform.api.DeploymentConfigurationManagement": [
+      "com.raxim.myscoutee.domain.platform.dto.OperatorConfigurationDtos"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationSettingsController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationSettingsService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService"
+    ],
+    "com.raxim.myscoutee.domain.access.api.RegionSecurity": [],
+    "com.raxim.myscoutee.domain.platform.service.DeploymentFirebaseRuntime": [
+      "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime",
+      "com.raxim.myscoutee.domain.platform.config.ConfigProperties",
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration",
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret",
+      "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository",
+      "com.raxim.myscoutee.domain.platform.service.DeploymentConfigurationCrypto",
+      "com.raxim.myscoutee.domain.platform.service.OperatorConfigurationService"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AssetProfile": [
+      "com.raxim.myscoutee.domain.accounts.api.AssetAffinityProfile",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileSummary"
+    ],
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationClientIdentity": [
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationProductCapabilities": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.FacebookDataDeletionService": [
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository",
+      "com.raxim.myscoutee.domain.accounts.service.AccountLifecycleService",
+      "com.raxim.myscoutee.domain.email.api.EmailLinks",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.accounts.document.UserLoginAudit": [],
+    "com.raxim.myscoutee.domain.access.api.ConsentAuthorization": [],
+    "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy": [],
+    "com.raxim.myscoutee.domain.chat.api.SupportMessages": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.SelectedProfile": [
+      "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto"
+    ],
+    "com.raxim.myscoutee.domain.access.config.RegionSecurityProperties": [
+      "com.raxim.myscoutee.domain.access.api.RegionSecurity"
+    ],
+    "com.raxim.myscoutee.domain.accounts.document.PrivacyConsent": [],
+    "com.raxim.myscoutee.domain.accounts.api.EmailProfile": [],
+    "com.raxim.myscoutee.domain.accounts.api.AssetAffinityProfile": [
+      "com.raxim.myscoutee.domain.accounts.dto.HostConfidenceFactsDto"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusValues": [
+      "com.raxim.myscoutee.domain.accounts.document.Users"
+    ],
+    "com.raxim.myscoutee.domain.platform.repository.OperatorTlsRepository": [
+      "com.raxim.myscoutee.domain.platform.config.OperatorTlsProperties",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos"
+    ],
+    "com.raxim.myscoutee.domain.email.service.EmailPresentationService": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService",
+      "com.raxim.myscoutee.domain.localization.api.TranslationBundles",
+      "com.raxim.myscoutee.domain.platform.api.DeploymentBranding"
+    ],
+    "com.raxim.myscoutee.domain.accounts.repository.PrivacyConsentsRepository": [
+      "com.raxim.myscoutee.domain.accounts.document.PrivacyConsent"
+    ],
+    "com.raxim.myscoutee.domain.media.api.MediaSessionAccess": [],
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateArtifactDownloader": [
+      "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateHttpClient"
+    ],
+    "com.raxim.myscoutee.domain.accounts.repository.UserFriendshipsRepository": [
+      "com.raxim.myscoutee.domain.accounts.document.UserFriendship"
+    ],
+    "com.raxim.myscoutee.domain.integrations.document.McpEventSubscription": [
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration": [
+      "com.raxim.myscoutee.domain.platform.api.AuthenticationMode",
+      "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ContactPermissions": [],
+    "com.raxim.myscoutee.common.util.TextValues": [],
+    "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess": [],
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionState": [],
+    "com.raxim.myscoutee.domain.access.repository.AccessGrantsRepository": [
+      "com.raxim.myscoutee.domain.access.document.AccessGrant"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.OperatorTlsService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.platform.config.OperatorTlsProperties",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos",
+      "com.raxim.myscoutee.domain.platform.mapper.OperatorTlsMapper",
+      "com.raxim.myscoutee.domain.platform.repository.OperatorTlsRepository"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountDeviceService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountDevices",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorMatchesSubjectCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery": [],
+    "com.raxim.myscoutee.domain.accounts.api.AccountConsents": [],
+    "com.raxim.myscoutee.common.security.http.HttpSecurityContribution": [],
+    "com.raxim.myscoutee.common.config.mongo.SessionMongoRoutingFilter": [
+      "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.security.media.MediaSessionAccessService",
+      "com.raxim.myscoutee.domain.media.api.MediaSessionAccess",
+      "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+      "com.raxim.myscoutee.domain.platform.config.ConfigProperties"
+    ],
+    "com.raxim.myscoutee.domain.integrations.document.McpAuthorization": [],
+    "com.raxim.myscoutee.domain.chat.websocket.ChatWebSocketHandler": [
+      "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+      "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto",
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos",
+      "com.raxim.myscoutee.domain.chat.service.ChatCallSignalingService",
+      "com.raxim.myscoutee.domain.chat.service.ChatService",
+      "com.raxim.myscoutee.domain.chat.service.ChatWebSocketSessionRegistry",
+      "com.raxim.myscoutee.domain.chat.websocket.ChatHandshakeInterceptor",
+      "com.raxim.myscoutee.domain.platform.api.AuthenticationMode"
+    ],
+    "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto": [],
+    "com.raxim.myscoutee.domain.accounts.api.AccountIdentity": [
+      "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto"
+    ],
+    "com.raxim.myscoutee.domain.notifications.service.NotificationPrivacyService": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateReleaseService": [
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.common.security.crypto.CanonicalValues",
+      "com.raxim.myscoutee.common.security.crypto.Ed25519Signatures",
+      "com.raxim.myscoutee.domain.notifications.api.RoleNotifications",
+      "com.raxim.myscoutee.domain.platform.api.ReleaseProtocol",
+      "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateArtifactDownloader",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateHttpClient"
+    ],
+    "com.raxim.myscoutee.common.security.crypto.Ed25519Signatures": [
+      "com.raxim.myscoutee.common.security.crypto.CanonicalValues"
+    ],
+    "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos": [],
+    "com.raxim.myscoutee.domain.email.service.SendGridEmailProvider": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.config.EmailProperties",
+      "com.raxim.myscoutee.domain.email.service.EmailProvider",
+      "com.raxim.myscoutee.domain.email.service.OperatorEmailConfigurationService"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientSettingsController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos",
+      "com.raxim.myscoutee.domain.integrations.service.AdminClientAccessService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationSettingsService",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationTokenService"
+    ],
+    "com.raxim.myscoutee.common.security.crypto.CanonicalValues": [],
+    "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport": [],
+    "com.raxim.myscoutee.domain.notifications.controller.UserNotificationsController": [
+      "com.raxim.myscoutee.domain.accounts.api.SelectedProfile",
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos",
+      "com.raxim.myscoutee.domain.notifications.service.UserNotificationService"
+    ],
+    "com.raxim.myscoutee.domain.accounts.document.AccountPurgeJob": [],
+    "com.raxim.myscoutee.common.config.JsonConfig": [
+      "com.raxim.myscoutee.common.util.JsonUtil"
+    ],
+    "com.raxim.myscoutee.domain.accounts.document.UserFriendship": [],
+    "com.raxim.myscoutee.domain.accounts.api.ProfileStatusObserver": [],
+    "com.raxim.myscoutee.domain.platform.api.ReleaseProtocol": [
+      "com.raxim.myscoutee.common.security.crypto.CanonicalValues"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.NotificationPolicy": [],
+    "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions": [],
+    "com.raxim.myscoutee.domain.accounts.service.SelectedProfileService": [
+      "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+      "com.raxim.myscoutee.domain.accounts.api.CurrentProfile",
+      "com.raxim.myscoutee.domain.accounts.api.SelectedProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal"
+    ],
+    "com.raxim.myscoutee.domain.access.security.condition.NoExplicitDenyCondition": [
+      "com.raxim.myscoutee.domain.access.api.AccessGrantEffect",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.common.config.MongoConverterConfig": [],
+    "com.raxim.myscoutee.domain.platform.document.AppSettings": [],
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationToken": [],
+    "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto": [],
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyContext": [],
+    "com.raxim.myscoutee.domain.integrations.dto.McpEventDtos": [],
+    "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings": [
+      "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto"
+    ],
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationTokensRepository": [
+      "com.raxim.myscoutee.domain.integrations.document.IntegrationToken"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusWork": [
+      "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.domain.accounts.api.ProfileStatusObserver",
+      "com.raxim.myscoutee.domain.accounts.document.Users",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository",
+      "com.raxim.myscoutee.domain.chat.api.SupportMessages",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.domain.help.document.HelpCenterGuideField": [],
+    "com.raxim.myscoutee.domain.media.service.MediaObjectStoreClient": [
+      "com.raxim.myscoutee.domain.media.api.MediaStorage"
+    ],
+    "com.raxim.myscoutee.domain.notifications.document.UserNotification": [],
+    "com.raxim.myscoutee.domain.chat.dto.ChatUnreadVersionDto": [],
+    "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos": [],
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTokenInvalidException": [],
+    "com.raxim.myscoutee.common.security.policy.PolicyExpressionEvaluator": [],
+    "com.raxim.myscoutee.domain.integrations.dto.McpDtos": [
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationDtos"
+    ],
+    "com.raxim.myscoutee.domain.chat.document.ContactChatAccess": [
+      "com.raxim.myscoutee.domain.chat.api.ContactPermissions"
+    ],
+    "com.raxim.myscoutee.domain.accounts.service.AccountIntegrationAccessService": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountIntegrationAccess",
+      "com.raxim.myscoutee.domain.accounts.repository.UsersRepository",
+      "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateHttpClient": [
+      "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.accounts.document.Users"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.DeploymentBranding": [],
+    "com.raxim.myscoutee.domain.localization.repository.I18nMessageRepository": [
+      "com.raxim.myscoutee.domain.localization.document.I18nMessage"
+    ],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationProvider": [
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken"
+    ],
+    "com.raxim.myscoutee.domain.accounts.controller.FacebookDataDeletionController": [
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos",
+      "com.raxim.myscoutee.domain.accounts.service.FacebookDataDeletionService"
+    ],
+    "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository": [
+      "com.raxim.myscoutee.domain.platform.document.DeploymentConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.media.controller.MediaController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPolicyKeys",
+      "com.raxim.myscoutee.domain.access.api.RequiresPolicy",
+      "com.raxim.myscoutee.domain.media.api.MediaAccessPaths",
+      "com.raxim.myscoutee.domain.media.api.MediaStorage",
+      "com.raxim.myscoutee.domain.media.dto.MediaDtos",
+      "com.raxim.myscoutee.domain.media.service.MediaStorageService"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.ChatCounters": [],
+    "com.raxim.myscoutee.domain.notifications.document.NotificationRuleConfig": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationJobs"
+    ],
+    "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility": [
+      "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto"
+    ],
+    "com.raxim.myscoutee.domain.accounts.dto.FeedCountersRecord": [],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DefaultFirebaseTokenVerifier": [
+      "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseTokenVerifier",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential",
+      "com.raxim.myscoutee.domain.accounts.security.firebase.exception.FirebaseTokenInvalidException",
+      "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime"
+    ],
+    "com.raxim.myscoutee.domain.platform.repository.CountryPartitionsRepository": [
+      "com.raxim.myscoutee.domain.platform.document.CountryPartition"
+    ],
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicies": [
+      "com.raxim.myscoutee.domain.access.api.RequiresPolicy"
+    ],
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationRoleAccessService": [
+      "com.raxim.myscoutee.domain.accounts.api.WorkspaceProfile",
+      "com.raxim.myscoutee.domain.platform.api.AdministratorSettings",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.chat.config.ChatMediaIndexInitializer": [],
+    "com.raxim.myscoutee.domain.chat.service.ChatMediaVisibilityService": [
+      "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility",
+      "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto"
+    ],
+    "com.raxim.myscoutee.domain.localization.api.TranslationBundles": [
+      "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto"
+    ],
+    "com.raxim.myscoutee.domain.platform.controller.OperatorUpdateController": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateReleaseService",
+      "com.raxim.myscoutee.domain.platform.service.OperatorUpdateService"
+    ],
+    "com.raxim.myscoutee.domain.help.document.HelpCenterRevision": [],
+    "com.raxim.myscoutee.domain.access.repository.AccessPolicyDefinitionsRepository": [
+      "com.raxim.myscoutee.domain.access.document.AccessPolicyDefinition"
+    ],
+    "com.raxim.myscoutee.common.config.caching.MessageKeyGenerator": [],
+    "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime": [],
+    "com.raxim.myscoutee.domain.integrations.controller.McpSettingsController": [
+      "com.raxim.myscoutee.domain.access.api.AccessPermissions",
+      "com.raxim.myscoutee.domain.integrations.dto.McpDtos",
+      "com.raxim.myscoutee.domain.integrations.service.McpAuthorizationService"
+    ],
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionMode": [],
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyAdvisor": [
+      "com.raxim.myscoutee.common.security.policy.RequiresPolicyMethodInterceptor",
+      "com.raxim.myscoutee.common.security.policy.RequiresPolicySupport"
+    ],
+    "com.raxim.myscoutee.domain.chat.websocket.ChatHandshakeInterceptor": [
+      "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+      "com.raxim.myscoutee.domain.chat.api.ChatSessionAttributes"
+    ],
+    "com.raxim.myscoutee.domain.chat.document.ChatMessage": [],
+    "com.raxim.myscoutee.domain.platform.repository.AppSettingsRepository": [
+      "com.raxim.myscoutee.domain.platform.document.AppSettings"
+    ],
+    "com.raxim.myscoutee.domain.email.controller.PublicEmailUnsubscribeController": [
+      "com.raxim.myscoutee.domain.email.service.EmailPresentationService",
+      "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService",
+      "com.raxim.myscoutee.domain.localization.api.TranslationBundles",
+      "com.raxim.myscoutee.domain.platform.api.DeploymentBranding"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.FriendshipReads": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.ScoringProfile": [
+      "com.raxim.myscoutee.domain.accounts.api.AssetAffinityProfile",
+      "com.raxim.myscoutee.domain.accounts.dto.HostConfidenceFactsDto"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.AccountJobScopes": [
+      "com.raxim.myscoutee.domain.platform.api.JobAudience"
+    ],
+    "com.raxim.myscoutee.domain.accounts.api.WorkspaceIdentity": [],
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanAccessChatCondition": [
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyContext",
+      "com.raxim.myscoutee.domain.access.security.AccessPolicyData"
+    ],
+    "com.raxim.myscoutee.common.dto.MediaUrlsQueryDto": [],
+    "com.raxim.myscoutee.domain.integrations.controller.McpOAuthController": [
+      "com.raxim.myscoutee.domain.integrations.dto.McpDtos",
+      "com.raxim.myscoutee.domain.integrations.service.McpAuthorizationService"
+    ],
+    "com.raxim.myscoutee.domain.media.api.MediaImageVariant": [],
+    "com.raxim.myscoutee.common.runtime.RuntimeStatusPublisher": [],
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamPublisher": [
+      "com.raxim.myscoutee.common.redis.RedisStreamRetentionService",
+      "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent"
+    ],
+    "com.raxim.myscoutee.domain.platform.service.AppSettingsService": [
+      "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.domain.platform.api.AdministratorSettings",
+      "com.raxim.myscoutee.domain.platform.document.AppSettings",
+      "com.raxim.myscoutee.domain.platform.repository.AppSettingsRepository"
+    ],
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationCommunicationReadController": [
+      "com.raxim.myscoutee.domain.chat.api.ChatQueries",
+      "com.raxim.myscoutee.domain.integrations.controller.IntegrationReadSupport",
+      "com.raxim.myscoutee.domain.integrations.service.IntegrationCapabilitiesService",
+      "com.raxim.myscoutee.domain.notifications.api.NotificationReads"
+    ],
+    "com.raxim.myscoutee.domain.help.service.HelpPrivacyService": [
+      "com.raxim.myscoutee.domain.help.api.HelpPrivacy"
+    ],
+    "com.raxim.myscoutee.common.mongo.OwnerScopedQuery": [],
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DevelopmentIdentityEmail": [],
+    "com.raxim.myscoutee.domain.platform.config.ConfigProperties": [
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration"
+    ],
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationService": [
+      "com.raxim.myscoutee.domain.accounts.api.BootstrapAccounts",
+      "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration",
+      "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTokenInvalidException"
+    ],
+    "com.raxim.myscoutee.domain.platform.controller.OperatorBootstrapController": [
+      "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport",
+      "com.raxim.myscoutee.domain.accounts.api.BootstrapLoginAudit",
+      "com.raxim.myscoutee.domain.accounts.dto.AuthDtos",
+      "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport",
+      "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration",
+      "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationService",
+      "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTransportSecurity"
+    ],
+    "com.raxim.myscoutee.domain.platform.controller.OperatorTlsController": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos",
+      "com.raxim.myscoutee.domain.platform.service.OperatorTlsService"
+    ],
+    "com.raxim.myscoutee.domain.platform.api.JobAudience": [
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ]
+  },
+  "paths": {
+    "com.raxim.myscoutee.domain.localization.controller.I18nMessageRestController": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/controller/I18nMessageRestController.java",
+    "com.raxim.myscoutee.domain.platform.api.JobWorkspaceDirectory": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/JobWorkspaceDirectory.java",
+    "com.raxim.myscoutee.domain.media.api.MediaCleanup": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaCleanup.java",
+    "com.raxim.myscoutee.domain.platform.service.DeploymentSettingsService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DeploymentSettingsService.java",
+    "com.raxim.myscoutee.domain.integrations.repository.McpAuthorizationRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/McpAuthorizationRepository.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountDevices": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountDevices.java",
+    "com.raxim.myscoutee.domain.email.api.EmailSendResult": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailSendResult.java",
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionAction": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserSessionAction.java",
+    "com.raxim.myscoutee.domain.media.service.S3CompatibleMediaObjectStoreClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/service/S3CompatibleMediaObjectStoreClient.java",
+    "com.raxim.myscoutee.domain.chat.repository.ChatMessagesRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/repository/ChatMessagesRepository.java",
+    "com.raxim.myscoutee.domain.integrations.controller.McpEventsController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/McpEventsController.java",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationReadSupport": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/IntegrationReadSupport.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationToken": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseAuthenticationToken.java",
+    "com.raxim.myscoutee.domain.accounts.service.AccountJobQueries": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountJobQueries.java",
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/RequiresPolicy.java",
+    "com.raxim.myscoutee.domain.platform.api.EmailSecrets": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/EmailSecrets.java",
+    "com.raxim.myscoutee.domain.media.api.ImageUploads": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/ImageUploads.java",
+    "com.raxim.myscoutee.domain.accounts.repository.UserLoginAuditsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/UserLoginAuditsRepository.java",
+    "com.raxim.myscoutee.common.config.mongo.SessionRoutingMongoDatabaseFactory": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/SessionRoutingMongoDatabaseFactory.java",
+    "com.raxim.myscoutee.domain.access.security.condition.ExplicitAllowCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/ExplicitAllowCondition.java",
+    "com.raxim.myscoutee.domain.media.config.MediaSessionConfiguration": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/config/MediaSessionConfiguration.java",
+    "com.raxim.myscoutee.domain.accounts.config.FirebaseConfig": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/config/FirebaseConfig.java",
+    "com.raxim.myscoutee.domain.chat.dto.ChatDirectoryEntryDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatDirectoryEntryDto.java",
+    "com.raxim.myscoutee.common.config.MongoRoutingConfig": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/MongoRoutingConfig.java",
+    "com.raxim.myscoutee.domain.access.document.AccessPolicyDefinition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/document/AccessPolicyDefinition.java",
+    "com.raxim.myscoutee.domain.email.service.EmailProviderGateway": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/EmailProviderGateway.java",
+    "com.raxim.myscoutee.domain.localization.repository.I18nBundleRepository": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/repository/I18nBundleRepository.java",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/api/NotificationDelivery.java",
+    "com.raxim.myscoutee.domain.access.document.AccessGrant": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/document/AccessGrant.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatCallSignalingService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatCallSignalingService.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebaseCredential": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/dto/FirebaseCredential.java",
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationWebhookDelivery": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/IntegrationWebhookDelivery.java",
+    "com.raxim.myscoutee.domain.notifications.dto.JobRuleDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/dto/JobRuleDto.java",
+    "com.raxim.myscoutee.domain.email.service.NoopEmailProvider": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/NoopEmailProvider.java",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyMethodInterceptor": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/policy/RequiresPolicyMethodInterceptor.java",
+    "com.raxim.myscoutee.common.util.TimeValues": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/util/TimeValues.java",
+    "com.raxim.myscoutee.domain.chat.api.ChatDirectory": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatDirectory.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.exception.FirebaseTokenInvalidException": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/exception/FirebaseTokenInvalidException.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseTokenVerifier": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseTokenVerifier.java",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationReads": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/api/NotificationReads.java",
+    "com.raxim.myscoutee.domain.chat.repository.ContactChatAccessRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/repository/ContactChatAccessRepository.java",
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/AdminClientController.java",
+    "com.raxim.myscoutee.domain.help.repository.HelpCenterGuideFieldsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/repository/HelpCenterGuideFieldsRepository.java",
+    "com.raxim.myscoutee.domain.accounts.service.AccountNotificationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountNotificationService.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountIntegrationAccess": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountIntegrationAccess.java",
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapLoginAudit": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/BootstrapLoginAudit.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatPrivacyService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatPrivacyService.java",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/AccessPolicyCondition.java",
+    "com.raxim.myscoutee.domain.email.api.EmailLinks": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailLinks.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamConsumer": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatStreamConsumer.java",
+    "com.raxim.myscoutee.domain.chat.service.ContactPermissionService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ContactPermissionService.java",
+    "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AuthenticatedActor.java",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicySupport": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/policy/RequiresPolicySupport.java",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTransportSecurity": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTransportSecurity.java",
+    "com.raxim.myscoutee.domain.platform.service.DefaultFirebasePushDelivery": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DefaultFirebasePushDelivery.java",
+    "com.raxim.myscoutee.domain.accounts.repository.UserSessionActionsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/UserSessionActionsRepository.java",
+    "com.raxim.myscoutee.common.util.JsonUtil": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/util/JsonUtil.java",
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationPublicEndpointResolver": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/IntegrationPublicEndpointResolver.java",
+    "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/ScheduledMongoSessionRunner.java",
+    "com.raxim.myscoutee.domain.email.api.EmailRendering": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailRendering.java",
+    "com.raxim.myscoutee.domain.platform.config.OperatorConfigurationProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/OperatorConfigurationProperties.java",
+    "com.raxim.myscoutee.domain.platform.service.DeploymentBrandingResolver": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DeploymentBrandingResolver.java",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanManageSupportChatCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/ActorCanManageSupportChatCondition.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountNotifications": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountNotifications.java",
+    "com.raxim.myscoutee.domain.accounts.api.DiscoveryProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/DiscoveryProfile.java",
+    "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/api/RoleAttentionEvents.java",
+    "com.raxim.myscoutee.domain.platform.config.OperatorUpdateProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/OperatorUpdateProperties.java",
+    "com.raxim.myscoutee.domain.media.dto.MediaDtos": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/dto/MediaDtos.java",
+    "com.raxim.myscoutee.domain.notifications.document.NotificationOutboxItem": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/document/NotificationOutboxItem.java",
+    "com.raxim.myscoutee.domain.accounts.dto.HostConfidenceFactsDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/dto/HostConfidenceFactsDto.java",
+    "com.raxim.myscoutee.domain.platform.document.CountryPartition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/document/CountryPartition.java",
+    "com.raxim.myscoutee.domain.chat.api.ChatQueries": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatQueries.java",
+    "com.raxim.myscoutee.domain.chat.api.ChatPresence": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatPresence.java",
+    "com.raxim.myscoutee.domain.integrations.repository.McpOAuthClientsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/McpOAuthClientsRepository.java",
+    "com.raxim.myscoutee.common.security.media.MediaSessionAccessService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/media/MediaSessionAccessService.java",
+    "com.raxim.myscoutee.domain.localization.service.I18nService": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/service/I18nService.java",
+    "com.raxim.myscoutee.domain.accounts.service.AccountJobScopeService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountJobScopeService.java",
+    "com.raxim.myscoutee.domain.email.service.EmailUnsubscribeService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/EmailUnsubscribeService.java",
+    "com.raxim.myscoutee.domain.integrations.config.AdminClientAuthenticationFilter": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/config/AdminClientAuthenticationFilter.java",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorDiffersFromSubjectCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/ActorDiffersFromSubjectCondition.java",
+    "com.raxim.myscoutee.domain.integrations.service.AdminModerationAttention": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/AdminModerationAttention.java",
+    "com.raxim.myscoutee.domain.help.api.HelpPrivacy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/api/HelpPrivacy.java",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanReadMediaCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/ActorCanReadMediaCondition.java",
+    "com.raxim.myscoutee.domain.integrations.service.McpAuthorizationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/McpAuthorizationService.java",
+    "com.raxim.myscoutee.domain.accounts.service.DeletedAccountWarningWorker": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/DeletedAccountWarningWorker.java",
+    "com.raxim.myscoutee.domain.email.service.EmailTemplateRenderer": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/EmailTemplateRenderer.java",
+    "com.raxim.myscoutee.domain.chat.api.ChatSessionAttributes": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatSessionAttributes.java",
+    "com.raxim.myscoutee.domain.media.api.MediaAccessPaths": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaAccessPaths.java",
+    "com.raxim.myscoutee.domain.chat.api.ChatPrivacy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatPrivacy.java",
+    "com.raxim.myscoutee.domain.platform.config.OperatorTlsProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/OperatorTlsProperties.java",
+    "com.raxim.myscoutee.domain.platform.service.OperatorFirebaseCapabilityClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorFirebaseCapabilityClient.java",
+    "com.raxim.myscoutee.domain.notifications.service.AdminNotificationSocketSessionRegistry": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/service/AdminNotificationSocketSessionRegistry.java",
+    "com.raxim.myscoutee.domain.accounts.api.FirebaseCredentialMarker": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/FirebaseCredentialMarker.java",
+    "com.raxim.myscoutee.domain.accounts.repository.AccountPurgeJobsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/AccountPurgeJobsRepository.java",
+    "com.raxim.myscoutee.common.config.mongo.MongoPrivacyOperations": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoPrivacyOperations.java",
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationOutboxRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/repository/NotificationOutboxRepository.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatPushNotificationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatPushNotificationService.java",
+    "com.raxim.myscoutee.domain.platform.api.SecretEncryption": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/SecretEncryption.java",
+    "com.raxim.myscoutee.domain.media.config.MediaStorageProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/config/MediaStorageProperties.java",
+    "com.raxim.myscoutee.domain.notifications.repository.NotificationRuleConfigsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/repository/NotificationRuleConfigsRepository.java",
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationPrivacy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/api/IntegrationPrivacy.java",
+    "com.raxim.myscoutee.domain.platform.mapper.OperatorTlsMapper": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/mapper/OperatorTlsMapper.java",
+    "com.raxim.myscoutee.common.redis.RedisStreamRetentionService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/redis/RedisStreamRetentionService.java",
+    "com.raxim.myscoutee.domain.chat.document.Chat": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/document/Chat.java",
+    "com.raxim.myscoutee.domain.accounts.service.AccountConsentService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountConsentService.java",
+    "com.raxim.myscoutee.domain.localization.document.I18nBundle": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/document/I18nBundle.java",
+    "com.raxim.myscoutee.domain.integrations.document.McpOAuthClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/McpOAuthClient.java",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorConfigurationController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/controller/OperatorConfigurationController.java",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/OperatorNotificationRecipientsDto.java",
+    "com.raxim.myscoutee.domain.accounts.service.UserLoginSessionService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/UserLoginSessionService.java",
+    "com.raxim.myscoutee.domain.accounts.service.ProfileAuthenticationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/ProfileAuthenticationService.java",
+    "com.raxim.myscoutee.Main": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/Main.java",
+    "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoChangeStreamService.java",
+    "com.raxim.myscoutee.domain.email.api.EmailSending": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailSending.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamEvent": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatStreamEvent.java",
+    "com.raxim.myscoutee.domain.integrations.service.AdminClientAccessService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/AdminClientAccessService.java",
+    "com.raxim.myscoutee.domain.platform.service.JobGroupScopeService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/JobGroupScopeService.java",
+    "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/EncryptedSecret.java",
+    "com.raxim.myscoutee.domain.notifications.mapper.UserNotificationMapper": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/mapper/UserNotificationMapper.java",
+    "com.raxim.myscoutee.domain.chat.dto.ChatSupportStatusDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatSupportStatusDto.java",
+    "com.raxim.myscoutee.domain.integrations.service.McpEventCallbackClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/McpEventCallbackClient.java",
+    "com.raxim.myscoutee.domain.accounts.api.ProfileAuthentication": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ProfileAuthentication.java",
+    "com.raxim.myscoutee.domain.media.api.MediaDeletionQueue": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaDeletionQueue.java",
+    "com.raxim.myscoutee.domain.platform.service.DefaultOperatorFirebaseCapabilityClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DefaultOperatorFirebaseCapabilityClient.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatDirectoryService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatDirectoryService.java",
+    "com.raxim.myscoutee.domain.email.service.OperatorEmailConfigurationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/OperatorEmailConfigurationService.java",
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoSessionModeContext.java",
+    "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/dto/ProfileIdentityDto.java",
+    "com.raxim.myscoutee.domain.localization.service.DBMessageSource": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/service/DBMessageSource.java",
+    "com.raxim.myscoutee.domain.integrations.repository.McpEventSubscriptionsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/McpEventSubscriptionsRepository.java",
+    "com.raxim.myscoutee.domain.media.api.MediaStorage": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaStorage.java",
+    "com.raxim.myscoutee.domain.notifications.repository.UserNotificationsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/repository/UserNotificationsRepository.java",
+    "com.raxim.myscoutee.domain.email.controller.OperatorEmailConfigurationController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/controller/OperatorEmailConfigurationController.java",
+    "com.raxim.myscoutee.domain.platform.api.AdministratorSettings": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/AdministratorSettings.java",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/AccessPolicy.java",
+    "com.raxim.myscoutee.domain.accounts.api.BootstrapAccounts": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/BootstrapAccounts.java",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationFilter": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapAuthenticationFilter.java",
+    "com.raxim.myscoutee.domain.media.service.MediaStorageService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/service/MediaStorageService.java",
+    "com.raxim.myscoutee.domain.administration.config.AdminStatsProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/administration/config/AdminStatsProperties.java",
+    "com.raxim.myscoutee.domain.administration.api.AdminTelemetryEvent": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/administration/api/AdminTelemetryEvent.java",
+    "com.raxim.myscoutee.domain.localization.document.I18nMessage": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/document/I18nMessage.java",
+    "com.raxim.myscoutee.domain.email.api.EmailSendRequest": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailSendRequest.java",
+    "com.raxim.myscoutee.domain.platform.api.OperatorBootstrapRequestSupport": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/OperatorBootstrapRequestSupport.java",
+    "com.raxim.myscoutee.domain.accounts.api.CurrentProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/CurrentProfile.java",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorUpdateService.java",
+    "com.raxim.myscoutee.domain.platform.api.AuthenticationMode": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/AuthenticationMode.java",
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationWebhookDeliveriesRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/IntegrationWebhookDeliveriesRepository.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseFilter": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseFilter.java",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyConditionRegistry": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/AccessPolicyConditionRegistry.java",
+    "com.raxim.myscoutee.domain.email.service.EmailProvider": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/EmailProvider.java",
+    "com.raxim.myscoutee.domain.access.api.AccessGrantEffect": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/AccessGrantEffect.java",
+    "com.raxim.myscoutee.domain.platform.api.DeploymentConfigurationManagement": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/DeploymentConfigurationManagement.java",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationSettingsController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/IntegrationSettingsController.java",
+    "com.raxim.myscoutee.domain.access.api.RegionSecurity": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/RegionSecurity.java",
+    "com.raxim.myscoutee.domain.platform.service.DeploymentFirebaseRuntime": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DeploymentFirebaseRuntime.java",
+    "com.raxim.myscoutee.domain.accounts.api.AssetProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AssetProfile.java",
+    "com.raxim.myscoutee.domain.integrations.api.IntegrationClientIdentity": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/api/IntegrationClientIdentity.java",
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationProductCapabilities": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/IntegrationProductCapabilities.java",
+    "com.raxim.myscoutee.domain.accounts.service.FacebookDataDeletionService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/FacebookDataDeletionService.java",
+    "com.raxim.myscoutee.domain.accounts.document.UserLoginAudit": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserLoginAudit.java",
+    "com.raxim.myscoutee.domain.access.api.ConsentAuthorization": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/ConsentAuthorization.java",
+    "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/api/NotificationPrivacy.java",
+    "com.raxim.myscoutee.domain.chat.api.SupportMessages": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/SupportMessages.java",
+    "com.raxim.myscoutee.domain.accounts.api.SelectedProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/SelectedProfile.java",
+    "com.raxim.myscoutee.domain.access.config.RegionSecurityProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/config/RegionSecurityProperties.java",
+    "com.raxim.myscoutee.domain.accounts.document.PrivacyConsent": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/PrivacyConsent.java",
+    "com.raxim.myscoutee.domain.accounts.api.EmailProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/EmailProfile.java",
+    "com.raxim.myscoutee.domain.accounts.api.AssetAffinityProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AssetAffinityProfile.java",
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusValues": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/ProfileStatusValues.java",
+    "com.raxim.myscoutee.domain.platform.repository.OperatorTlsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/repository/OperatorTlsRepository.java",
+    "com.raxim.myscoutee.domain.email.service.EmailPresentationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/EmailPresentationService.java",
+    "com.raxim.myscoutee.domain.accounts.repository.PrivacyConsentsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/PrivacyConsentsRepository.java",
+    "com.raxim.myscoutee.domain.media.api.MediaSessionAccess": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaSessionAccess.java",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateArtifactDownloader": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorUpdateArtifactDownloader.java",
+    "com.raxim.myscoutee.domain.accounts.repository.UserFriendshipsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/UserFriendshipsRepository.java",
+    "com.raxim.myscoutee.domain.integrations.document.McpEventSubscription": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/McpEventSubscription.java",
+    "com.raxim.myscoutee.domain.platform.api.RuntimeConfiguration": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/RuntimeConfiguration.java",
+    "com.raxim.myscoutee.domain.chat.api.ContactPermissions": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ContactPermissions.java",
+    "com.raxim.myscoutee.common.util.TextValues": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/util/TextValues.java",
+    "com.raxim.myscoutee.domain.integrations.dto.IntegrationAccess": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/dto/IntegrationAccess.java",
+    "com.raxim.myscoutee.domain.accounts.document.UserSessionState": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserSessionState.java",
+    "com.raxim.myscoutee.domain.access.repository.AccessGrantsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/repository/AccessGrantsRepository.java",
+    "com.raxim.myscoutee.domain.platform.service.OperatorTlsService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorTlsService.java",
+    "com.raxim.myscoutee.domain.accounts.service.AccountDeviceService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountDeviceService.java",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorMatchesSubjectCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/ActorMatchesSubjectCondition.java",
+    "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/FirebasePushDelivery.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountConsents": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountConsents.java",
+    "com.raxim.myscoutee.common.security.http.HttpSecurityContribution": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/http/HttpSecurityContribution.java",
+    "com.raxim.myscoutee.common.config.mongo.SessionMongoRoutingFilter": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/SessionMongoRoutingFilter.java",
+    "com.raxim.myscoutee.domain.integrations.document.McpAuthorization": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/McpAuthorization.java",
+    "com.raxim.myscoutee.domain.chat.websocket.ChatWebSocketHandler": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/websocket/ChatWebSocketHandler.java",
+    "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatMessageMediaVisibilityDto.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountIdentity": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountIdentity.java",
+    "com.raxim.myscoutee.domain.notifications.service.NotificationPrivacyService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/service/NotificationPrivacyService.java",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateReleaseService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorUpdateReleaseService.java",
+    "com.raxim.myscoutee.common.security.crypto.Ed25519Signatures": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/crypto/Ed25519Signatures.java",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorUpdateDtos": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/OperatorUpdateDtos.java",
+    "com.raxim.myscoutee.domain.email.service.SendGridEmailProvider": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/SendGridEmailProvider.java",
+    "com.raxim.myscoutee.domain.integrations.controller.AdminClientSettingsController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/AdminClientSettingsController.java",
+    "com.raxim.myscoutee.common.security.crypto.CanonicalValues": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/crypto/CanonicalValues.java",
+    "com.raxim.myscoutee.common.config.mongo.DemoSessionRequestSupport": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/DemoSessionRequestSupport.java",
+    "com.raxim.myscoutee.domain.notifications.controller.UserNotificationsController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/controller/UserNotificationsController.java",
+    "com.raxim.myscoutee.domain.accounts.document.AccountPurgeJob": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/AccountPurgeJob.java",
+    "com.raxim.myscoutee.common.config.JsonConfig": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/JsonConfig.java",
+    "com.raxim.myscoutee.domain.accounts.document.UserFriendship": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserFriendship.java",
+    "com.raxim.myscoutee.domain.accounts.api.ProfileStatusObserver": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ProfileStatusObserver.java",
+    "com.raxim.myscoutee.domain.platform.api.ReleaseProtocol": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/ReleaseProtocol.java",
+    "com.raxim.myscoutee.domain.platform.api.NotificationPolicy": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/NotificationPolicy.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountMediaSessions.java",
+    "com.raxim.myscoutee.domain.accounts.service.SelectedProfileService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/SelectedProfileService.java",
+    "com.raxim.myscoutee.domain.access.security.condition.NoExplicitDenyCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/NoExplicitDenyCondition.java",
+    "com.raxim.myscoutee.common.config.MongoConverterConfig": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/MongoConverterConfig.java",
+    "com.raxim.myscoutee.domain.platform.document.AppSettings": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/document/AppSettings.java",
+    "com.raxim.myscoutee.domain.integrations.document.IntegrationToken": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/IntegrationToken.java",
+    "com.raxim.myscoutee.domain.localization.dto.I18nBundleResponseDto": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/dto/I18nBundleResponseDto.java",
+    "com.raxim.myscoutee.domain.access.security.AccessPolicyContext": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/AccessPolicyContext.java",
+    "com.raxim.myscoutee.domain.integrations.dto.McpEventDtos": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/dto/McpEventDtos.java",
+    "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/OperatorNotificationSettings.java",
+    "com.raxim.myscoutee.domain.integrations.repository.IntegrationTokensRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/IntegrationTokensRepository.java",
+    "com.raxim.myscoutee.domain.accounts.service.ProfileStatusWork": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/ProfileStatusWork.java",
+    "com.raxim.myscoutee.domain.help.document.HelpCenterGuideField": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/document/HelpCenterGuideField.java",
+    "com.raxim.myscoutee.domain.media.service.MediaObjectStoreClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/service/MediaObjectStoreClient.java",
+    "com.raxim.myscoutee.domain.notifications.document.UserNotification": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/document/UserNotification.java",
+    "com.raxim.myscoutee.domain.chat.dto.ChatUnreadVersionDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatUnreadVersionDto.java",
+    "com.raxim.myscoutee.domain.platform.dto.OperatorTlsDtos": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/OperatorTlsDtos.java",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapTokenInvalidException": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTokenInvalidException.java",
+    "com.raxim.myscoutee.common.security.policy.PolicyExpressionEvaluator": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/policy/PolicyExpressionEvaluator.java",
+    "com.raxim.myscoutee.domain.integrations.dto.McpDtos": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/dto/McpDtos.java",
+    "com.raxim.myscoutee.domain.chat.document.ContactChatAccess": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/document/ContactChatAccess.java",
+    "com.raxim.myscoutee.domain.accounts.service.AccountIntegrationAccessService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountIntegrationAccessService.java",
+    "com.raxim.myscoutee.domain.platform.service.OperatorUpdateHttpClient": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorUpdateHttpClient.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.dto.FirebasePrincipal": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/dto/FirebasePrincipal.java",
+    "com.raxim.myscoutee.domain.platform.api.DeploymentBranding": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/DeploymentBranding.java",
+    "com.raxim.myscoutee.domain.localization.repository.I18nMessageRepository": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/repository/I18nMessageRepository.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.FirebaseAuthenticationProvider": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseAuthenticationProvider.java",
+    "com.raxim.myscoutee.domain.accounts.controller.FacebookDataDeletionController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/controller/FacebookDataDeletionController.java",
+    "com.raxim.myscoutee.domain.platform.repository.DeploymentConfigurationRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/repository/DeploymentConfigurationRepository.java",
+    "com.raxim.myscoutee.domain.media.controller.MediaController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/controller/MediaController.java",
+    "com.raxim.myscoutee.domain.accounts.api.ChatCounters": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ChatCounters.java",
+    "com.raxim.myscoutee.domain.notifications.document.NotificationRuleConfig": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/document/NotificationRuleConfig.java",
+    "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatMediaVisibility.java",
+    "com.raxim.myscoutee.domain.accounts.dto.FeedCountersRecord": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/dto/FeedCountersRecord.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DefaultFirebaseTokenVerifier": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/DefaultFirebaseTokenVerifier.java",
+    "com.raxim.myscoutee.domain.platform.repository.CountryPartitionsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/repository/CountryPartitionsRepository.java",
+    "com.raxim.myscoutee.domain.access.api.RequiresPolicies": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/RequiresPolicies.java",
+    "com.raxim.myscoutee.domain.integrations.service.IntegrationRoleAccessService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/IntegrationRoleAccessService.java",
+    "com.raxim.myscoutee.domain.chat.config.ChatMediaIndexInitializer": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/config/ChatMediaIndexInitializer.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatMediaVisibilityService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatMediaVisibilityService.java",
+    "com.raxim.myscoutee.domain.localization.api.TranslationBundles": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/api/TranslationBundles.java",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorUpdateController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/controller/OperatorUpdateController.java",
+    "com.raxim.myscoutee.domain.help.document.HelpCenterRevision": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/document/HelpCenterRevision.java",
+    "com.raxim.myscoutee.domain.access.repository.AccessPolicyDefinitionsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/repository/AccessPolicyDefinitionsRepository.java",
+    "com.raxim.myscoutee.common.config.caching.MessageKeyGenerator": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/caching/MessageKeyGenerator.java",
+    "com.raxim.myscoutee.domain.platform.api.FirebaseRuntime": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/FirebaseRuntime.java",
+    "com.raxim.myscoutee.domain.integrations.controller.McpSettingsController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/McpSettingsController.java",
+    "com.raxim.myscoutee.common.config.mongo.MongoSessionMode": "/home/raxim/workspace/myscoutee-base/server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoSessionMode.java",
+    "com.raxim.myscoutee.common.security.policy.RequiresPolicyAdvisor": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/policy/RequiresPolicyAdvisor.java",
+    "com.raxim.myscoutee.domain.chat.websocket.ChatHandshakeInterceptor": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/websocket/ChatHandshakeInterceptor.java",
+    "com.raxim.myscoutee.domain.chat.document.ChatMessage": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/document/ChatMessage.java",
+    "com.raxim.myscoutee.domain.platform.repository.AppSettingsRepository": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/repository/AppSettingsRepository.java",
+    "com.raxim.myscoutee.domain.email.controller.PublicEmailUnsubscribeController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/controller/PublicEmailUnsubscribeController.java",
+    "com.raxim.myscoutee.domain.accounts.api.FriendshipReads": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/FriendshipReads.java",
+    "com.raxim.myscoutee.domain.accounts.api.ScoringProfile": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ScoringProfile.java",
+    "com.raxim.myscoutee.domain.accounts.api.AccountJobScopes": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountJobScopes.java",
+    "com.raxim.myscoutee.domain.accounts.api.WorkspaceIdentity": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/WorkspaceIdentity.java",
+    "com.raxim.myscoutee.domain.access.security.condition.ActorCanAccessChatCondition": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/condition/ActorCanAccessChatCondition.java",
+    "com.raxim.myscoutee.common.dto.MediaUrlsQueryDto": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/dto/MediaUrlsQueryDto.java",
+    "com.raxim.myscoutee.domain.integrations.controller.McpOAuthController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/McpOAuthController.java",
+    "com.raxim.myscoutee.domain.media.api.MediaImageVariant": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaImageVariant.java",
+    "com.raxim.myscoutee.common.runtime.RuntimeStatusPublisher": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/runtime/RuntimeStatusPublisher.java",
+    "com.raxim.myscoutee.domain.chat.service.ChatStreamPublisher": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatStreamPublisher.java",
+    "com.raxim.myscoutee.domain.platform.service.AppSettingsService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/AppSettingsService.java",
+    "com.raxim.myscoutee.domain.integrations.controller.IntegrationCommunicationReadController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/IntegrationCommunicationReadController.java",
+    "com.raxim.myscoutee.domain.help.service.HelpPrivacyService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/service/HelpPrivacyService.java",
+    "com.raxim.myscoutee.common.mongo.OwnerScopedQuery": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/common/mongo/OwnerScopedQuery.java",
+    "com.raxim.myscoutee.domain.accounts.security.firebase.DevelopmentIdentityEmail": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/DevelopmentIdentityEmail.java",
+    "com.raxim.myscoutee.domain.platform.config.ConfigProperties": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/ConfigProperties.java",
+    "com.raxim.myscoutee.domain.platform.security.bootstrap.OperatorBootstrapAuthenticationService": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapAuthenticationService.java",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorBootstrapController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/controller/OperatorBootstrapController.java",
+    "com.raxim.myscoutee.domain.platform.controller.OperatorTlsController": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/controller/OperatorTlsController.java",
+    "com.raxim.myscoutee.domain.platform.api.JobAudience": "/home/raxim/workspace/myscoutee-backend/server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/JobAudience.java"
+  }
+}

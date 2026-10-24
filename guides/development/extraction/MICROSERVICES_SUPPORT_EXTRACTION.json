@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "status": "implemented; focused verification passed; overall backend extraction incomplete",
+  "owner": "myscoutee-microservices",
+  "consumers": {
+    "myscoutee-backend": "99c12a8c52c6be2fcfc42198b3b3681ad8ec2650",
+    "myscoutee-template": "a2f1278546e3f6ce9b59cc463a0539c0ffa64d77"
+  },
+  "files": [
+    {
+      "path": "deploy/images/service.Dockerfile.template",
+      "sourceSha256": "21e35903ec5bfc2abb6ae834210f1bea8a542818d314b95b61f01759834ae4b5",
+      "destination": "myscoutee-microservices/deploy/images/service.Dockerfile.template",
+      "destinationSha256": "21e35903ec5bfc2abb6ae834210f1bea8a542818d314b95b61f01759834ae4b5",
+      "wiringChange": null
+    },
+    {
+      "path": "deploy/release-simulator.Dockerfile",
+      "sourceSha256": "34b93fc3b4b81db810fb8612bd63c6f40bfb721fa077fe27e0e48751691298e9",
+      "destination": "myscoutee-microservices/deploy/release-simulator.Dockerfile",
+      "destinationSha256": "34b93fc3b4b81db810fb8612bd63c6f40bfb721fa077fe27e0e48751691298e9",
+      "wiringChange": null
+    },
+    {
+      "path": "deploy/stun/Dockerfile",
+      "sourceSha256": "81cdcc570a8fef585ade169166ccb14e11f3f39f8eaace32f597414cd674d8ef",
+      "destination": "myscoutee-microservices/deploy/stun/Dockerfile",
+      "destinationSha256": "81cdcc570a8fef585ade169166ccb14e11f3f39f8eaace32f597414cd674d8ef",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/guest/install-k3s.sh",
+      "sourceSha256": "0b026980e93635d7d0f73b520d6e217dfd3e61590d4227d331b7ac2a7000b1d6",
+      "destination": "myscoutee-microservices/infra/guest/install-k3s.sh",
+      "destinationSha256": "0b026980e93635d7d0f73b520d6e217dfd3e61590d4227d331b7ac2a7000b1d6",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/guest/k3s.service",
+      "sourceSha256": "8a45e6e6e49179bd5a50adb7ce48a9b23da2f02ffce722e5cb2ec6a7e28a1ed3",
+      "destination": "myscoutee-microservices/infra/guest/k3s.service",
+      "destinationSha256": "8a45e6e6e49179bd5a50adb7ce48a9b23da2f02ffce722e5cb2ec6a7e28a1ed3",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/guest/observe.py",
+      "sourceSha256": "33c529d1429189e5685562b56e2068a86faa15884bdf2aff40b40770bdee7bf4",
+      "destination": "myscoutee-microservices/infra/guest/observe.py",
+      "destinationSha256": "33c529d1429189e5685562b56e2068a86faa15884bdf2aff40b40770bdee7bf4",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/guest/resource-snapshot.py",
+      "sourceSha256": "53c24c3d6db3d49e6503f1b45f943bc28e21a6fd808b976acf0b60d891f27c09",
+      "destination": "myscoutee-microservices/infra/guest/resource-snapshot.py",
+      "destinationSha256": "53c24c3d6db3d49e6503f1b45f943bc28e21a6fd808b976acf0b60d891f27c09",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/helm-version.json",
+      "sourceSha256": "03e2c791c57bdf4dcba5e160addd753cc5f997be81462a30ec14fcc6e12a6424",
+      "destination": "myscoutee-microservices/infra/helm-version.json",
+      "destinationSha256": "03e2c791c57bdf4dcba5e160addd753cc5f997be81462a30ec14fcc6e12a6424",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/terraform.tfrc",
+      "sourceSha256": "167a74c9a4c5fd0b7c3f7de4b116a0ebd369e3f8890c399e9eef0e57562ffd62",
+      "destination": "myscoutee-microservices/infra/terraform.tfrc",
+      "destinationSha256": "167a74c9a4c5fd0b7c3f7de4b116a0ebd369e3f8890c399e9eef0e57562ffd62",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/terraform/.terraform.lock.hcl",
+      "sourceSha256": "2ad6d1356a0ee52d824cd85070bdd09406fd62e1476ac14f7d392aa45c2c6d27",
+      "destination": "myscoutee-microservices/infra/terraform/.terraform.lock.hcl",
+      "destinationSha256": "2ad6d1356a0ee52d824cd85070bdd09406fd62e1476ac14f7d392aa45c2c6d27",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/terraform/main.tf",
+      "sourceSha256": "79799c9d96969c2051b169587d4821a3fbf45d4513d58b36ddd846f2eaaffb54",
+      "destination": "myscoutee-microservices/infra/terraform/main.tf",
+      "destinationSha256": "79799c9d96969c2051b169587d4821a3fbf45d4513d58b36ddd846f2eaaffb54",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/terraform/variables.tf",
+      "sourceSha256": "0e727d23a481c2a62ffa29f9542dc3468ace22ef738178e4916e1f0a4247e7d8",
+      "destination": "myscoutee-microservices/infra/terraform/variables.tf",
+      "destinationSha256": "0e727d23a481c2a62ffa29f9542dc3468ace22ef738178e4916e1f0a4247e7d8",
+      "wiringChange": null
+    },
+    {
+      "path": "infra/versions.json",
+      "sourceSha256": "4acbfabfaaec114b6eb2f7e67c8f6ef6ecd00cb1dc5cf05957385f504fa1aba8",
+      "destination": "myscoutee-microservices/infra/versions.json",
+      "destinationSha256": "4acbfabfaaec114b6eb2f7e67c8f6ef6ecd00cb1dc5cf05957385f504fa1aba8",
+      "wiringChange": null
+    },
+    {
+      "path": "observability/compose.yaml",
+      "sourceSha256": "3a7a50d052a893d1ab59ff127b8f65238cb18e424c8aa736a41e772912dc63b4",
+      "destination": "myscoutee-microservices/observability/compose.yaml",
+      "destinationSha256": "b2ce280922a1a43daf21ef9f9048d277140f32703b8054cadb18919a7cfb4da2",
+      "wiringChange": "monitoring mount-source path interpolation only"
+    },
+    {
+      "path": "observability/grafana/dashboards/services.json",
+      "sourceSha256": "e4ebf0bb5b5b8c9146fd713e141333b9e6ab1bd8512248b416b73083dad960e7",
+      "destination": "myscoutee-microservices/observability/grafana/dashboards/services.json",
+      "destinationSha256": "e4ebf0bb5b5b8c9146fd713e141333b9e6ab1bd8512248b416b73083dad960e7",
+      "wiringChange": null
+    },
+    {
+      "path": "observability/grafana/provisioning/alerting/.gitkeep",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination": "myscoutee-microservices/observability/grafana/provisioning/alerting/.gitkeep",
+      "destinationSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wiringChange": null
+    },
+    {
+      "path": "observability/grafana/provisioning/dashboards/services.yaml",
+      "sourceSha256": "32c5f91a72bcbaa9850ef1852588928838270ad8eb12fdb8cf24fdb34f45f0f0",
+      "destination": "myscoutee-microservices/observability/grafana/provisioning/dashboards/services.yaml",
+      "destinationSha256": "32c5f91a72bcbaa9850ef1852588928838270ad8eb12fdb8cf24fdb34f45f0f0",
+      "wiringChange": null
+    },
+    {
+      "path": "observability/grafana/provisioning/datasources/prometheus.yaml",
+      "sourceSha256": "1109b7b5b54540f35bde5574c807ceaa39f916bd6475c350a217802f7665a8f5",
+      "destination": "myscoutee-microservices/observability/grafana/provisioning/datasources/prometheus.yaml",
+      "destinationSha256": "1109b7b5b54540f35bde5574c807ceaa39f916bd6475c350a217802f7665a8f5",
+      "wiringChange": null
+    },
+    {
+      "path": "observability/grafana/provisioning/plugins/.gitkeep",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination": "myscoutee-microservices/observability/grafana/provisioning/plugins/.gitkeep",
+      "destinationSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wiringChange": null
+    },
+    {
+      "path": "tools/host.py",
+      "sourceSha256": "7d7bfef3b4c31f8aecf65dcf9c036d2f9783f944e2f03d9312c5af3e5031a8aa",
+      "destination": "myscoutee-microservices/tools/host.py",
+      "destinationSha256": "7d7bfef3b4c31f8aecf65dcf9c036d2f9783f944e2f03d9312c5af3e5031a8aa",
+      "wiringChange": null
+    }
+  ],
+  "verification": {
+    "backendFocusedTests": 16,
+    "templateFocusedTests": 11,
+    "backendGeneratedFilesByteIdentical": 14,
+    "templateGeneratedFilesByteIdentical": 10,
+    "resolvedMonitoringCompose": "identical for both consumers",
+    "sourcePayloads": "19 byte-identical; one Compose file changes only required mount-source interpolation",
+    "syntax": "consumer Python and Bash passed",
+    "runtimeQualification": "deferred until the entire extraction and cleanup are complete"
+  },
+  "chartBatch": {
+    "status": "implemented; focused verification passed",
+    "sharedFiles": [
+      {
+        "path": "deploy/chart/.helmignore",
+        "sourceSha256": "ae9a2868b5090b9e81953b7cd8316b3002e7cd6897320c2aa69ee71fc27be3ae",
+        "destination": "myscoutee-microservices/deploy/chart/.helmignore",
+        "destinationSha256": "ae9a2868b5090b9e81953b7cd8316b3002e7cd6897320c2aa69ee71fc27be3ae"
+      },
+      {
+        "path": "deploy/chart/files/public-upstream.conf",
+        "sourceSha256": "7d15d36fe1b3adad6b53eb26c5da3fe5966809fb9f9cdbfa79731fb230d44b9d",
+        "destination": "myscoutee-microservices/deploy/chart/files/public-upstream.conf",
+        "destinationSha256": "7d15d36fe1b3adad6b53eb26c5da3fe5966809fb9f9cdbfa79731fb230d44b9d"
+      },
+      {
+        "path": "deploy/chart/templates/assemblies.yaml",
+        "sourceSha256": "936787ac7f30133aa9223b87b184427149c099033df16f9232d57bfd130cb4fd",
+        "destination": "myscoutee-microservices/deploy/chart/templates/assemblies.yaml",
+        "destinationSha256": "936787ac7f30133aa9223b87b184427149c099033df16f9232d57bfd130cb4fd"
+      },
+      {
+        "path": "deploy/chart/templates/frontend.yaml",
+        "sourceSha256": "fbb44c45f89665b93999a57576fb786ab6b0f51175256347dc9fca2269a7216f",
+        "destination": "myscoutee-microservices/deploy/chart/templates/frontend.yaml",
+        "destinationSha256": "fbb44c45f89665b93999a57576fb786ab6b0f51175256347dc9fca2269a7216f"
+      },
+      {
+        "path": "deploy/chart/templates/minio.yaml",
+        "sourceSha256": "d7636459d3b7b0b2ee516dc1e182fab1c2b2ecc1fa0be56caf5e761905774fce",
+        "destination": "myscoutee-microservices/deploy/chart/templates/minio.yaml",
+        "destinationSha256": "d7636459d3b7b0b2ee516dc1e182fab1c2b2ecc1fa0be56caf5e761905774fce"
+      },
+      {
+        "path": "deploy/chart/templates/mongodb.yaml",
+        "sourceSha256": "18392d2f154b76287dc96c9d1206f12033ddcc124b4009c4829b0ec762559958",
+        "destination": "myscoutee-microservices/deploy/chart/templates/mongodb.yaml",
+        "destinationSha256": "18392d2f154b76287dc96c9d1206f12033ddcc124b4009c4829b0ec762559958"
+      },
+      {
+        "path": "deploy/chart/templates/redis.yaml",
+        "sourceSha256": "97c2579582e0b2a1005b7999ab55215adac1854ba0921676bf200944e99bbcdc",
+        "destination": "myscoutee-microservices/deploy/chart/templates/redis.yaml",
+        "destinationSha256": "97c2579582e0b2a1005b7999ab55215adac1854ba0921676bf200944e99bbcdc"
+      },
+      {
+        "path": "deploy/chart/templates/release-simulator-ca.yaml",
+        "sourceSha256": "8057691f1d8e35952dd00ca01d1d19a9cadc669153b200afec19b52a093c7099",
+        "destination": "myscoutee-microservices/deploy/chart/templates/release-simulator-ca.yaml",
+        "destinationSha256": "8057691f1d8e35952dd00ca01d1d19a9cadc669153b200afec19b52a093c7099"
+      },
+      {
+        "path": "deploy/chart/templates/runtime-status.yaml",
+        "sourceSha256": "fa4d3244c017946580b66658c01b0ef6be66144b734c08a97a03c4a18d33b8bc",
+        "destination": "myscoutee-microservices/deploy/chart/templates/runtime-status.yaml",
+        "destinationSha256": "fa4d3244c017946580b66658c01b0ef6be66144b734c08a97a03c4a18d33b8bc"
+      },
+      {
+        "path": "deploy/chart/templates/secrets.yaml",
+        "sourceSha256": "0f786df341778d397b38da16f777789a53fc4e2d419079d159321222a1597c26",
+        "destination": "myscoutee-microservices/deploy/chart/templates/secrets.yaml",
+        "destinationSha256": "0f786df341778d397b38da16f777789a53fc4e2d419079d159321222a1597c26"
+      },
+      {
+        "path": "deploy/chart/templates/support.yaml",
+        "sourceSha256": "27dcb4044f557cf880bb70ff150a00cdb173cc4e7289811aea21d8d6bbfd7aa5",
+        "destination": "myscoutee-microservices/deploy/chart/templates/support.yaml",
+        "destinationSha256": "27dcb4044f557cf880bb70ff150a00cdb173cc4e7289811aea21d8d6bbfd7aa5"
+      },
+      {
+        "path": "tools/render-deployment.py",
+        "sourceSha256": "ef809a27bc08e5707a67d05dd736fdfc49e80bd71ccfe2104aa530b1bf70ac2f",
+        "destination": "myscoutee-microservices/tools/render-deployment.py",
+        "destinationSha256": "7c1753fa11c3708f27ba718cdb381ef4a2d6bf5cc0bd1dd49679da1c96495f41"
+      }
+    ],
+    "projectSpecificMoves": {
+      "myscoutee-backend": [
+        {
+          "source": "microservices/deploy/chart/Chart.yaml",
+          "destination": "config/microservices/chart/Chart.yaml",
+          "sha256": "6aa72801b37ae95a8501ccb1fad2a0e3eede3d94b96fc99e765c9c3c8bf1d117"
+        },
+        {
+          "source": "microservices/deploy/chart/files/gateway.conf",
+          "destination": "config/microservices/chart/files/gateway.conf",
+          "sha256": "f2779f9f18758b091cbe3df0bdc2f9d4d426a9f49dfaf92c3ec4f7c19ee54a80"
+        },
+        {
+          "source": "microservices/deploy/chart/files/payment-provider-locations.conf",
+          "destination": "config/microservices/chart/files/payment-provider-locations.conf",
+          "sha256": "66b980012278150340bf156639f831772510d52ff26b83f908f85549215dfdd9"
+        },
+        {
+          "source": "microservices/deploy/chart/templates/configuration.yaml",
+          "destination": "config/microservices/chart/templates/configuration.yaml",
+          "sha256": "c3e31f711bbb32760f3a450803e8a9e0cd635c06f14447135bda0688c8511954"
+        },
+        {
+          "source": "microservices/deploy/chart/values.yaml",
+          "destination": "config/microservices/chart/values.yaml",
+          "sha256": "915365619256e835c878ad98641a961131a43868ba16a285be740bc3ca93d40e"
+        }
+      ],
+      "myscoutee-template": [
+        {
+          "source": "microservices/deploy/chart/Chart.yaml",
+          "destination": "config/microservices/chart/Chart.yaml",
+          "sha256": "30e71dcf3a893d9be0831e5cdd10aae1d6edc498838ecec8b46538212f823b65"
+        },
+        {
+          "source": "microservices/deploy/chart/files/gateway.conf",
+          "destination": "config/microservices/chart/files/gateway.conf",
+          "sha256": "690bb268212b69b7f52d302d2c5f1920936c05c7e9f43142f9ab1346d648ea71"
+        },
+        {
+          "source": "microservices/deploy/chart/templates/configuration.yaml",
+          "destination": "config/microservices/chart/templates/configuration.yaml",
+          "sha256": "4cfd63aef52e0d57be5a4aad10ca7c4d3186681dc34e5c83821b9d5156f21be4"
+        },
+        {
+          "source": "microservices/deploy/chart/values.yaml",
+          "destination": "config/microservices/chart/values.yaml",
+          "sha256": "c641ef9df7d3ca3d97a57644d93595fa7adf2721510d0ae8bd4b4285fd05ac6e"
+        }
+      ]
+    },
+    "verification": {
+      "backendStagedChartFilesByteIdentical": 16,
+      "templateStagedChartFilesByteIdentical": 15,
+      "backendOfflineRenderedObjectsByteIdentical": 65,
+      "templateOfflineRenderedObjectsByteIdentical": 45,
+      "previousImageAndMonitoringOutput": "unchanged for both consumers",
+      "sourceOwnership": "all 32 shared originals absent from both consumers; product chart inputs moved unchanged",
+      "sonarMetadataTests": 1,
+      "runtimeQualification": "not run; deferred"
+    }
+  }
+}

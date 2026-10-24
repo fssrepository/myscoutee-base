@@ -1,0 +1,24 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/common/config/JsonConfig.java'
+        include 'com/raxim/myscoutee/common/config/caching/MessageKeyGenerator.java'
+        include 'com/raxim/myscoutee/common/mongo/OwnerScopedQuery.java'
+        include 'com/raxim/myscoutee/common/runtime/RuntimeStatusPublisher.java'
+        include 'com/raxim/myscoutee/common/util/JsonUtil.java'
+        include 'com/raxim/myscoutee/common/util/TextValues.java'
+        include 'com/raxim/myscoutee/common/util/TimeValues.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework.boot:spring-boot-actuator'
+    api 'com.fasterxml.jackson.core:jackson-annotations'
+    api 'jakarta.annotation:jakarta.annotation-api'
+    api 'org.slf4j:slf4j-api'
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework.boot:spring-boot-health'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+    api 'tools.jackson.core:jackson-databind'
+}

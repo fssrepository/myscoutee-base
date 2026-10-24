@@ -1,0 +1,14 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/email/api/EmailLinks.java'
+        include 'com/raxim/myscoutee/domain/email/api/EmailRendering.java'
+        include 'com/raxim/myscoutee/domain/email/api/EmailSendRequest.java'
+        include 'com/raxim/myscoutee/domain/email/api/EmailSendResult.java'
+        include 'com/raxim/myscoutee/domain/email/api/EmailSending.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework:spring-context'
+}

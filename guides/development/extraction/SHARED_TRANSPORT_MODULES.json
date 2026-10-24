@@ -1,0 +1,82 @@
+{
+  "modules": {
+    "access-transport": {
+      "artifact": "access-transport",
+      "sources": [
+        "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol",
+        "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization"
+      ]
+    },
+    "accounts-transport": {
+      "artifact": "accounts-transport",
+      "sources": [
+        "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol",
+        "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol",
+        "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol"
+      ]
+    },
+    "chat-transport": {
+      "artifact": "chat-transport",
+      "sources": [
+        "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol",
+        "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol",
+        "com.raxim.myscoutee.microservices.transport.chat.RemoteChatDirectory"
+      ]
+    },
+    "email-transport": {
+      "artifact": "email-transport",
+      "sources": [
+        "com.raxim.myscoutee.microservices.transport.email.EmailLinksClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.email.EmailLinksEndpoint",
+        "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol",
+        "com.raxim.myscoutee.microservices.transport.email.EmailLinksServerConfiguration",
+        "com.raxim.myscoutee.microservices.transport.email.EmailRenderingClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol",
+        "com.raxim.myscoutee.microservices.transport.email.RemoteEmailLinks",
+        "com.raxim.myscoutee.microservices.transport.email.RemoteEmailRendering"
+      ]
+    },
+    "notifications-transport": {
+      "artifact": "notifications-transport",
+      "sources": [
+        "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol"
+      ]
+    },
+    "platform-transport": {
+      "artifact": "platform-transport",
+      "sources": [
+        "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol",
+        "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeEndpoint",
+        "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol",
+        "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeServerConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingEndpoint",
+        "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol",
+        "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingServerConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol",
+        "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol",
+        "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsClientConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsEndpoint",
+        "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol",
+        "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsServerConfiguration",
+        "com.raxim.myscoutee.microservices.transport.platform.RemoteAdministratorSettings",
+        "com.raxim.myscoutee.microservices.transport.platform.RemoteAuthenticationMode",
+        "com.raxim.myscoutee.microservices.transport.platform.RemoteDeploymentBranding",
+        "com.raxim.myscoutee.microservices.transport.platform.RemoteEmailSecrets",
+        "com.raxim.myscoutee.microservices.transport.platform.RemoteOperatorNotificationSettings",
+        "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds"
+      ]
+    },
+    "service-bootstrap": {
+      "artifact": "service-bootstrap",
+      "sources": [
+        "com.raxim.myscoutee.microservices.bootstrap.ServiceSecurityConfiguration",
+        "com.raxim.myscoutee.microservices.bootstrap.SharedMediaSessionConfiguration"
+      ]
+    }
+  }
+}

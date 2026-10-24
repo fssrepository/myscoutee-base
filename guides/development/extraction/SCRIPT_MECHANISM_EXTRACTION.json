@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "status": "Shared seed/retry/session/fixture execution and resource/probe helpers extracted; remaining script ownership review continues.",
+  "sources": {
+    "myscoutee-backend": {
+      "revision": "81ca568c3197f6caa8f8d4522dd58594eb765818",
+      "files": [
+        {
+          "path": "tools/microservices/seed-mongo.py",
+          "sha256": "4b9cff10ee74941cbf1ec9d0fb3411ea3df0d06ab19836f332500ac12a44ef45"
+        },
+        {
+          "path": "tools/microservices/e2e-mongo.py",
+          "sha256": "9b527f277054f8eecdace513c199c9cec1159996b163d6e785b6769cb97f02ad"
+        },
+        {
+          "path": "tools/microservices/check-session.py",
+          "sha256": "a033b63691548d24bf97443fde419f4929da9579b1fc4c700c46db9fcc51b152"
+        },
+        {
+          "path": "tools/microservices/check-public.py",
+          "sha256": "1ce21889efac391e893c4f9408138445e528a822a9276cd342eda0ec23563e24",
+          "destination": "myscoutee-microservices/tools/check-public.py"
+        },
+        {
+          "path": "tools/microservices/measure-stress.py",
+          "sha256": "5e1cdb5378ebf615a32f9c2801860b1070ead75bdca4bc4ef123595479f15c7b",
+          "destination": "myscoutee-microservices/tools/measure-stress.py"
+        },
+        {
+          "path": "tools/microservices/check-admin-identity.py",
+          "sha256": "65dd1bbaf12e03554d18b5e330244a49e42e1e22b73317155e5053b61e1b5f78"
+        },
+        {
+          "path": "tools/microservices/check-campaign-chat.py",
+          "sha256": "103bdb638b1b8c79302fec5a0dd85c08ee439b3333908d57091ee5ebec407267"
+        },
+        {
+          "path": "tools/microservices/check-business.py",
+          "sha256": "75446d47c6bc440cde931c39e8893c3e5785988803c8a9f699acfcc217f15ad1"
+        },
+        {
+          "path": "tools/microservices/check-support.py",
+          "sha256": "72597a8ba95521c72ef8bfc819b28817460235e28b54cdb947a33edaf8c60c8c"
+        }
+      ]
+    },
+    "myscoutee-template": {
+      "revision": "9ae366ed68f93fcaad03e96b2010d07d0c1b1589",
+      "files": [
+        {
+          "path": "tools/microservices/seed-mongo.py",
+          "sha256": "6cf76edcc688c928b31215c88194cd8101f5baecf7f8f11a4fd1ca732aeebc8c"
+        },
+        {
+          "path": "tools/microservices/e2e-mongo.py",
+          "sha256": "e4d47a7ae2f4157c5feeafefa0550d9572019865c26f59d2059793557f8815ff"
+        },
+        {
+          "path": "tools/microservices/e2e-media.py",
+          "sha256": "7d812c2593f2d368f850406f390640c35aaed3038aeb3436aafd7ee455384305",
+          "destination": "myscoutee-microservices/tools/e2e-media.py"
+        }
+      ]
+    }
+  },
+  "functions": {
+    "mongo": {
+      "sha256": "3ff86499d8cf744e2dcc5cf6bf07f5f02b221fbef0839b36abf7f9e9beedee10",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "3ff86499d8cf744e2dcc5cf6bf07f5f02b221fbef0839b36abf7f9e9beedee10"
+    },
+    "claim_bootstrap": {
+      "sha256": "50f8fd2509ceda3d5ee75061e0725c7a5db69912c31b190fdba7cf39dbb2d7d0",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "50f8fd2509ceda3d5ee75061e0725c7a5db69912c31b190fdba7cf39dbb2d7d0"
+    },
+    "snapshot": {
+      "sha256": "e31469a54b898cb4d171fd62a9ccd6351be115ce561ff75c6265d84806e5064f",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "e31469a54b898cb4d171fd62a9ccd6351be115ce561ff75c6265d84806e5064f"
+    },
+    "verify_persistence": {
+      "sha256": "c92b9baa053b94e69680e3dab4a98314625b7316b0b3771fd05b9f28a523caf2",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "c92b9baa053b94e69680e3dab4a98314625b7316b0b3771fd05b9f28a523caf2"
+    },
+    "import_files": {
+      "sha256": "43529552addcb7fade51746e21d1cf0da15b6d4b07fca07ad60a800d9ba38829",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "43529552addcb7fade51746e21d1cf0da15b6d4b07fca07ad60a800d9ba38829"
+    },
+    "seed_bundle": {
+      "sha256": "3e20f68d09edc09e8692ef6470892d2e963c40f063b179aa32c3a4dc6ba84cdf",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "3e20f68d09edc09e8692ef6470892d2e963c40f063b179aa32c3a4dc6ba84cdf"
+    },
+    "bundle_fingerprint": {
+      "sha256": "f2ec37c56c4dcb9179082186440cbd138531265df86ac0ff3eb0a02cbb0832f2",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "f2ec37c56c4dcb9179082186440cbd138531265df86ac0ff3eb0a02cbb0832f2"
+    },
+    "catalog_baseline_fingerprint": {
+      "sha256": "8c22e4c2158fd44c3d672b3e7cfc173d24a0a6174df17c7f94c9e40fe9facfa4",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "8c22e4c2158fd44c3d672b3e7cfc173d24a0a6174df17c7f94c9e40fe9facfa4"
+    },
+    "reset_lab": {
+      "sha256": "0d09e64aec3df4168057f3dd8b01efdd7848b83dda5c6c533dc30ad2310ab01f",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "0d09e64aec3df4168057f3dd8b01efdd7848b83dda5c6c533dc30ad2310ab01f"
+    },
+    "add_catalog": {
+      "sha256": "3ecda80bc6d6ec3f37e4243a3986fbdc94f14f9caa92427b3b1bfce331db6dc0",
+      "owner": "myscoutee-microservices/tools/seed_mongo.py",
+      "identicalInBoth": true,
+      "resultSha256": "3ecda80bc6d6ec3f37e4243a3986fbdc94f14f9caa92427b3b1bfce331db6dc0"
+    },
+    "retry_catalog_delta": {
+      "sha256": "35b0686416570168d1ed6ee7cf1e3374843a2af9be5cbc38f216001f96141051",
+      "owner": "myscoutee-microservices/tools/seed_retry_catalog.py",
+      "inputOnlyChanges": [
+        "Read ruleKeys and messageKeys from the selected project seed configuration, preserving exact sets."
+      ],
+      "resultSha256": "0c9a4535e9f8eb8dca00bd96f44d88939bf09684718907f74c43fe88b0cc2a24"
+    },
+    "add_retry_catalog": {
+      "sha256": "3ce86600c04002fd1a0c6e203f8c3902354b3e08118ed14527e0fb5d6e7623cb",
+      "owner": "myscoutee-microservices/tools/seed_retry_catalog.py",
+      "resultSha256": "3ce86600c04002fd1a0c6e203f8c3902354b3e08118ed14527e0fb5d6e7623cb"
+    },
+    "check-session:request": {
+      "sha256": "b710609990c7ae92b0d91af87dde2de2bff4725595ba158dcf9fd782f659d6fd",
+      "owner": "myscoutee-microservices/tools/check-session.py",
+      "resultSha256": "b710609990c7ae92b0d91af87dde2de2bff4725595ba158dcf9fd782f659d6fd"
+    },
+    "check-session:start_session": {
+      "sha256": "50f18ef6cb8ed0ad5c1d4c1261c5636419558d9681da842816fbca09996ac60e",
+      "owner": "myscoutee-microservices/tools/check-session.py",
+      "resultSha256": "50f18ef6cb8ed0ad5c1d4c1261c5636419558d9681da842816fbca09996ac60e"
+    },
+    "check-session:end_session": {
+      "sha256": "d4d92dc489c0632d3947034b6d3f0152bb595807df7fb46ae85c284f27951ee9",
+      "owner": "myscoutee-microservices/tools/check-session.py",
+      "resultSha256": "d4d92dc489c0632d3947034b6d3f0152bb595807df7fb46ae85c284f27951ee9"
+    },
+    "measure-stress:snapshot": {
+      "sha256": "30e530bc2a6ab895de17bafe78971946a890a0930d8ef086b39ae5d7713e128b",
+      "owner": "myscoutee-microservices/tools/runtime_metrics.py",
+      "resultSha256": "30e530bc2a6ab895de17bafe78971946a890a0930d8ef086b39ae5d7713e128b"
+    },
+    "measure-stress:resource_deltas": {
+      "sha256": "8bb632ffa1617328df5b33631beb9b819a74fdeb6ecae5f85bb64f910559e92c",
+      "owner": "myscoutee-microservices/tools/runtime_metrics.py",
+      "resultSha256": "8bb632ffa1617328df5b33631beb9b819a74fdeb6ecae5f85bb64f910559e92c"
+    },
+    "measure-stress:host_delta": {
+      "sha256": "71b6d120641b2d959e5d5237940c863900406b8aede3fbc13ec2122ccb1b0405",
+      "owner": "myscoutee-microservices/tools/runtime_metrics.py",
+      "resultSha256": "71b6d120641b2d959e5d5237940c863900406b8aede3fbc13ec2122ccb1b0405"
+    },
+    "check-support:transport_scopes": {
+      "sha256": "ca828616c001cff5313c72e76db14b32e8444240daf963eac7c1077cd9e137da",
+      "owner": "myscoutee-microservices/tools/runtime_probes.py",
+      "resultSha256": "ca828616c001cff5313c72e76db14b32e8444240daf963eac7c1077cd9e137da"
+    },
+    "check-support:stun_probe": {
+      "sha256": "af8eabd4ab0ced02f2a7e2e1bc69cdf08c23ede21756174fb3b2fa71156d7a4e",
+      "owner": "myscoutee-microservices/tools/runtime_probes.py",
+      "resultSha256": "af8eabd4ab0ced02f2a7e2e1bc69cdf08c23ede21756174fb3b2fa71156d7a4e"
+    },
+    "check-support:check_stun_image": {
+      "sha256": "a1f69736b3f45bc97daf2841cdb0d17efbef016298f08226ae6816ca2932c675",
+      "owner": "myscoutee-microservices/tools/runtime_probes.py",
+      "resultSha256": "a1f69736b3f45bc97daf2841cdb0d17efbef016298f08226ae6816ca2932c675"
+    },
+    "check-load:owned_deployment": {
+      "sha256": "ef5031e858fe4f43e8b8768d8569133b793bd5bd9a0eeabf329f378ff68a687d",
+      "owner": "myscoutee-microservices/tools/runtime_probes.py"
+    },
+    "check-load:memory": {
+      "sha256": "9d8e27890021159fe09b716f05d18d8524bcf8f5f31bc311d7eeb3aedcc358f4",
+      "owner": "myscoutee-microservices/tools/runtime_probes.py"
+    }
+  },
+  "verification": {
+    "seedTests": {
+      "backend": 14,
+      "template": 3
+    },
+    "resourceEvidenceTests": 3,
+    "seedCliHelpIdentical": true,
+    "sessionRequestsAndReportIdentical": {
+      "requests": 20
+    },
+    "e2eTransportTests": 2,
+    "installedNpmPackageTest": 1,
+    "e2eArtifactVersion": "1.4.7-dev.1",
+    "runtimeApplicationsOrVmsStarted": false,
+    "originalRegularJavaUnchanged": {
+      "backend": 1072,
+      "template": 194
+    },
+    "contactFixtureRequestIdentical": true,
+    "configuredActorRouteValuesIdentical": true,
+    "publicRequestTraceAndReportIdentical": {
+      "requests": 20,
+      "configuredCases": 14
+    },
+    "sonarRunnerTests": 9
+  },
+  "retryOwnershipReview": {
+    "templateDependencies": [
+      "Canonical notificationRuleConfigs / i18n catalogs",
+      "NotificationOutboxService / NotificationOutboxWorkerService"
+    ],
+    "templateMissingInputs": [
+      "adminWorkerSignals",
+      "affinityAdminSignalOutbox",
+      "affinityAdminSignalOutboxRetries",
+      "eventAdminSignalOutbox",
+      "eventAdminSignalOutboxRetries",
+      "integrationWebhookRetries",
+      "mediaDeletionRetries",
+      "mediaDeletions",
+      "notificationAdminSignalOutbox",
+      "notificationAdminSignalOutboxRetries"
+    ],
+    "decision": "Shared migration mechanism; backend declares this exact additive migration. Template can use the mechanism with a reviewed own migration profile; no backend fixture policy enabled implicitly."
+  },
+  "additionalOwnershipReview": {
+    "e2e-media.py": "UUID-owned cleanup is common; template fixture owner regex stays in template configuration. Backend fixture prefix is not invented.",
+    "check-public.py": "Common ingress/catalog runner. Backend keeps its exact 14-case matrix and canonical landing projection. Template declares only its existing public/account/private-ingress contracts: its security allowlist mentions landing but no corresponding controller exists, so landing scenarios/catalog probing are not enabled from that alone.",
+    "measure-stress.py": "Shared recorder uses declared existing scenario IDs; template enables its native template-read scenario, not backend event scenarios."
+  },
+  "contactFixtureSha256": "2198ac4d04c68774cc5ba5e25a30e3d1819c16c7b43fcbb4a8242d98c30a17af"
+}

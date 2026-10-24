@@ -1,0 +1,11 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/administration/config/AdminStatsProperties.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework:spring-context'
+}

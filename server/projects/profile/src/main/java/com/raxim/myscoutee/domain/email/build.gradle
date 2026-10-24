@@ -1,0 +1,16 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/email/service/EmailTemplateRenderer.java'
+    }
+    test.java {
+        srcDirs = [rootProject.canonicalTests]
+        include 'com/raxim/myscoutee/domain/email/service/EmailTemplateRendererTest.java'
+    }
+}
+
+dependencies {
+    api project(':email-api')
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+}

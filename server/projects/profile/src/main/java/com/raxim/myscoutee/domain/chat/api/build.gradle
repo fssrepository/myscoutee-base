@@ -1,0 +1,19 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/chat/api/ChatDirectory.java'
+        include 'com/raxim/myscoutee/domain/chat/api/ChatMediaVisibility.java'
+        include 'com/raxim/myscoutee/domain/chat/api/ChatPresence.java'
+        include 'com/raxim/myscoutee/domain/chat/api/ChatPrivacy.java'
+        include 'com/raxim/myscoutee/domain/chat/api/ChatSessionAttributes.java'
+        include 'com/raxim/myscoutee/domain/chat/api/ContactPermissions.java'
+        include 'com/raxim/myscoutee/domain/chat/dto/ChatDirectoryEntryDto.java'
+        include 'com/raxim/myscoutee/domain/chat/dto/ChatMessageMediaVisibilityDto.java'
+        include 'com/raxim/myscoutee/domain/chat/dto/ChatSupportStatusDto.java'
+        include 'com/raxim/myscoutee/domain/chat/dto/ChatUnreadVersionDto.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework:spring-context'
+}

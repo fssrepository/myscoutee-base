@@ -1,0 +1,18 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/common/config/mongo/SessionMongoRoutingFilter.java'
+    }
+}
+
+dependencies {
+    api project(':common-mongo')
+    api project(':common-security')
+    api project(':media-api')
+    api project(':platform-api')
+    api project(':platform-business')
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

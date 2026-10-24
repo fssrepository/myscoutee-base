@@ -1,0 +1,9 @@
+dependencies {
+    api project(':common-mongo')
+    api 'org.springframework:spring-web'
+    api 'org.springframework.security:spring-security-web'
+    api 'tools.jackson.core:jackson-databind'
+    api 'io.micrometer:micrometer-core'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

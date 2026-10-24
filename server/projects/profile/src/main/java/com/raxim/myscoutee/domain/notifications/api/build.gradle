@@ -1,0 +1,11 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/notifications/api/NotificationDelivery.java'
+        include 'com/raxim/myscoutee/domain/notifications/api/NotificationPrivacy.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework:spring-context'
+}

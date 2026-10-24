@@ -1,0 +1,40 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/platform/config/ConfigProperties.java'
+        include 'com/raxim/myscoutee/domain/platform/config/OperatorConfigurationProperties.java'
+        include 'com/raxim/myscoutee/domain/platform/config/OperatorTlsProperties.java'
+        include 'com/raxim/myscoutee/domain/platform/config/OperatorUpdateProperties.java'
+        include 'com/raxim/myscoutee/domain/platform/document/AppSettings.java'
+        include 'com/raxim/myscoutee/domain/platform/mapper/OperatorTlsMapper.java'
+        include 'com/raxim/myscoutee/domain/platform/repository/AppSettingsRepository.java'
+        include 'com/raxim/myscoutee/domain/platform/repository/OperatorTlsRepository.java'
+        include 'com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapAuthenticationService.java'
+        include 'com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTokenInvalidException.java'
+        include 'com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTransportSecurity.java'
+        include 'com/raxim/myscoutee/domain/platform/service/AppSettingsService.java'
+        include 'com/raxim/myscoutee/domain/platform/service/DefaultFirebasePushDelivery.java'
+        include 'com/raxim/myscoutee/domain/platform/service/DefaultOperatorFirebaseCapabilityClient.java'
+        include 'com/raxim/myscoutee/domain/platform/service/OperatorFirebaseCapabilityClient.java'
+        include 'com/raxim/myscoutee/domain/platform/service/OperatorTlsService.java'
+        include 'com/raxim/myscoutee/domain/platform/service/OperatorUpdateArtifactDownloader.java'
+        include 'com/raxim/myscoutee/domain/platform/service/OperatorUpdateHttpClient.java'
+    }
+}
+
+dependencies {
+    api project(':accounts-api')
+    api project(':common-mongo')
+    api project(':platform-api')
+    api 'com.google.firebase:firebase-admin:9.10.0'
+    api 'jakarta.annotation:jakarta.annotation-api'
+    api 'org.slf4j:slf4j-api'
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    api 'tools.jackson.core:jackson-databind'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

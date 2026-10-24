@@ -1,0 +1,21 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/media/api/ImageUploads.java'
+        include 'com/raxim/myscoutee/domain/media/api/MediaAccessPaths.java'
+        include 'com/raxim/myscoutee/domain/media/api/MediaCleanup.java'
+        include 'com/raxim/myscoutee/domain/media/api/MediaDeletionQueue.java'
+        include 'com/raxim/myscoutee/domain/media/api/MediaImageVariant.java'
+        include 'com/raxim/myscoutee/domain/media/api/MediaSessionAccess.java'
+        include 'com/raxim/myscoutee/domain/media/api/MediaStorage.java'
+        include 'com/raxim/myscoutee/domain/media/dto/MediaDtos.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

@@ -1,0 +1,9 @@
+{
+  "id": "base",
+  "modules": {
+    "backend": "server"
+  },
+  "bytecode": {
+    "backend": "gradle-output"
+  }
+}

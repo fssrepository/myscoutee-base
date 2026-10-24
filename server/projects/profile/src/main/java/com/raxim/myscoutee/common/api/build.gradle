@@ -1,0 +1,15 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/common/dto/MediaUrlsQueryDto.java'
+        include 'com/raxim/myscoutee/common/security/crypto/CanonicalValues.java'
+        include 'com/raxim/myscoutee/common/security/crypto/Ed25519Signatures.java'
+        include 'com/raxim/myscoutee/common/security/http/HttpSecurityContribution.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework.security:spring-security-config'
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-context'
+}

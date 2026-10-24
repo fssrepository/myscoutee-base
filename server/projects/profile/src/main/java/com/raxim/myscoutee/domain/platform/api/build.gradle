@@ -1,0 +1,32 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/platform/api/AdministratorSettings.java'
+        include 'com/raxim/myscoutee/domain/platform/api/AuthenticationMode.java'
+        include 'com/raxim/myscoutee/domain/platform/api/DeploymentBranding.java'
+        include 'com/raxim/myscoutee/domain/platform/api/EmailSecrets.java'
+        include 'com/raxim/myscoutee/domain/platform/api/FirebasePushDelivery.java'
+        include 'com/raxim/myscoutee/domain/platform/api/FirebaseRuntime.java'
+        include 'com/raxim/myscoutee/domain/platform/api/JobWorkspaceDirectory.java'
+        include 'com/raxim/myscoutee/domain/platform/api/NotificationPolicy.java'
+        include 'com/raxim/myscoutee/domain/platform/api/OperatorBootstrapRequestSupport.java'
+        include 'com/raxim/myscoutee/domain/platform/api/OperatorNotificationSettings.java'
+        include 'com/raxim/myscoutee/domain/platform/api/ReleaseProtocol.java'
+        include 'com/raxim/myscoutee/domain/platform/api/RuntimeConfiguration.java'
+        include 'com/raxim/myscoutee/domain/platform/api/SecretEncryption.java'
+        include 'com/raxim/myscoutee/domain/platform/dto/EncryptedSecret.java'
+        include 'com/raxim/myscoutee/domain/platform/dto/OperatorNotificationRecipientsDto.java'
+        include 'com/raxim/myscoutee/domain/platform/dto/OperatorTlsDtos.java'
+        include 'com/raxim/myscoutee/domain/platform/dto/OperatorUpdateDtos.java'
+    }
+}
+
+dependencies {
+    api project(':common-api')
+    api 'com.fasterxml.jackson.core:jackson-annotations'
+    api 'com.google.firebase:firebase-admin:9.10.0'
+    api 'jakarta.validation:jakarta.validation-api'
+    api 'org.springframework:spring-context'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

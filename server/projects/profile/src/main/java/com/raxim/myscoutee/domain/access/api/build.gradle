@@ -1,0 +1,14 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/access/api/AccessGrantEffect.java'
+        include 'com/raxim/myscoutee/domain/access/api/ConsentAuthorization.java'
+        include 'com/raxim/myscoutee/domain/access/api/RegionSecurity.java'
+        include 'com/raxim/myscoutee/domain/access/api/RequiresPolicies.java'
+        include 'com/raxim/myscoutee/domain/access/api/RequiresPolicy.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework:spring-context'
+}

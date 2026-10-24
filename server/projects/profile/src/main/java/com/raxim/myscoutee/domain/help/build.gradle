@@ -1,0 +1,15 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/help/document/HelpCenterGuideField.java'
+        include 'com/raxim/myscoutee/domain/help/document/HelpCenterRevision.java'
+        include 'com/raxim/myscoutee/domain/help/repository/HelpCenterGuideFieldsRepository.java'
+        include 'com/raxim/myscoutee/domain/help/service/HelpPrivacyService.java'
+    }
+}
+
+dependencies {
+    api project(':help-api')
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+}

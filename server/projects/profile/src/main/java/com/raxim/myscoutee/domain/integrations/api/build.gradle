@@ -1,0 +1,15 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/integrations/api/IntegrationClientIdentity.java'
+        include 'com/raxim/myscoutee/domain/integrations/api/IntegrationPrivacy.java'
+        include 'com/raxim/myscoutee/domain/integrations/api/RoleAttentionEvents.java'
+        include 'com/raxim/myscoutee/domain/integrations/dto/IntegrationAccess.java'
+        include 'com/raxim/myscoutee/domain/integrations/dto/McpEventDtos.java'
+    }
+}
+
+dependencies {
+    api 'com.fasterxml.jackson.core:jackson-annotations'
+    api 'org.springframework:spring-context'
+}

@@ -1,0 +1,11 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/localization/api/TranslationBundles.java'
+        include 'com/raxim/myscoutee/domain/localization/dto/I18nBundleResponseDto.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework:spring-context'
+}

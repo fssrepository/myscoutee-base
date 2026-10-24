@@ -1,0 +1,2350 @@
+{
+  "schemaVersion": 1,
+  "status": "Both original microservices trees retired; context wiring and focused checks passed; reusable script/config separation continues in step 1.7.6.",
+  "sharedFiles": [
+    {
+      "source": "microservices/tools/audit-assemblies.py",
+      "destination": "myscoutee-microservices/tools/audit-assemblies.py",
+      "backendSha256": "09d4d08bad15e123fa95730cf54f4d795019c6fa4e4eb6d448567b467998cf29",
+      "templateSha256": "09d4d08bad15e123fa95730cf54f4d795019c6fa4e4eb6d448567b467998cf29"
+    },
+    {
+      "source": "microservices/tools/cleanup-lab.sh",
+      "destination": "myscoutee-microservices/tools/cleanup-lab.sh",
+      "backendSha256": "c9145e7dcb4e7dfd6291f01527b08ae7e0a48fd16bdb4d57473c8f2bf847aff3",
+      "templateSha256": "c9145e7dcb4e7dfd6291f01527b08ae7e0a48fd16bdb4d57473c8f2bf847aff3"
+    },
+    {
+      "source": "microservices/tools/helm.sh",
+      "destination": "myscoutee-microservices/tools/helm.sh",
+      "backendSha256": "f06d40f3f90754450b9e8b8a3f808a1f449d6d5b630ee44a69a2482f64bd7a7f",
+      "templateSha256": "f06d40f3f90754450b9e8b8a3f808a1f449d6d5b630ee44a69a2482f64bd7a7f"
+    },
+    {
+      "source": "microservices/tools/lab.sh",
+      "destination": "myscoutee-microservices/tools/lab.sh",
+      "backendSha256": "9a9cb172dab4bbb673d1a9a52e2a1e1d98c78671495cfc682b3d8515e993f11a",
+      "templateSha256": "9a9cb172dab4bbb673d1a9a52e2a1e1d98c78671495cfc682b3d8515e993f11a"
+    },
+    {
+      "source": "microservices/tools/mongo_replica.py",
+      "destination": "myscoutee-microservices/tools/mongo_replica.py",
+      "backendSha256": "786fc55f04a88c74a2916145e4573a76416c4b3431327a2ed5bc60d2535a93a8",
+      "templateSha256": "786fc55f04a88c74a2916145e4573a76416c4b3431327a2ed5bc60d2535a93a8"
+    },
+    {
+      "source": "microservices/tools/open-terminals.sh",
+      "destination": "myscoutee-microservices/tools/open-terminals.sh",
+      "backendSha256": "e1dd1adefe08e961b12c71d50dbe9749030284eb33f690fa43b9173a512dc25d",
+      "templateSha256": "e1dd1adefe08e961b12c71d50dbe9749030284eb33f690fa43b9173a512dc25d"
+    },
+    {
+      "source": "microservices/tools/runtime_config.py",
+      "destination": "myscoutee-microservices/tools/runtime_config.py",
+      "backendSha256": "650b42c9d7f6e9170eb73443bd1f4e83ab333a10888644252a8b62518122d884",
+      "templateSha256": "650b42c9d7f6e9170eb73443bd1f4e83ab333a10888644252a8b62518122d884"
+    },
+    {
+      "source": "microservices/tools/setup-host.sh",
+      "destination": "myscoutee-microservices/tools/setup-host.sh",
+      "backendSha256": "981af96aedb83c1496e29b637d6e2a7eca4b60bb7f9b2bf9255153328ca7af8b",
+      "templateSha256": "981af96aedb83c1496e29b637d6e2a7eca4b60bb7f9b2bf9255153328ca7af8b"
+    },
+    {
+      "source": "microservices/tools/terraform.sh",
+      "destination": "myscoutee-microservices/tools/terraform.sh",
+      "backendSha256": "4e5f80245d5059ceea93c6764a0efbee9144a070a42f6a21c7a954ee31cfaff7",
+      "templateSha256": "4e5f80245d5059ceea93c6764a0efbee9144a070a42f6a21c7a954ee31cfaff7"
+    },
+    {
+      "source": "microservices/tools/test_runtime_config.py",
+      "destination": "myscoutee-microservices/tools/test_runtime_config.py",
+      "backendSha256": "11377169c80177a93cf0b22c535b2b687d1164d89ac955ff0de0c0a1e1c6876f",
+      "templateSha256": "11377169c80177a93cf0b22c535b2b687d1164d89ac955ff0de0c0a1e1c6876f"
+    },
+    {
+      "source": "microservices/tools/test_transport_usage.py",
+      "destination": "myscoutee-microservices/tools/test_transport_usage.py",
+      "backendSha256": "6930c75c57b8151c693d07d0d5364a1d630f0f06890758da1c84ff5983d935d4",
+      "templateSha256": "6930c75c57b8151c693d07d0d5364a1d630f0f06890758da1c84ff5983d935d4"
+    },
+    {
+      "source": "microservices/tools/transport_usage.py",
+      "destination": "myscoutee-microservices/tools/transport_usage.py",
+      "backendSha256": "83865dd810926e92c2ceaf5df14cac8e261086f46440afe1ea0ad63042fc274d",
+      "templateSha256": "83865dd810926e92c2ceaf5df14cac8e261086f46440afe1ea0ad63042fc274d"
+    },
+    {
+      "source": "microservices/tools/verify-transport-contracts.mjs",
+      "destination": "myscoutee-microservices/tools/verify-transport-contracts.mjs",
+      "backendSha256": "85e3215ca68878f185d2620895b070612ebaf90a6d211e94a095a587953bb307",
+      "templateSha256": "85e3215ca68878f185d2620895b070612ebaf90a6d211e94a095a587953bb307"
+    },
+    {
+      "source": "microservices/tools/vm.py",
+      "destination": "myscoutee-microservices/tools/vm.py",
+      "backendSha256": "5a494fb2691a54f88707a057fe16f668090b79234cd877be42b8e16ba80101e1",
+      "templateSha256": "5a494fb2691a54f88707a057fe16f668090b79234cd877be42b8e16ba80101e1"
+    },
+    {
+      "source": "microservices/tools/workloads.py",
+      "destination": "myscoutee-microservices/tools/workloads.py",
+      "backendSha256": "92c952b767842c6bb6e1dd27b7e8627e623affe510efd838f7c6815260f4db1f",
+      "templateSha256": "92c952b767842c6bb6e1dd27b7e8627e623affe510efd838f7c6815260f4db1f"
+    },
+    {
+      "source": "microservices/build.gradle",
+      "destination": "myscoutee-microservices/build.gradle",
+      "backendSha256": "eaa05ac8cae87c0eff91655cac4d93c8108d48032b069ba9556f665558aa73ea",
+      "templateSha256": "eaa05ac8cae87c0eff91655cac4d93c8108d48032b069ba9556f665558aa73ea"
+    },
+    {
+      "source": "microservices/settings.gradle",
+      "destination": "myscoutee-microservices/settings.gradle",
+      "backendSha256": "33247d6835b01f8f7805977e6095ec4857e0b61719923303520cd4ef9f03cbc1",
+      "templateSha256": "33247d6835b01f8f7805977e6095ec4857e0b61719923303520cd4ef9f03cbc1"
+    },
+    {
+      "source": "microservices/gradlew",
+      "destination": "myscoutee-microservices/gradlew",
+      "backendSha256": "5c2215a6d57434a4bf7e96561cf72abaf0723da35ecd0e219f99818ad2434ead",
+      "templateSha256": "5c2215a6d57434a4bf7e96561cf72abaf0723da35ecd0e219f99818ad2434ead"
+    },
+    {
+      "source": "microservices/contracts/build.gradle",
+      "destination": "myscoutee-microservices/contracts/build.gradle",
+      "backendSha256": "29b5f0e69e7846a3e49b1107dc6722f38167bf29c3f0d8604d7b363925f508a5",
+      "templateSha256": "29b5f0e69e7846a3e49b1107dc6722f38167bf29c3f0d8604d7b363925f508a5"
+    },
+    {
+      "source": "microservices/build-logic/service.gradle",
+      "destination": "myscoutee-microservices/build-logic/service.gradle",
+      "backendSha256": "6950ed4cc2dd4a1410efdbb51c12959e43dd4a3caa399e478602afbca19188ff",
+      "templateSha256": "ec84a034fd22ec9f9c7bbf841916198e24c0ebc3b89060b046d5b60916830651"
+    },
+    {
+      "source": "microservices/bootstrap-tests/build.gradle",
+      "destination": "myscoutee-microservices/build-logic/transport-tests.gradle",
+      "backendSha256": "015268e6771b86016268a867735cd2a8041de91569c61a036e90a4894bae5655",
+      "templateSha256": "7418957c0331ec3fd0c4319255a40a8f6bc2c67b050256e553008c4af280a9dd"
+    },
+    {
+      "source": "microservices/tools/check-contexts.py",
+      "destination": "myscoutee-microservices/tools/check-contexts.py",
+      "backendSha256": "14c53a8bc79fa227dd4a2895b5625462481018b18868745d266772dfaf86eeeb",
+      "templateSha256": null
+    },
+    {
+      "source": "microservices/tools/check-minio.py",
+      "destination": "myscoutee-microservices/tools/check-minio.py",
+      "backendSha256": "6c0ed746fb2b5e7d8731026448c937aefb02abb664eb824f01e8c862882c0833",
+      "templateSha256": null
+    }
+  ],
+  "projects": {
+    "myscoutee-backend": {
+      "revision": "3ff1c6134da96a97721dfcd9145ef8126c8de8ed",
+      "moves": [
+        {
+          "source": "microservices/.gitignore",
+          "destination": null,
+          "sha256": "6d7fc0de81a8db3f68052344481a61b037dd55e794b0c44e34df302a252865b6"
+        },
+        {
+          "source": "microservices/DATABASE_POLLING_AUDIT.md",
+          "destination": "guides/microservices/DATABASE_POLLING_AUDIT.md",
+          "sha256": "60a350a45236aad70416b22be722befa824ad16a8e23b3a748c1546b7d733766"
+        },
+        {
+          "source": "microservices/IDLE_CPU_PROFILE_2026-10-09.md",
+          "destination": "guides/microservices/IDLE_CPU_PROFILE_2026-10-09.md",
+          "sha256": "7fb396adcc14d452a943c86189ebf58ddb5ea767ef998116b4e63dd9478e59be"
+        },
+        {
+          "source": "microservices/MONOLITH_COMPARISON.md",
+          "destination": "guides/microservices/MONOLITH_COMPARISON.md",
+          "sha256": "07865c07d12702fa22452fefdac3fb073cbd1cfaad76cd3c8ed4e30cc6881694"
+        },
+        {
+          "source": "microservices/PROGRESS.md",
+          "destination": "guides/microservices/PROGRESS.md",
+          "sha256": "86892a06075e7e8f1e0843c71f5399f2d42239424c29b459a081bda67f76bb48"
+        },
+        {
+          "source": "microservices/README.md",
+          "destination": "guides/microservices/README.md",
+          "sha256": "581a07337d4a8bcdbde25c39c9b1009eb652cceefd3fffa4503df9666d931426"
+        },
+        {
+          "source": "microservices/assemblies.json",
+          "destination": "config/microservices/assemblies.json",
+          "sha256": "1b8f4ab6fc5fe353abf15f6d6eb51cb430f7fa4953f41200d9206b0b276a0ce5"
+        },
+        {
+          "source": "microservices/deploy/browser-sessions.json",
+          "destination": "config/microservices/deploy/browser-sessions.json",
+          "sha256": "87f2118b8e0f0bf318cc90506bfe5f2a5dfd0f6222f2f1ffde58c211d131db24"
+        },
+        {
+          "source": "microservices/deploy/images.lock.json",
+          "destination": "config/microservices/deploy/images.lock.json",
+          "sha256": "a15ad9d461fca994dadd63602372a23190e56d262660f2c7de0272b9e13f711c"
+        },
+        {
+          "source": "microservices/deploy/runtime.json",
+          "destination": "config/microservices/deploy/runtime.json",
+          "sha256": "24173f611eaa48e2c92c00ad032b654079bb16cc064adfa2fefd290ee0a0e49b"
+        },
+        {
+          "source": "microservices/tools/check-admin-identity.py",
+          "destination": "tools/microservices/check-admin-identity.py",
+          "sha256": "3376ed3c2e97cf20462135c24b4fbd3baef298be5f643a90a0490ec7d7094cb9"
+        },
+        {
+          "source": "microservices/tools/check-browser.mjs",
+          "destination": "tools/microservices/check-browser.mjs",
+          "sha256": "f448c6636ec4ed752fef10fd9318a30d371e5165421109a630412b97dc579eb6"
+        },
+        {
+          "source": "microservices/tools/check-business.py",
+          "destination": "tools/microservices/check-business.py",
+          "sha256": "2c5995d449f4d9f0f52e0eae53a478740fa3cee36af27974f9ee602a124212e1"
+        },
+        {
+          "source": "microservices/tools/check-campaign-chat.py",
+          "destination": "tools/microservices/check-campaign-chat.py",
+          "sha256": "43be6a5b6fd2d6acffec402fa15b185ec330bf0c6d275e00f22703fd378209fa"
+        },
+        {
+          "source": "microservices/tools/check-current-monolith.sh",
+          "destination": "tools/microservices/check-current-monolith.sh",
+          "sha256": "28e1ab5c98b94828bced027f5dd26d3da7d9e8c4c3d7c368fba8630220875eae"
+        },
+        {
+          "source": "microservices/tools/check-demo-selection.mjs",
+          "destination": "tools/microservices/check-demo-selection.mjs",
+          "sha256": "adf1d2330a76901e9bf24fa5f1abb9b4b716746c87bd4dc1537e8c14c3a654ed"
+        },
+        {
+          "source": "microservices/tools/check-load.py",
+          "destination": "tools/microservices/check-load.py",
+          "sha256": "195c90cc06ab9d226fee384c849953a5e63ea7c2e1389fa2f407a866cfe264ae"
+        },
+        {
+          "source": "microservices/tools/check-profile-selection.py",
+          "destination": "tools/microservices/check-profile-selection.py",
+          "sha256": "3061ee7c228f2c35f0846739f586aeec9e979bb74d83ec5bed1a40f1546753bf"
+        },
+        {
+          "source": "microservices/tools/check-public.py",
+          "destination": "tools/microservices/check-public.py",
+          "sha256": "8c66ef675357a06c6f210feab822a3ca9b6fc03196917be518acb01cc0e6423e"
+        },
+        {
+          "source": "microservices/tools/check-session.py",
+          "destination": "tools/microservices/check-session.py",
+          "sha256": "c1c19fb87aac57519d2c9064fd380e3edc472cb5201dac635b4e07d9016e184c"
+        },
+        {
+          "source": "microservices/tools/check-support.py",
+          "destination": "tools/microservices/check-support.py",
+          "sha256": "37aa96cf2f0d4a04ee99c51cab58e59658e5575c1615a0cd946b710effbf2eec"
+        },
+        {
+          "source": "microservices/tools/check-uk-entry.mjs",
+          "destination": "tools/microservices/check-uk-entry.mjs",
+          "sha256": "3984103293f5a3db6a11141b7f11836adb64f6a8db82709fa462079bcd213874"
+        },
+        {
+          "source": "microservices/tools/contact_fault.py",
+          "destination": "tools/microservices/contact_fault.py",
+          "sha256": "6810eb2b47cd04abe366058576f93ab1d0b1dd5a8d399ce4810371c5c5943975"
+        },
+        {
+          "source": "microservices/tools/e2e-mongo.py",
+          "destination": "tools/microservices/e2e-mongo.py",
+          "sha256": "5d29b1d72a598c672e5c35a439cb8de053b6c7318896aff80038dc3ead7486b6"
+        },
+        {
+          "source": "microservices/tools/managed-browser-manifest.mjs",
+          "destination": "tools/microservices/managed-browser-manifest.mjs",
+          "sha256": "59b5d3d9ff8de5010388ade12428336930c45ebaf0936f2376deda416e90cd5d"
+        },
+        {
+          "source": "microservices/tools/measure-stress.py",
+          "destination": "tools/microservices/measure-stress.py",
+          "sha256": "35574d3893edb25dee48ce0fa90580cef48dafe3b3a9124d5224313e70811418"
+        },
+        {
+          "source": "microservices/tools/seed-mongo.py",
+          "destination": "tools/microservices/seed-mongo.py",
+          "sha256": "6f0d1db3cbc4035ba97b21e0556bc4bc2ca771358b8a384c9acbdf2bec0bf2c0"
+        },
+        {
+          "source": "microservices/tools/test_browser_manifest.py",
+          "destination": "tools/microservices/test_browser_manifest.py",
+          "sha256": "4a04cd156ccb28f744f8fddcc3088138fab9ee4e9c9f722b9442c01f9cbea58b"
+        },
+        {
+          "source": "microservices/tools/test_infra.py",
+          "destination": "tools/microservices/test_infra.py",
+          "sha256": "911905bff51c0f1ca1942cc409d370c427ee3eb1d3e5500f6c50be38bdf0bd0d"
+        },
+        {
+          "source": "microservices/transport/bindings.json",
+          "destination": "config/microservices/transport/bindings.json",
+          "sha256": "c4aa7969ed1a41503ab03b7f840ce8c95cdadab00eec3430561cf3910dbbbc9c"
+        },
+        {
+          "source": "microservices/transport/contracts/access/access-permissions-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/access/access-permissions-v1.openapi.json",
+          "sha256": "69bdbebc9d097e0bf64088538a84852e88dc22fea13af224af06092ca0882071"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-affinity-projections-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-affinity-projections-v1.openapi.json",
+          "sha256": "a996c5625120aa1ef2ff7e68a8c9f7b843185a3a7807f0e50e3c5f1d30a46243"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-consents-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-consents-v1.openapi.json",
+          "sha256": "3504b0727f78fde0d6018edfe31ab5122856944d716b2989ed7580ea60ac8028"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-devices-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-devices-v1.openapi.json",
+          "sha256": "10b0621d0a9010bf8e164bef2b5a7c69fbfc4f185ca101c06f943a5cb6450a76"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-inactivity-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-inactivity-v1.openapi.json",
+          "sha256": "0c4146ec9dbf2075c25cade068fa962c76ca759559dc6b41638214f3fa63ad09"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-job-scopes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-job-scopes-v1.openapi.json",
+          "sha256": "29abbc0c589b691b393e9bce9e8d587b00fb7d65e03fa380c81adb8207f7472a"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-media-sessions-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-media-sessions-v1.openapi.json",
+          "sha256": "30e5b08df907ecc377d1bdfcbfd21e40f457340b39c4a138b980ce8a8e7a1007"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-notifications-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-notifications-v1.openapi.json",
+          "sha256": "4e120a4b8bc56f9bd9701ff02ed7a13b97e2959009a78d5024f02f2042c47c4f"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-payment-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-payment-reads-v1.openapi.json",
+          "sha256": "add9b782d8a402a0fe371c1fc809fca878bb8b68b8181a8d710c27cedd79905d"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-workspaces-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-workspaces-v1.openapi.json",
+          "sha256": "a54c609f5db90531e7eaebae3fd04f55cf6edbe508e51858d7e7b1873bf55f54"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/activity-counters-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/activity-counters-v1.openapi.json",
+          "sha256": "aab174b9d739f626b153e5c2e96d9546d2caddfa4fe7967c31ef2135669a26ab"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/actor-delegation-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/actor-delegation-v1.openapi.json",
+          "sha256": "42b1f22bba090f193fd13398043d9e940abc3d14ba28f0dca94601f25b060ce7"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/asset-profiles-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/asset-profiles-v1.openapi.json",
+          "sha256": "3ec7ed4509ba3635b09080bf5e362b9b99002b877512c99968529e38c172ebf8"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/chat-counters-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/chat-counters-v1.openapi.json",
+          "sha256": "0a6bc5b69899a1a9c92f588bcfcd3b00bfa11399c9f2bb6b82ff262e7bb903cc"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/contact-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/contact-directory-v1.openapi.json",
+          "sha256": "24d1a6b0c1480a1d4517f987e48239f0f8cd64d9ba0c884ec45bae8d43d7a309"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/discovery-profiles-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/discovery-profiles-v1.openapi.json",
+          "sha256": "4177210008bbf7da79f44ce28ad104c4aa8eaf85f0f9bcd9d846747171b188a8"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/email-profiles-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/email-profiles-v1.openapi.json",
+          "sha256": "9363ef6cb4a87b4f629c6b8e83ed24ef95b3bfd33243484f332f76ddeb81a869"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/event-counter-updates-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/event-counter-updates-v1.openapi.json",
+          "sha256": "8222115c3455f8af88f6dddd539d706740c1bd199aaabf8ef0b8d0d0ffd9a461"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/experiences-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/experiences-v1.openapi.json",
+          "sha256": "db99d11ca04c00782ca61e3782fa2c0c2c501cce947564c9333f6ebf763c2717"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/feedback-session-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/feedback-session-v1.openapi.json",
+          "sha256": "6c5648b3e5e04bbcf601929e9058331f4a2fe9df154505f39ec635a6eb1df2a7"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/following-events-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/following-events-v1.openapi.json",
+          "sha256": "ebe46ff942cd871b63a87d87b2812c0fcaa2eb9dfb416fba1be7e2513f8e4d2a"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/friendship-projections-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/friendship-projections-v1.openapi.json",
+          "sha256": "a850588e143e757c195049a56bdfe6e43017789202f96e7b78d36a18d864363d"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/friendship-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/friendship-reads-v1.openapi.json",
+          "sha256": "f38d0f86fd135decf9b20244111e01b1f5e088ac93904ace030bbc77cb7f7755"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/location-eligibility-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/location-eligibility-v1.openapi.json",
+          "sha256": "68fe0e764c8a2fd8292586077ea0d3820284f5c914e386df4a1e9c115249f003"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/measurement-eligibility-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/measurement-eligibility-v1.openapi.json",
+          "sha256": "57ec540aae32066375f0badc01233e640907b96e2678b096f5d266c0c64cf819"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/payment-totals-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/payment-totals-v1.openapi.json",
+          "sha256": "20b5fb62458720521c6cacdbbdc3194dae4c2688c3873342c6ea1b15896c9150"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-cards-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-cards-v1.openapi.json",
+          "sha256": "2cf8ccd7ae4553fdcb74df58f40de5bc08eee4a9fbda3baf370832ee5ca5e133"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-identities-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-identities-v1.openapi.json",
+          "sha256": "0bc4860b6497f6a0b7535c61d9597b83e4a078f947e039c30761fd4fe3e0bcf5"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-moderation-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-moderation-v1.openapi.json",
+          "sha256": "ab03294928b82bea2f3c2530f1de1f2b5f9b7a17e3c87d8dbabaf713e813c194"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-read-state-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-read-state-v1.openapi.json",
+          "sha256": "a81f6a99a682e15f1dcc0a0a2ab570c0f6ccfd820f845477e16db372589d894e"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-summaries-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-summaries-v1.openapi.json",
+          "sha256": "57d27721e7547d3bae3f3c986288426493f35981189316aedc269e62590d35fa"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/rating-profiles-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/rating-profiles-v1.openapi.json",
+          "sha256": "484c6baac3faa3aeee9ef019983b2b7491860f2e2ca11d2ba35ae5a4de43b848"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/rating-session-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/rating-session-v1.openapi.json",
+          "sha256": "0059d9ffc6cb5ccad6387596b4ed57a1808a97f3361610fab1fa7b658e0693f0"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/scoring-profiles-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/scoring-profiles-v1.openapi.json",
+          "sha256": "b73f4f2146241a1782b78928d98e898990afce8f45bb88eca00726ff095e6884"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/selected-profile-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/selected-profile-v1.openapi.json",
+          "sha256": "131d3a59ba2756ed8c7099775bc0f0d7bec03f72b391b0d907da2067bddf59bd"
+        },
+        {
+          "source": "microservices/transport/contracts/administration/admin-audience-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/administration/admin-audience-v1.openapi.json",
+          "sha256": "6775bf2866c0bcdcd740948b1a473fdf4429511626659de980569c3f7ff5c951"
+        },
+        {
+          "source": "microservices/transport/contracts/administration/operational-telemetry-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/administration/operational-telemetry-v1.openapi.json",
+          "sha256": "7e5d5a48a0a2f1c8d290eff83ae8a912092a70056281d420d775f266b5e61d4d"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/account-ratings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/account-ratings-v1.openapi.json",
+          "sha256": "2d6af4de78f5d870d509d8036b8155ddb334e82dc27c25f3bb695446ca90d1cf"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/affinity-graph-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/affinity-graph-v1.openapi.json",
+          "sha256": "83581e379bc463a7764a0aee27264ac198e9a96b2f8ed7ab7c6e2dbe2abf9be3"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/affinity-parameters-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/affinity-parameters-v1.openapi.json",
+          "sha256": "eae5e5e6fdbe6d1235b5d8526da0903325a0046ca5142c25b9774e1e64177daa"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/affinity-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/affinity-privacy-v1.openapi.json",
+          "sha256": "a5dc441755f0421e40335a3470bc2fc92ae493caa406805f4a5e7aa6de5e20e8"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/asset-affinity-scores-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/asset-affinity-scores-v1.openapi.json",
+          "sha256": "3b9698b80d36e82a3deca4c55de98866d46a33f981aa99c9fa77489b22dbbb93"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/campaign-graphs-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/campaign-graphs-v1.openapi.json",
+          "sha256": "9abe6b7ff347c48e79a6118d16108ae8c922103b90728637060eb915735b50f7"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/campaign-ratings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/campaign-ratings-v1.openapi.json",
+          "sha256": "0d16ba5c74f83833d6bb4ff4d714a89d761b4c7d2847fbe1bec5de4d0991857b"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/configuration-catalog-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/configuration-catalog-v1.openapi.json",
+          "sha256": "f92c1477dac99579ff53a80fffe37b22bf85c23994aa5b8f32d04fbc799ab59b"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/edge-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/edge-directory-v1.openapi.json",
+          "sha256": "fe95ea3439db59ca6510d03874b6e3f2338ec6703cabfdde8fc719fa8dddfe52"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/event-affinity-scores-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/event-affinity-scores-v1.openapi.json",
+          "sha256": "83031ee2d4bd7b054861e3fe3cb66b6dfaaec11cd945eb6ad6ef3b2caa3e7838"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/graph-science-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/graph-science-v1.openapi.json",
+          "sha256": "05aaab73fd2610e440815e0c829f6aeb3aa71ccd94caed746d2bbe68314f326b"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/meeting-evidence-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/meeting-evidence-v1.openapi.json",
+          "sha256": "e0dc27c4a9e58c2f9a253b6734e1ba5774f2c883e7cac3facb959af378d80e69"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/meeting-projections-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/meeting-projections-v1.openapi.json",
+          "sha256": "ebac29373fcc42b0c9c3fb03e14509bb02fd8baf7193f1ffbcddde90a2d18d61"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/rating-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/rating-directory-v1.openapi.json",
+          "sha256": "9533a04ce9b698378ee10c456d94192af5c9f0d617b363f70306a6d882e1034e"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/rating-measurement-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/rating-measurement-v1.openapi.json",
+          "sha256": "d16d6c529e2604eb529612a41b39c559b60e5c166ab5253401a2cb0d7748ad5e"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/rating-page-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/rating-page-reads-v1.openapi.json",
+          "sha256": "dbd460a6585c488716ad61aafa16d73b6c5efe6d1343178ed164116a35273b56"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/recompute-metrics-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/recompute-metrics-v1.openapi.json",
+          "sha256": "1cea06d5dbb657d7adfa9328bb918d1055e8260c3352bd66c39d136047f3955b"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/recompute-queue-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/recompute-queue-v1.openapi.json",
+          "sha256": "43f0d5657f105c8ab6f9dda595c1f7f31c35077c87faf840a035c7d6b907928b"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/user-affinity-changes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/user-affinity-changes-v1.openapi.json",
+          "sha256": "56460bd1cfb94c029b54678f98344fbc62b1c6547b24b7d8fb4c974fd87c30e0"
+        },
+        {
+          "source": "microservices/transport/contracts/affinity/user-affinity-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/affinity/user-affinity-v1.openapi.json",
+          "sha256": "a8950d0fda6010205acd15017b7e954aa0696d40a329ad9c2e77f4d35d833c95"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-derived-updates-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-derived-updates-v1.openapi.json",
+          "sha256": "aa5b6bfa1cce096d27456ae3209a67a27d7543b9a844adecb6e82562dac9e1ec"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-measurement-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-measurement-v1.openapi.json",
+          "sha256": "51e8a72902fa6ea820125e3cb3f3dec41a856737626086cb1adad9dcfad6184b"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-membership-facts-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-membership-facts-v1.openapi.json",
+          "sha256": "d03f0cd160b7a36dcda47e8903f5eb8212158a18ffbea0e50d0779bd87bffd6f"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-moderation-details-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-moderation-details-v1.openapi.json",
+          "sha256": "7950632e784a4c9ee57ce4b4cbb732bd056f7373fc71fe1a73f60a01cacb96f6"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-moderation-projection-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-moderation-projection-v1.openapi.json",
+          "sha256": "bc9ecb788cba2af3586f92afc06c337ef99948504049822720e68f9b6726f86b"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-ownership-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-ownership-reads-v1.openapi.json",
+          "sha256": "421efaa169c1de10195b36c16783b8c61b02b025de1885ef38e8d30b29d9f7a6"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/asset-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/asset-privacy-v1.openapi.json",
+          "sha256": "86f1d756acbf400d75be85e94723cd99eb1a9a1e89742daaba85af8755c74974"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/assets-job-scopes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/assets-job-scopes-v1.openapi.json",
+          "sha256": "39bd81a8e6466b68d69bbe70427682f3949cd99d7b6340a8bfff0d0f5faf5d74"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/assets-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/assets-media-v1.openapi.json",
+          "sha256": "b32cdd3b57d58b5c1d5f602ee69cf5a9ea4163bbf5b7d8ea5b31e55db802049b"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/assets-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/assets-v1.openapi.json",
+          "sha256": "85a4478c9266b1dc9a3ad8fe978553679f66a3a7887b6378133a17fe2d623bfa"
+        },
+        {
+          "source": "microservices/transport/contracts/assets/ticket-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/assets/ticket-reads-v1.openapi.json",
+          "sha256": "0731ef96b032733ada50ed8883eba5ce0128e1fe7153629517d9e8752ed6ce5b"
+        },
+        {
+          "source": "microservices/transport/contracts/campaigns/campaign-catalog-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/campaigns/campaign-catalog-v1.openapi.json",
+          "sha256": "74ff6fd220053e667a4d98197c8b9486298b27b5fd0e35924d53f93a81d68bf0"
+        },
+        {
+          "source": "microservices/transport/contracts/campaigns/campaigns-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/campaigns/campaigns-media-v1.openapi.json",
+          "sha256": "2e9f2a95cfd1f32c7687dad4d1db64a7a1c65a2c2c83b11d673a17088c549122"
+        },
+        {
+          "source": "microservices/transport/contracts/campaigns/campaigns-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/campaigns/campaigns-v1.openapi.json",
+          "sha256": "cc00aad7942e2fb7adc3f3a7cd594f6ce0916449100bd0e7f61ee9e126f36016"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/attachment-lifecycle-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/attachment-lifecycle-v1.openapi.json",
+          "sha256": "d6874f19ff14509fef3dc51732593e52279658768fa30425e326baf9206e3403"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/campaign-conversations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/campaign-conversations-v1.openapi.json",
+          "sha256": "9c38e3590d549cb767289d8f1d4c2f12f7f083336573f7139bb2b640e74710fb"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/case-conversations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/case-conversations-v1.openapi.json",
+          "sha256": "dae4160be547c1f2637b5250692e1e7c463144f10951877269a04ec2a1588c8e"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-directory-v1.openapi.json",
+          "sha256": "80fcd4c9dee208d3bb576388718145114395e095404a91413faf601a38ce63cd"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-measurement-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-measurement-v1.openapi.json",
+          "sha256": "92352524721a672d3bf867c7de82699e9d59d29cc6ee855069a89636515d4edf"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-media-v1.openapi.json",
+          "sha256": "4a1338f2a8994257f8b09be10bb88bc986a8a672099e768cdd7c7759a7fffcf4"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-privacy-v1.openapi.json",
+          "sha256": "47361f81aa568deb50b6d9393b5ef0a527df4a43a8e3642f11c845cba78a16c6"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-queries-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-queries-v1.openapi.json",
+          "sha256": "b8db36699edd60a6832b116dabd83c1f4be992b6f694f8ec74673a27174d0866"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-review-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-review-v1.openapi.json",
+          "sha256": "ba168bb45c1fb6f4609a914ecd093a7ec2f5de4e6c3c705906325c72ce8ea161"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/contact-permissions-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/contact-permissions-v1.openapi.json",
+          "sha256": "51ca98dfeb94e612f9ea010558c91b3a63d0f1453c6dd98611ff44066e67b5b3"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/event-conversations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/event-conversations-v1.openapi.json",
+          "sha256": "11649856309d68d349128beff3bf6c26fb75f4f5642eb30935506adee9dd584a"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/support-messages-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/support-messages-v1.openapi.json",
+          "sha256": "a2abd4b9ea218c69292eba0c2a9f6169f3d0824f6d199b0e2b0aefcea7dfc037"
+        },
+        {
+          "source": "microservices/transport/contracts/community/announcement-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/announcement-directory-v1.openapi.json",
+          "sha256": "3399bd90665452b4ca2189942009c60c51fc8735668b1f107e2f09b7b13cb1be"
+        },
+        {
+          "source": "microservices/transport/contracts/community/announcements-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/announcements-v1.openapi.json",
+          "sha256": "8a02b38690d7582830dcde14fa1e8666bba2073803eddedb119cf32027f32fc2"
+        },
+        {
+          "source": "microservices/transport/contracts/community/case-participants-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/case-participants-v1.openapi.json",
+          "sha256": "38b15d4725c244e8b50a93c9e73e079716c6122a087f15436cab9298a5185916"
+        },
+        {
+          "source": "microservices/transport/contracts/community/cases-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/cases-v1.openapi.json",
+          "sha256": "bf34949695cd85ede059a9fe424d5cb8a79543b45a693c6dcf78225220daa1c8"
+        },
+        {
+          "source": "microservices/transport/contracts/community/community-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/community-media-v1.openapi.json",
+          "sha256": "5603f84729d6ceec370b201c6ef02d4852298f85df3d697698ffd76d6912412c"
+        },
+        {
+          "source": "microservices/transport/contracts/community/scheduled-cases-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/scheduled-cases-v1.openapi.json",
+          "sha256": "969e2d18be4f95f1625362089518348e2ffcf8b2a0c07f1f07c8d2478c152492"
+        },
+        {
+          "source": "microservices/transport/contracts/community/service-offerings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/community/service-offerings-v1.openapi.json",
+          "sha256": "32487beb1f6bf3a8a34bd43e5bd428ded1693c359b9d97bc1aa27916b2458e4d"
+        },
+        {
+          "source": "microservices/transport/contracts/content/administrative-access-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/administrative-access-v1.openapi.json",
+          "sha256": "ff1fa89eb9a9b7737023de6bec7aa43e9e7af8fb500b0f3d075654da4615a3d1"
+        },
+        {
+          "source": "microservices/transport/contracts/content/administrative-actors-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/administrative-actors-v1.openapi.json",
+          "sha256": "d7be320e8202fdda80be47ea72ae2c2cdebb0aa664758b74fcf5c34bedd95048"
+        },
+        {
+          "source": "microservices/transport/contracts/content/content-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/content-media-v1.openapi.json",
+          "sha256": "5df033db4624ddd2e65f94268e17dddb98cf64ed7e770733f87a521277fd66a9"
+        },
+        {
+          "source": "microservices/transport/contracts/content/content-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/content-privacy-v1.openapi.json",
+          "sha256": "430bed48901dcfc0f768a1e346c2f712b483daa4f692409b92e795b0a28a18a1"
+        },
+        {
+          "source": "microservices/transport/contracts/content/content-registration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/content-registration-v1.openapi.json",
+          "sha256": "430fc53de9ee8de8e67b83816d8a6c47cfe51d52c3eb294a6c6c1e4c71eafc5c"
+        },
+        {
+          "source": "microservices/transport/contracts/content/content-statistics-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/content-statistics-v1.openapi.json",
+          "sha256": "92d86b29bf522020acab1ad7367bcdf21fdf957f4f64c67ef9334a3d2c25daa2"
+        },
+        {
+          "source": "microservices/transport/contracts/content/idea-administration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/idea-administration-v1.openapi.json",
+          "sha256": "e57db7255814b70007f55ad279eccf9fe2d572a0345a531560b0d4c87644a03e"
+        },
+        {
+          "source": "microservices/transport/contracts/content/user-feedback-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/user-feedback-v1.openapi.json",
+          "sha256": "d1b4ccb539f00654b75c65c7b8324381fff0559dcfad4d6ab0ffe9ba6d79eeaf"
+        },
+        {
+          "source": "microservices/transport/contracts/content/user-reports-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/content/user-reports-v1.openapi.json",
+          "sha256": "e0e744b74c6966c32598dbcef29080dc5aad24adcaeaba4e7a894a19e3f88e96"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-links-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-links-v1.openapi.json",
+          "sha256": "ab4cb6ea2ecd6abafa77139ac1629edf9631c6b092847d3f1f8ffa6e43685303"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-privacy-v1.openapi.json",
+          "sha256": "9949d87716d2649c168c86bea9a7652c4188de8444d3dbd601b592aa712d03c8"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-rendering-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-rendering-v1.openapi.json",
+          "sha256": "a97e2b4da863874741b65ccf69d1590f3db2b011a1ba57a92742c9399caa4e23"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-sending-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-sending-v1.openapi.json",
+          "sha256": "56179676c7d49f6c4bc7a1fcc799d81396fec231796feb4e098b3d252159b7e2"
+        },
+        {
+          "source": "microservices/transport/contracts/email/scheduled-messages-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/scheduled-messages-v1.openapi.json",
+          "sha256": "7529008f3c592ba75cdc07fa470917b08b20251d94b8568a1637cf7e7524acce"
+        },
+        {
+          "source": "microservices/transport/contracts/email/user-activity-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/user-activity-v1.openapi.json",
+          "sha256": "a4c06c28e2b786862dda3245a7da9428fdb3b0baa94c4c75633225b6e7174b8d"
+        },
+        {
+          "source": "microservices/transport/contracts/events/asset-memberships-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/asset-memberships-v1.openapi.json",
+          "sha256": "e4b797d03160f7aa1ac7479e06b3dde53d00dbd357cf510070b6c433e69da23f"
+        },
+        {
+          "source": "microservices/transport/contracts/events/checkout-memberships-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/checkout-memberships-v1.openapi.json",
+          "sha256": "c86bc30bb492cac0860927f21e220f829956679592ad9deb227ff59867f9ce94"
+        },
+        {
+          "source": "microservices/transport/contracts/events/community-memberships-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/community-memberships-v1.openapi.json",
+          "sha256": "7876e4ac73a17ce00dc6177f97c4e61c4db7de82597255964881cfb7dcfb8e3f"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-checkout-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-checkout-v1.openapi.json",
+          "sha256": "c1f7da5ebdee7788f24a6e3c4a263895e6cda9be9d514ba52da38132d9ccb956"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-derived-updates-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-derived-updates-v1.openapi.json",
+          "sha256": "42f18feb674fef91ce18c98e034dcd37e9d9a92be45c5d40713f36b28912990a"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-home-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-home-reads-v1.openapi.json",
+          "sha256": "c2ad5d1e4759a70a38cedf3b5c0b900f0a46d8639b4cfda8ec04c76f6feb6b4c"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-measurement-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-measurement-v1.openapi.json",
+          "sha256": "9ad1c04469f36a309e7899af37b53ec4b13f13acad76f2d617fd5fe18bd0ad72"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-membership-facts-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-membership-facts-v1.openapi.json",
+          "sha256": "2e804372dbfa2d04bfaa5708aa298695ba9654493e2c68fb34d18b5e61406d86"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-operations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-operations-v1.openapi.json",
+          "sha256": "81766ebbd1eb83e7fdd2a36c5c04393c249d6c601f4896e91a275a89147fe862"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-ownership-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-ownership-reads-v1.openapi.json",
+          "sha256": "1d1be916e53eccbee6d50fdc292378fe35286d0a60abf1315686fcb5ccd18003"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-privacy-v1.openapi.json",
+          "sha256": "f23948207b616cc5d7a5fbed4036525a6687e421d23b2b5f4fbdc9bda06f4d6f"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-resource-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-resource-directory-v1.openapi.json",
+          "sha256": "06afdbc46edcf2ff8df4599774077b6131b24cc32a845edc1d72d22ff2138222"
+        },
+        {
+          "source": "microservices/transport/contracts/events/event-watch-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/event-watch-directory-v1.openapi.json",
+          "sha256": "e40e8078024f88fc9b91249d89db2307c1ad08746e201d9de2770a69f36ee46a"
+        },
+        {
+          "source": "microservices/transport/contracts/events/events-job-scopes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/events-job-scopes-v1.openapi.json",
+          "sha256": "dd5607e74048a735600e414c31d6238b4279f8ee020af47dac4f772d061dda57"
+        },
+        {
+          "source": "microservices/transport/contracts/events/events-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/events-media-v1.openapi.json",
+          "sha256": "f3559d9d9f105656cdee4ad6c842b557c4b4480feab8988b81cb4eec01cebde7"
+        },
+        {
+          "source": "microservices/transport/contracts/events/member-attention-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/member-attention-v1.openapi.json",
+          "sha256": "b2a00ee349e4fe1174813dd37da1885cde9022376e19a10836c5a21ffb93ad76"
+        },
+        {
+          "source": "microservices/transport/contracts/events/member-audience-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/member-audience-v1.openapi.json",
+          "sha256": "768d0dc4b7ed90cbe790b87c1ac0dfa9d294377cf538dea08d6a88ff6d088970"
+        },
+        {
+          "source": "microservices/transport/contracts/events/member-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/member-directory-v1.openapi.json",
+          "sha256": "e538715e70895c8094e80cfab5f6b3df8920f9a7b490895581455d1f7b97b9ff"
+        },
+        {
+          "source": "microservices/transport/contracts/events/mingle-encounters-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/mingle-encounters-v1.openapi.json",
+          "sha256": "96d7cc3cc40873d3df29f590e312e6949f056b13595098d07be97551a29d3de1"
+        },
+        {
+          "source": "microservices/transport/contracts/events/organizer-event-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/organizer-event-reads-v1.openapi.json",
+          "sha256": "be40d2597446811955619650227b125f5a3e44a5856ecd6ab09492680c04e2da"
+        },
+        {
+          "source": "microservices/transport/contracts/events/participation-tickets-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/participation-tickets-v1.openapi.json",
+          "sha256": "6e421132dedbc3010944af02f9cb4ca55669cc78035a0531b46d909c984f1a5f"
+        },
+        {
+          "source": "microservices/transport/contracts/events/partner-invitation-admission-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/partner-invitation-admission-v1.openapi.json",
+          "sha256": "be5a5fbaa68b986958a76c36f717dd2d987f4ade5f38cc336cbf7c02b6ee8341"
+        },
+        {
+          "source": "microservices/transport/contracts/events/random-group-assignment-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/random-group-assignment-v1.openapi.json",
+          "sha256": "c0c7f7ecf25b0e5ce309a83e26aa10ddc9c8bcfae5162cc9c3a642b8d969bb40"
+        },
+        {
+          "source": "microservices/transport/contracts/events/resource-assignments-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/resource-assignments-v1.openapi.json",
+          "sha256": "fa199badcb0debd449bcfcfcb7a777ecd9eb6a418f106e3fcde999b96ab6a49d"
+        },
+        {
+          "source": "microservices/transport/contracts/events/ticket-audit-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/events/ticket-audit-v1.openapi.json",
+          "sha256": "ed0240c60427b292df109f8b6381cfdb5e0f1208bf1347065354226ee1bfd84c"
+        },
+        {
+          "source": "microservices/transport/contracts/evidence-index.json",
+          "destination": "config/microservices/transport/contracts/evidence-index.json",
+          "sha256": "46f6c5aedfa061cc17ee694890d5bf1ba7010f04a4ccd172a62a577133a399c7"
+        },
+        {
+          "source": "microservices/transport/contracts/feedback/feedback-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/feedback/feedback-directory-v1.openapi.json",
+          "sha256": "62cb344a1b35ac3e49059a8cc0ea7b4c3877681f9d1beef1fdae160c642743f1"
+        },
+        {
+          "source": "microservices/transport/contracts/feedback/feedback-eligibility-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/feedback/feedback-eligibility-v1.openapi.json",
+          "sha256": "f5998956800c24f72534b65677d65867672df605d29dfd1ffb4389a807b84d9a"
+        },
+        {
+          "source": "microservices/transport/contracts/feedback/feedback-measurement-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/feedback/feedback-measurement-v1.openapi.json",
+          "sha256": "b306e71bbce74e1aa2b48e5aa89bd6f07a4e68465a862477af8f59aba4587aaa"
+        },
+        {
+          "source": "microservices/transport/contracts/feedback/feedback-preparation-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/feedback/feedback-preparation-v1.openapi.json",
+          "sha256": "1d874e05d03ca56928c10a5eec7ed7b6725ee1a672af4028103cf07029ce0ffd"
+        },
+        {
+          "source": "microservices/transport/contracts/feedback/feedback-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/feedback/feedback-privacy-v1.openapi.json",
+          "sha256": "df575204cf6dc61eb4c13d848616281b3a1142db1c92079d12d366242f9b04ef"
+        },
+        {
+          "source": "microservices/transport/contracts/groups/group-administration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/groups/group-administration-v1.openapi.json",
+          "sha256": "96f995cb72d96a4c779559d39e0c4f7065a01a1825f7f34fd84c811d2e97752c"
+        },
+        {
+          "source": "microservices/transport/contracts/groups/group-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/groups/group-directory-v1.openapi.json",
+          "sha256": "3ba0d28699d5aa50543135a1c2d9261bbbbe72862c594d9387e521e165a5740a"
+        },
+        {
+          "source": "microservices/transport/contracts/groups/groups-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/groups/groups-media-v1.openapi.json",
+          "sha256": "7b23957e5f8c0d93a8e0d89b8ee9df7ce1d59938a27f6782c46fd53b0f29577d"
+        },
+        {
+          "source": "microservices/transport/contracts/groups/integration-groups-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/groups/integration-groups-v1.openapi.json",
+          "sha256": "d9b5d9b1cfe75512733700790862174f71414ddf483e2a0d3e222e9a5b928aca"
+        },
+        {
+          "source": "microservices/transport/contracts/groups/profile-workspace-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/groups/profile-workspace-v1.openapi.json",
+          "sha256": "d36427adeae7c45c4577b28f40448cb60f5ecbe76dee681388893ff26f5175b6"
+        },
+        {
+          "source": "microservices/transport/contracts/help/help-administration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/help/help-administration-v1.openapi.json",
+          "sha256": "c7ab743d5a568edddbc276f273f1a8883ca06e138f01fd8ad7411460be49caf0"
+        },
+        {
+          "source": "microservices/transport/contracts/help/help-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/help/help-privacy-v1.openapi.json",
+          "sha256": "4b38cc6bab2008c04230b780cca1c7e89879ed3a7028849f8d740e66a2615c74"
+        },
+        {
+          "source": "microservices/transport/contracts/help/public-help-content-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/help/public-help-content-v1.openapi.json",
+          "sha256": "6f9362680b7c7518a17ba1a20ebead7244df9bcec154c2f95dda1d21f5cf51d3"
+        },
+        {
+          "source": "microservices/transport/contracts/integrations/asset-changes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/integrations/asset-changes-v1.openapi.json",
+          "sha256": "ca07672d7c4621d14f52ba8d1d525a113070dc5b827f21a94831390f88a4920f"
+        },
+        {
+          "source": "microservices/transport/contracts/integrations/event-changes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/integrations/event-changes-v1.openapi.json",
+          "sha256": "14e744a9cdf40cff733d7509c0911f1db1ec28246f51c13a50184ef19198726b"
+        },
+        {
+          "source": "microservices/transport/contracts/integrations/participant-statistics-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/integrations/participant-statistics-v1.openapi.json",
+          "sha256": "eaab7b97cf002c877713c0567810edafe90cefb5b6475293d7bd56e5d4b9faed"
+        },
+        {
+          "source": "microservices/transport/contracts/integrations/role-attention-events-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/integrations/role-attention-events-v1.openapi.json",
+          "sha256": "51e3085a3d8ebe66316fe3b9e2e81e6a6e37b7ed690e9ac51a94ceb38506097f"
+        },
+        {
+          "source": "microservices/transport/contracts/localization/localization-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/localization/localization-v1.openapi.json",
+          "sha256": "23d085c0a322b4db2616f652ff929a0fa03a5c8e8620e7fb8a4a23fe201c286a"
+        },
+        {
+          "source": "microservices/transport/contracts/localization/message-translations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/localization/message-translations-v1.openapi.json",
+          "sha256": "7692e2ec129edb79b269b38039dc395024b20f0449d29fbde819e9081f32552c"
+        },
+        {
+          "source": "microservices/transport/contracts/media/image-uploads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/media/image-uploads-v1.openapi.json",
+          "sha256": "1e51fe5419494e2020775478686650ce60103e7748a2a04088c4467eba8e5ebf"
+        },
+        {
+          "source": "microservices/transport/contracts/media/media-cleanup-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/media/media-cleanup-v1.openapi.json",
+          "sha256": "f5871e3f7ede6af21ca53ab902994f1a82028650df9bc5dcb71a7fc5ec3f365d"
+        },
+        {
+          "source": "microservices/transport/contracts/media/media-deletion-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/media/media-deletion-v1.openapi.json",
+          "sha256": "4ce5e7066f6b20cab1711b9b169a99e69c4815e3495a6d34516982b38f752ecb"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/event-invitation-notifications-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/event-invitation-notifications-v1.openapi.json",
+          "sha256": "c8fe6adc11b2ab6307dae626786f2d5214b2db6b7d8565cc2cc7726b8f3bd764"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-administration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-administration-v1.openapi.json",
+          "sha256": "97bc1fb0db882fc3f61001d0a43dc3077addeec69c12e5e6c5d5505fd20eddca"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-catalog-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-catalog-v1.openapi.json",
+          "sha256": "755fd1bf8fb46a2d50f465b4c9bff5b63a432ac8f1fb2be6aaffc5c56d31b522"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-delivery-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-delivery-v1.openapi.json",
+          "sha256": "10f9a5018992ebe6cf09e19251f298b2ad12261649c66175241534a9ef519e0f"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-jobs-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-jobs-v1.openapi.json",
+          "sha256": "d0d5303704ee84b044d87dc86c51822deb0664c9de7992bb73668ca533ea72e7"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-privacy-v1.openapi.json",
+          "sha256": "ba905c33530a164a138d23599830e406f37d6aaa37b48cb6eddaa2aa886df062"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-reads-v1.openapi.json",
+          "sha256": "46ec8244560975ca6e2be1feeb18006f775b8f1768ca76fc288532e4e96dc03e"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/role-notifications-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/role-notifications-v1.openapi.json",
+          "sha256": "e999cc297c45defb5340a76f3105e56b675fab495f4cf2946be1a7585ebf572e"
+        },
+        {
+          "source": "microservices/transport/contracts/operator/global-identity-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/operator/global-identity-privacy-v1.openapi.json",
+          "sha256": "22c08d9c9edb0ab2b4060b4dabdc240c733f71c9258bb95d3fe1c2f3cfe4e124"
+        },
+        {
+          "source": "microservices/transport/contracts/operator/operator-reports-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/operator/operator-reports-v1.openapi.json",
+          "sha256": "c6c63d1ea96ac8e6c7712da801af7b5428acb9c646bbba86fd16be2db75be552"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/affiliate-registrations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/affiliate-registrations-v1.openapi.json",
+          "sha256": "b015b0da72121f61336a205abd66190be3280e9ea79595562fe7115ca3e26cb9"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/affiliates-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/affiliates-v1.openapi.json",
+          "sha256": "1c86918235b9762433483c3310c37afedd101fd7e03453ae4bd9eca67af37615"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/asset-payments-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/asset-payments-v1.openapi.json",
+          "sha256": "48dddb30b07c3070f9505e2ca7fe6a16230b9f2a5b15f24d998e34cbcdecc89b"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/checkout-baskets-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/checkout-baskets-v1.openapi.json",
+          "sha256": "c01e60bb05942fc93b1f235597b43480073c89b21c63753ec672125d70381566"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/checkout-pricing-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/checkout-pricing-v1.openapi.json",
+          "sha256": "0c27344b7c8ce80320ac8e9750c055842e1edc8da34df8abd9646bd797ff336f"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/checkout-results-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/checkout-results-v1.openapi.json",
+          "sha256": "4f5ddcf61f8f8e7eaa99506807cd6426d76d0470f28de85c98d53f0968962c7d"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/current-payment-provider-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/current-payment-provider-v1.openapi.json",
+          "sha256": "23288e7b76c75413f4d112160dcbe673e1d6cf4c34e518d5c4d4a3dfa6dc5370"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/event-payment-cancellations-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/event-payment-cancellations-v1.openapi.json",
+          "sha256": "c56502e7529e80da9868557994eff8f665231165d0b5edebc2765919917b8c97"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/event-payments-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/event-payments-v1.openapi.json",
+          "sha256": "9658ff11520ddea5cc13c8ecebe0a1775f09a0369b1450a8fbb322e4447a3118"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/exchange-rate-configuration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/exchange-rate-configuration-v1.openapi.json",
+          "sha256": "76c9aa468f0b425738c9ec7eddd2701c8f976c45b5cb4b277c22efdd6b976bb4"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/exchange-rate-refresh-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/exchange-rate-refresh-v1.openapi.json",
+          "sha256": "60a1c134618c87676cf5ae2a300654452f6de74e449de1d93b131cc621201c2c"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/payment-methods-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/payment-methods-v1.openapi.json",
+          "sha256": "a7fc2a05e9e4b6106d9bd342701ce249cfbcce00d74abe2a0f435af9f491317f"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/payment-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/payment-privacy-v1.openapi.json",
+          "sha256": "c2e9b56794f07893011d51d9ca508f01ef3e40f5c4b8e095fb3c657a8d40da95"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/payment-providers-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/payment-providers-v1.openapi.json",
+          "sha256": "269bfabe9e8602e825fda49511d84ec5e522a7272685f18cd218d268e3763062"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/payment-refunds-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/payment-refunds-v1.openapi.json",
+          "sha256": "7d5a69ce97f1811bb74f1a5cbb2362e2bbf7480bba6ca16df1e478d77f59ff14"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/payment-revenue-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/payment-revenue-v1.openapi.json",
+          "sha256": "7ee5d655ef51b0a4e11a5531128be0330129b41cf67deb45ffbc277e2f4b234a"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/payment-simulator-configuration-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/payment-simulator-configuration-v1.openapi.json",
+          "sha256": "1039840157294b5665f21e9800123576835fd6bb0b1c8dc03946b5b2d7344b8f"
+        },
+        {
+          "source": "microservices/transport/contracts/payments/service-slot-pricing-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/payments/service-slot-pricing-v1.openapi.json",
+          "sha256": "74ba84f6cf3afe8202bf7dc7f9979db2446f85fe2f1d65fc301522979656c8fd"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/administrator-settings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/administrator-settings-v1.openapi.json",
+          "sha256": "0c07b457584168670eeaa9c8a32aebf6d9c8d12a555eeeab45997bc836a08d09"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/authentication-mode-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/authentication-mode-v1.openapi.json",
+          "sha256": "354aabee6d524623bb8cad7da357b08cf10733d1c409a6222992d8560a59f418"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/country-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/country-directory-v1.openapi.json",
+          "sha256": "871d4c78c8b15aa489c8bf19661fedb4a95331452c383aa0d333433a4ff342b1"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/deployment-branding-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/deployment-branding-v1.openapi.json",
+          "sha256": "7c759a6181d698fc8a67927df617642398a017091c55b037881e04e40feddee0"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/deployment-settings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/deployment-settings-v1.openapi.json",
+          "sha256": "243307d07f582cc601e3b7a5394345f50052391a7a8d6a0470d8fc1b0921d7ab"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/email-secrets-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/email-secrets-v1.openapi.json",
+          "sha256": "c508e0c5b6f68b136f2bb0e8ced428482e072fcc664369028c786f47b775ffed"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/firebase-push-delivery-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/firebase-push-delivery-v1.openapi.json",
+          "sha256": "f9554839b7d8e19ac42148837c6a9063020c3676d4bb7d6e24e9374fd731cdce"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/job-audience-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/job-audience-v1.openapi.json",
+          "sha256": "c41c75160091c5caa5869100758a027b2319e67c746a43e0ee8a61ffb4942c85"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/model-status-changes-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/model-status-changes-v1.openapi.json",
+          "sha256": "ff5dc7c6689aa4d92c35c52656a6fffa4ac839c6b14806aa181873b949040377"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/operator-notification-settings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/operator-notification-settings-v1.openapi.json",
+          "sha256": "425a925324b5638003832b11251fdb33962c295dbde77f4342ea53e58d67fade"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/payment-credential-secrets-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/payment-credential-secrets-v1.openapi.json",
+          "sha256": "86d715f6636609d8d2dbf0f5c336cf89a54780a5edc567b829a5927a1e7ab4a2"
+        }
+      ],
+      "testJavaIncludes": [
+        "com/raxim/myscoutee/microservices/**",
+        "com/raxim/myscoutee/common/config/JsonConfig.java",
+        "com/raxim/myscoutee/common/config/PlatformParametersService.java",
+        "com/raxim/myscoutee/common/util/JsonUtil.java",
+        "com/raxim/myscoutee/domain/email/config/EmailProperties.java",
+        "com/raxim/myscoutee/domain/groups/service/GroupMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/platform/service/JobGroupScopeService.java",
+        "com/raxim/myscoutee/domain/platform/service/AppSettingsService.java",
+        "com/raxim/myscoutee/domain/platform/document/AppSettings.java",
+        "com/raxim/myscoutee/domain/platform/repository/AppSettingsRepository.java",
+        "com/raxim/myscoutee/domain/groups/service/GroupDirectoryService.java",
+        "com/raxim/myscoutee/domain/groups/service/GroupAdministrationService.java",
+        "com/raxim/myscoutee/domain/groups/service/CommunityAccessService.java",
+        "com/raxim/myscoutee/domain/groups/document/CommunityGroup.java",
+        "com/raxim/myscoutee/domain/groups/repository/CommunityGroupsRepository.java",
+        "com/raxim/myscoutee/domain/community/service/CommunityMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/community/service/CaseParticipantsService.java",
+        "com/raxim/myscoutee/domain/community/service/CommunityCaseCounterWork.java",
+        "com/raxim/myscoutee/domain/community/service/CommunityVoteCounterWork.java",
+        "com/raxim/myscoutee/domain/community/document/CommunityScheduledTask.java",
+        "com/raxim/myscoutee/domain/community/document/CommunityAnnouncement.java",
+        "com/raxim/myscoutee/domain/community/repository/CommunityScheduledTasksRepository.java",
+        "com/raxim/myscoutee/domain/community/repository/CommunityAnnouncementsRepository.java",
+        "com/raxim/myscoutee/domain/community/repository/ServiceCasesRepository.java",
+        "com/raxim/myscoutee/domain/community/document/ServiceCase.java",
+        "com/raxim/myscoutee/domain/community/mapper/CaseConversationMapper.java",
+        "com/raxim/myscoutee/domain/assets/service/AssetMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/events/service/EventMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/events/service/MemberDirectoryService.java",
+        "com/raxim/myscoutee/domain/events/service/CommunityMembershipService.java",
+        "com/raxim/myscoutee/domain/feedback/service/FeedbackDirectoryService.java",
+        "com/raxim/myscoutee/domain/feedback/document/FeedbackAnswer.java",
+        "com/raxim/myscoutee/domain/feedback/repository/FeedbackAnswersRepository.java",
+        "com/raxim/myscoutee/domain/events/service/EventVipInvitation.java",
+        "com/raxim/myscoutee/domain/events/document/ActivityMember.java",
+        "com/raxim/myscoutee/domain/events/repository/ActivityMembersRepository.java",
+        "com/raxim/myscoutee/domain/campaigns/service/CampaignCatalogService.java",
+        "com/raxim/myscoutee/domain/campaigns/document/Campaign.java",
+        "com/raxim/myscoutee/domain/content/service/ContentMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/content/service/UserFeedbackService.java",
+        "com/raxim/myscoutee/domain/content/service/CommunityReportService.java",
+        "com/raxim/myscoutee/domain/content/document/UserReportSubmission.java",
+        "com/raxim/myscoutee/domain/content/repository/UserReportSubmissionsRepository.java",
+        "com/raxim/myscoutee/domain/content/document/UserFeedbackSubmission.java",
+        "com/raxim/myscoutee/domain/content/repository/UserFeedbackSubmissionsRepository.java",
+        "com/raxim/myscoutee/domain/chat/service/ChatMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/chat/service/ChatReviewService.java",
+        "com/raxim/myscoutee/domain/chat/repository/ChatMessagesRepository.java",
+        "com/raxim/myscoutee/domain/chat/service/ChatDirectoryService.java",
+        "com/raxim/myscoutee/domain/chat/service/ContactPermissionService.java",
+        "com/raxim/myscoutee/domain/chat/repository/ContactChatAccessRepository.java",
+        "com/raxim/myscoutee/domain/chat/document/ContactChatAccess.java",
+        "com/raxim/myscoutee/domain/chat/repository/ChatsRepository.java",
+        "com/raxim/myscoutee/domain/chat/document/Chat.java",
+        "com/raxim/myscoutee/domain/chat/document/ChatMessage.java",
+        "com/raxim/myscoutee/domain/notifications/service/RoleNotificationService.java",
+        "com/raxim/myscoutee/domain/notifications/service/NotificationCatalogService.java",
+        "com/raxim/myscoutee/domain/notifications/repository/UserNotificationPageRepository.java",
+        "com/raxim/myscoutee/domain/notifications/repository/NotificationOutboxRepository.java",
+        "com/raxim/myscoutee/domain/notifications/repository/NotificationRuleConfigsRepository.java",
+        "com/raxim/myscoutee/domain/notifications/repository/NotificationTemplatesRepository.java",
+        "com/raxim/myscoutee/domain/notifications/document/UserNotification.java",
+        "com/raxim/myscoutee/domain/notifications/document/NotificationOutboxItem.java",
+        "com/raxim/myscoutee/domain/notifications/document/NotificationRuleConfig.java",
+        "com/raxim/myscoutee/domain/notifications/document/NotificationTemplate.java",
+        "com/raxim/myscoutee/common/mongo/MessageTemplateMetadata.java",
+        "com/raxim/myscoutee/domain/accounts/service/ExperienceDirectoryService.java",
+        "com/raxim/myscoutee/domain/accounts/repository/UserExperienceProfilesRepository.java",
+        "com/raxim/myscoutee/domain/accounts/document/UserExperienceProfile.java",
+        "com/raxim/myscoutee/domain/affinity/service/AffinityRecomputeTaskService.java",
+        "com/raxim/myscoutee/domain/affinity/config/AffinityRecomputeProperties.java",
+        "com/raxim/myscoutee/domain/affinity/service/ConfigurationCatalogService.java",
+        "com/raxim/myscoutee/domain/affinity/service/AbsoluteAffinityService.java",
+        "com/raxim/myscoutee/domain/affinity/repository/AffinityConfigsRepository.java",
+        "com/raxim/myscoutee/domain/affinity/document/AffinityConfig.java",
+        "com/raxim/myscoutee/domain/affinity/service/RatingDirectoryService.java",
+        "com/raxim/myscoutee/domain/affinity/repository/UserRatesRepository.java",
+        "com/raxim/myscoutee/domain/affinity/document/UserRate.java",
+        "com/raxim/myscoutee/domain/affinity/service/EdgeDirectoryService.java",
+        "com/raxim/myscoutee/domain/affinity/repository/UserAffinityEdgesRepository.java",
+        "com/raxim/myscoutee/domain/affinity/document/UserAffinityEdge.java",
+        "com/raxim/myscoutee/domain/affinity/service/RecomputeQueueService.java",
+        "com/raxim/myscoutee/domain/affinity/repository/AffinityRecomputeTasksRepository.java",
+        "com/raxim/myscoutee/domain/affinity/document/AffinityRecomputeTask.java",
+        "com/raxim/myscoutee/domain/localization/service/TranslationService.java"
+      ]
+    },
+    "myscoutee-template": {
+      "revision": "ec0e0e97f99be2e815c8e289c37d99e5fb988cd8",
+      "moves": [
+        {
+          "source": "microservices/README.md",
+          "destination": "guides/microservices/README.md",
+          "sha256": "ab168494bb4ad61f572dca244c7e01aa772b93652a4d3aafb9fa6c2de56f0a18"
+        },
+        {
+          "source": "microservices/assemblies.json",
+          "destination": "config/microservices/assemblies.json",
+          "sha256": "024dd246e41d5ee5bb4b8d89aaf4a0542d195bd7101ba9cf25925ed7a5063438"
+        },
+        {
+          "source": "microservices/deploy/images.lock.json",
+          "destination": "config/microservices/deploy/images.lock.json",
+          "sha256": "6cd029391bf6a1d53f6300139d2ce111c4ba945c9d525194fe73e0f4a0794f4e"
+        },
+        {
+          "source": "microservices/deploy/runtime.json",
+          "destination": "config/microservices/deploy/runtime.json",
+          "sha256": "2b3f8e7b938d046992976cb44b7125438153e1e8f355cd4e59f86d322194d323"
+        },
+        {
+          "source": "microservices/tools/e2e-media.py",
+          "destination": "tools/microservices/e2e-media.py",
+          "sha256": "87887dc277ec515084a16e0a392a7e2e508540adad83b41f457aa53a6a2947d5"
+        },
+        {
+          "source": "microservices/tools/e2e-mongo.py",
+          "destination": "tools/microservices/e2e-mongo.py",
+          "sha256": "d7f7256fc076029d52b5c62184e37f588e50d718f63a6ca9511af20c16e53dfa"
+        },
+        {
+          "source": "microservices/tools/seed-mongo.py",
+          "destination": "tools/microservices/seed-mongo.py",
+          "sha256": "3de3f469d9b834cb2ce7ead2b7ea5e0373b6b9c512637c24ff795ee7803ab834"
+        },
+        {
+          "source": "microservices/tools/test_seed_staging.py",
+          "destination": "tools/microservices/test_seed_staging.py",
+          "sha256": "6dfe3af73188156f0da1e4ec989cc1838e3ac76ddba6171e75dfe421672e287f"
+        },
+        {
+          "source": "microservices/transport/bindings.json",
+          "destination": "config/microservices/transport/bindings.json",
+          "sha256": "6af3d3d0f30ee84cd495a9d27c68ee486324e398c34fc1fbe8a149600d0ee47a"
+        },
+        {
+          "source": "microservices/transport/contracts/access/access-permissions-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/access/access-permissions-v1.openapi.json",
+          "sha256": "7881033047449edf2d329b955c6041bf8cb7204ac4be3dce37abb704fa0a2dbf"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-consents-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-consents-v1.openapi.json",
+          "sha256": "3504b0727f78fde0d6018edfe31ab5122856944d716b2989ed7580ea60ac8028"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-devices-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-devices-v1.openapi.json",
+          "sha256": "10b0621d0a9010bf8e164bef2b5a7c69fbfc4f185ca101c06f943a5cb6450a76"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-media-sessions-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-media-sessions-v1.openapi.json",
+          "sha256": "f544e97306b758574f9c6651b92ae832d8e9c9a953369a64412fd96af26a22e0"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/account-notifications-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/account-notifications-v1.openapi.json",
+          "sha256": "4e120a4b8bc56f9bd9701ff02ed7a13b97e2959009a78d5024f02f2042c47c4f"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/actor-delegation-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/actor-delegation-v1.openapi.json",
+          "sha256": "42b1f22bba090f193fd13398043d9e940abc3d14ba28f0dca94601f25b060ce7"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/chat-counters-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/chat-counters-v1.openapi.json",
+          "sha256": "0a6bc5b69899a1a9c92f588bcfcd3b00bfa11399c9f2bb6b82ff262e7bb903cc"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-read-state-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-read-state-v1.openapi.json",
+          "sha256": "750ead5b7101e0cd7427a12d5bded7d4095257a9f830aebb0813b679cb183410"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/profile-summaries-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/profile-summaries-v1.openapi.json",
+          "sha256": "3365f228391c9b4fcad0b6436527f11a216b678db462d5efefd4d3d490cd6866"
+        },
+        {
+          "source": "microservices/transport/contracts/accounts/selected-profile-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/accounts/selected-profile-v1.openapi.json",
+          "sha256": "4dba871fe9cd20ac1e41df320cecf63d4c0c3af11626fb4125de56ae679713b0"
+        },
+        {
+          "source": "microservices/transport/contracts/administration/operational-telemetry-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/administration/operational-telemetry-v1.openapi.json",
+          "sha256": "7e5d5a48a0a2f1c8d290eff83ae8a912092a70056281d420d775f266b5e61d4d"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-directory-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-directory-v1.openapi.json",
+          "sha256": "80fcd4c9dee208d3bb576388718145114395e095404a91413faf601a38ce63cd"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-media-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-media-v1.openapi.json",
+          "sha256": "fb94c7221381343b573565c484324f99b2542b85530d17593b27731b1c19d25d"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-privacy-v1.openapi.json",
+          "sha256": "47361f81aa568deb50b6d9393b5ef0a527df4a43a8e3642f11c845cba78a16c6"
+        },
+        {
+          "source": "microservices/transport/contracts/chat/chat-queries-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/chat/chat-queries-v1.openapi.json",
+          "sha256": "b8db36699edd60a6832b116dabd83c1f4be992b6f694f8ec74673a27174d0866"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-links-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-links-v1.openapi.json",
+          "sha256": "ab4cb6ea2ecd6abafa77139ac1629edf9631c6b092847d3f1f8ffa6e43685303"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-rendering-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-rendering-v1.openapi.json",
+          "sha256": "a97e2b4da863874741b65ccf69d1590f3db2b011a1ba57a92742c9399caa4e23"
+        },
+        {
+          "source": "microservices/transport/contracts/email/email-sending-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/email/email-sending-v1.openapi.json",
+          "sha256": "56179676c7d49f6c4bc7a1fcc799d81396fec231796feb4e098b3d252159b7e2"
+        },
+        {
+          "source": "microservices/transport/contracts/evidence-index.json",
+          "destination": "config/microservices/transport/contracts/evidence-index.json",
+          "sha256": "6119f8b85f9076768a384a04a86fa242a8831e5115c41d772375e9d1400d2d36"
+        },
+        {
+          "source": "microservices/transport/contracts/help/help-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/help/help-privacy-v1.openapi.json",
+          "sha256": "4b38cc6bab2008c04230b780cca1c7e89879ed3a7028849f8d740e66a2615c74"
+        },
+        {
+          "source": "microservices/transport/contracts/integrations/role-attention-events-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/integrations/role-attention-events-v1.openapi.json",
+          "sha256": "51e3085a3d8ebe66316fe3b9e2e81e6a6e37b7ed690e9ac51a94ceb38506097f"
+        },
+        {
+          "source": "microservices/transport/contracts/localization/localization-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/localization/localization-v1.openapi.json",
+          "sha256": "872e4c1664720afb9b775f945eb227652bce53b126a61fc5932dbe5667d38531"
+        },
+        {
+          "source": "microservices/transport/contracts/media/media-cleanup-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/media/media-cleanup-v1.openapi.json",
+          "sha256": "f5871e3f7ede6af21ca53ab902994f1a82028650df9bc5dcb71a7fc5ec3f365d"
+        },
+        {
+          "source": "microservices/transport/contracts/media/media-deletion-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/media/media-deletion-v1.openapi.json",
+          "sha256": "4ce5e7066f6b20cab1711b9b169a99e69c4815e3495a6d34516982b38f752ecb"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-delivery-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-delivery-v1.openapi.json",
+          "sha256": "10f9a5018992ebe6cf09e19251f298b2ad12261649c66175241534a9ef519e0f"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-jobs-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-jobs-v1.openapi.json",
+          "sha256": "8ff7d6b7aa12ea39bc1f51d6b3eaed095b8fcc9191a8275c8503a10702b97d1e"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-privacy-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-privacy-v1.openapi.json",
+          "sha256": "ba905c33530a164a138d23599830e406f37d6aaa37b48cb6eddaa2aa886df062"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/notification-reads-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/notification-reads-v1.openapi.json",
+          "sha256": "46ec8244560975ca6e2be1feeb18006f775b8f1768ca76fc288532e4e96dc03e"
+        },
+        {
+          "source": "microservices/transport/contracts/notifications/role-notifications-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/notifications/role-notifications-v1.openapi.json",
+          "sha256": "e7e38398946e99a03ad01c15e540c15dadbdb8a83cb4b32cd99501887a1617b8"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/administrator-settings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/administrator-settings-v1.openapi.json",
+          "sha256": "0c07b457584168670eeaa9c8a32aebf6d9c8d12a555eeeab45997bc836a08d09"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/authentication-mode-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/authentication-mode-v1.openapi.json",
+          "sha256": "354aabee6d524623bb8cad7da357b08cf10733d1c409a6222992d8560a59f418"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/deployment-branding-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/deployment-branding-v1.openapi.json",
+          "sha256": "7c759a6181d698fc8a67927df617642398a017091c55b037881e04e40feddee0"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/email-secrets-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/email-secrets-v1.openapi.json",
+          "sha256": "c508e0c5b6f68b136f2bb0e8ced428482e072fcc664369028c786f47b775ffed"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/firebase-push-delivery-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/firebase-push-delivery-v1.openapi.json",
+          "sha256": "f9554839b7d8e19ac42148837c6a9063020c3676d4bb7d6e24e9374fd731cdce"
+        },
+        {
+          "source": "microservices/transport/contracts/platform/operator-notification-settings-v1.openapi.json",
+          "destination": "config/microservices/transport/contracts/platform/operator-notification-settings-v1.openapi.json",
+          "sha256": "425a925324b5638003832b11251fdb33962c295dbde77f4342ea53e58d67fade"
+        }
+      ],
+      "testJavaIncludes": [
+        "com/raxim/myscoutee/microservices/**",
+        "com/raxim/myscoutee/common/config/JsonConfig.java",
+        "com/raxim/myscoutee/common/util/JsonUtil.java",
+        "com/raxim/myscoutee/domain/platform/service/AppSettingsService.java",
+        "com/raxim/myscoutee/domain/platform/document/AppSettings.java",
+        "com/raxim/myscoutee/domain/platform/repository/AppSettingsRepository.java",
+        "com/raxim/myscoutee/domain/chat/service/ChatDirectoryService.java",
+        "com/raxim/myscoutee/domain/chat/repository/ChatsRepository.java",
+        "com/raxim/myscoutee/domain/chat/document/Chat.java",
+        "com/raxim/myscoutee/domain/chat/document/ChatMessage.java",
+        "com/raxim/myscoutee/domain/localization/service/TranslationService.java",
+        "com/raxim/myscoutee/domain/email/config/EmailProperties.java"
+      ]
+    }
+  },
+  "toolReview": {
+    "myscoutee-backend": [
+      {
+        "file": "audit-assemblies.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Check physical artifact ownership and list candidate remote dependencies.",
+        "imports": [
+          "argparse",
+          "hashlib",
+          "io",
+          "json",
+          "os",
+          "pathlib",
+          "re",
+          "transport_usage",
+          "zipfile"
+        ]
+      },
+      {
+        "file": "check-admin-identity.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Check administrator identity across moderation, help, notifications and affinity.",
+        "imports": [
+          "argparse",
+          "importlib",
+          "json",
+          "time",
+          "urllib.parse"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-browser.mjs",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-business.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Native contact mutations using disposable, owned DEMO actors.",
+        "imports": [
+          "argparse",
+          "concurrent.futures",
+          "contact_fault",
+          "fcntl",
+          "importlib",
+          "json",
+          "re",
+          "time",
+          "uuid",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-campaign-chat.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Read/rejection smoke checks for campaign chat ownership in KVM or monolith.",
+        "imports": [
+          "argparse",
+          "importlib",
+          "json",
+          "time",
+          "urllib.parse"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-contexts.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Check real assembly Spring contexts serially, without rebuilding images.",
+        "imports": [
+          "base64",
+          "json",
+          "os",
+          "pathlib",
+          "re",
+          "socket",
+          "subprocess",
+          "tempfile",
+          "time",
+          "uuid",
+          "workloads",
+          "yaml"
+        ]
+      },
+      {
+        "file": "check-current-monolith.sh",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-demo-selection.mjs",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-load.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Bounded authenticated read load, optionally with two assets replicas.",
+        "imports": [
+          "argparse",
+          "concurrent.futures",
+          "fcntl",
+          "importlib",
+          "json",
+          "math",
+          "pathlib",
+          "time",
+          "urllib.parse",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-minio.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Exercise the owned lab object store; optionally verify a pod restart.",
+        "imports": [
+          "argparse",
+          "fcntl",
+          "hashlib",
+          "os",
+          "pathlib",
+          "subprocess",
+          "uuid",
+          "workloads"
+        ]
+      },
+      {
+        "file": "check-profile-selection.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Verify native account selection without changing profiles or business data.",
+        "imports": [
+          "argparse",
+          "importlib.util",
+          "json",
+          "time",
+          "urllib.parse",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-public.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Read-only public ingress and authorization smoke checks for the owned lab.",
+        "imports": [
+          "json",
+          "os",
+          "pathlib",
+          "urllib.error",
+          "urllib.parse",
+          "urllib.request",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-session.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Exercise one native DEMO login and the retained domain read routes.",
+        "imports": [
+          "argparse",
+          "json",
+          "urllib.error",
+          "urllib.parse",
+          "urllib.request",
+          "uuid",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-support.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Check supporting prod images, ingress and native data initialization.",
+        "imports": [
+          "argparse",
+          "base64",
+          "fcntl",
+          "json",
+          "os",
+          "pathlib",
+          "secrets",
+          "socket",
+          "struct",
+          "subprocess",
+          "time",
+          "urllib.error",
+          "urllib.request",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "check-uk-entry.mjs",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "cleanup-lab.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "contact_fault.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Owned, temporary L7 fault for the existing contact recovery check.",
+        "imports": [
+          "json",
+          "re",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "e2e-mongo.py",
+        "owner": "myscoutee-backend",
+        "reason": "Same fixture body with distinct exception reporting; preserve product error policy while extracting its common execution body",
+        "purpose": "Run existing E2E Mongo fixtures only in the owned KVM lab's DEMO database.",
+        "imports": [
+          "argparse",
+          "importlib",
+          "json",
+          "subprocess",
+          "sys",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "helm.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "lab.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "managed-browser-manifest.mjs",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "measure-stress.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Run an unchanged repository stress scenario with guest cgroup evidence.",
+        "imports": [
+          "argparse",
+          "datetime",
+          "json",
+          "os",
+          "pathlib",
+          "re",
+          "shlex",
+          "subprocess",
+          "time",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "mongo_replica.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Owned two-member Mongo lab conversion, backup and idempotent initialization.",
+        "imports": [
+          "argparse",
+          "datetime",
+          "fcntl",
+          "gzip",
+          "hashlib",
+          "json",
+          "os",
+          "shlex",
+          "subprocess",
+          "time",
+          "uuid",
+          "workloads"
+        ]
+      },
+      {
+        "file": "open-terminals.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "runtime_config.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Read the existing runtime manifest for Python and shell lab entry points.",
+        "imports": [
+          "ipaddress",
+          "json",
+          "os",
+          "pathlib",
+          "re",
+          "sys"
+        ]
+      },
+      {
+        "file": "seed-mongo.py",
+        "owner": "myscoutee-backend",
+        "reason": "Shared seed engine plus different product retry CLI/policy; extract common functions separately without normalizing the CLI",
+        "purpose": "Bootstrap empty owned lab databases with the canonical prod/DEMO importer.",
+        "imports": [
+          "argparse",
+          "fcntl",
+          "hashlib",
+          "io",
+          "json",
+          "mongo_replica",
+          "os",
+          "pathlib",
+          "re",
+          "shlex",
+          "subprocess",
+          "tarfile",
+          "tempfile",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "setup-host.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "terraform.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "test_browser_manifest.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Verify private launcher state without opening or attaching to a browser.",
+        "imports": [
+          "json",
+          "os",
+          "pathlib",
+          "subprocess",
+          "tempfile",
+          "unittest"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "test_infra.py",
+        "owner": "myscoutee-backend",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Safety gates with disposable state; these tests do not claim a provisioned VM.",
+        "imports": [
+          "fcntl",
+          "hashlib",
+          "importlib.util",
+          "json",
+          "os",
+          "pathlib",
+          "pty",
+          "runtime_config",
+          "select",
+          "signal",
+          "struct",
+          "subprocess",
+          "sys",
+          "tempfile",
+          "termios",
+          "time",
+          "transport_usage",
+          "types",
+          "unittest",
+          "unittest.mock"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "test_runtime_config.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Project isolation checks; no host/VM/database mutations.",
+        "imports": [
+          "copy",
+          "json",
+          "pathlib",
+          "runtime_config",
+          "tempfile",
+          "unittest",
+          "unittest.mock",
+          "workloads"
+        ]
+      },
+      {
+        "file": "test_transport_usage.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "",
+        "imports": [
+          "pathlib",
+          "transport_usage",
+          "unittest"
+        ]
+      },
+      {
+        "file": "transport_usage.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Shared bean-reference selection for assembly imports, audits and credentials.",
+        "imports": [
+          "json",
+          "pathlib",
+          "re",
+          "sys"
+        ]
+      },
+      {
+        "file": "verify-transport-contracts.mjs",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "vm.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Explicit, private-state Terraform/KVM lab lifecycle; never enables host boot.",
+        "imports": [
+          "argparse",
+          "base64",
+          "fcntl",
+          "grp",
+          "hashlib",
+          "ipaddress",
+          "json",
+          "os",
+          "pathlib",
+          "pwd",
+          "re",
+          "runtime_config",
+          "select",
+          "shlex",
+          "shutil",
+          "subprocess",
+          "sys",
+          "termios",
+          "time",
+          "urllib.request",
+          "xml.etree.ElementTree"
+        ]
+      },
+      {
+        "file": "workloads.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Versioned image cache and Kubernetes workloads inside the owned project guest.",
+        "imports": [
+          "argparse",
+          "base64",
+          "fcntl",
+          "hashlib",
+          "json",
+          "mongo_replica",
+          "os",
+          "pathlib",
+          "re",
+          "secrets",
+          "shlex",
+          "subprocess",
+          "sys",
+          "tempfile",
+          "time",
+          "transport_usage",
+          "uuid",
+          "vm"
+        ]
+      }
+    ],
+    "myscoutee-template": [
+      {
+        "file": "audit-assemblies.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Check physical artifact ownership and list candidate remote dependencies.",
+        "imports": [
+          "argparse",
+          "hashlib",
+          "io",
+          "json",
+          "os",
+          "pathlib",
+          "re",
+          "transport_usage",
+          "zipfile"
+        ]
+      },
+      {
+        "file": "cleanup-lab.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "e2e-media.py",
+        "owner": "myscoutee-template",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Remove only a UUID-owned profile-test media prefix from the owned KVM lab.",
+        "imports": [
+          "argparse",
+          "re",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "e2e-mongo.py",
+        "owner": "myscoutee-template",
+        "reason": "Same fixture body with distinct exception reporting; preserve product error policy while extracting its common execution body",
+        "purpose": "Run existing E2E Mongo fixtures only in the owned KVM lab's DEMO database.",
+        "imports": [
+          "argparse",
+          "importlib",
+          "json",
+          "sys",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "helm.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "lab.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "mongo_replica.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Owned two-member Mongo lab conversion, backup and idempotent initialization.",
+        "imports": [
+          "argparse",
+          "datetime",
+          "fcntl",
+          "gzip",
+          "hashlib",
+          "json",
+          "os",
+          "shlex",
+          "subprocess",
+          "time",
+          "uuid",
+          "workloads"
+        ]
+      },
+      {
+        "file": "open-terminals.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "runtime_config.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Read the existing runtime manifest for Python and shell lab entry points.",
+        "imports": [
+          "ipaddress",
+          "json",
+          "os",
+          "pathlib",
+          "re",
+          "sys"
+        ]
+      },
+      {
+        "file": "seed-mongo.py",
+        "owner": "myscoutee-template",
+        "reason": "Shared seed engine plus different product retry CLI/policy; extract common functions separately without normalizing the CLI",
+        "purpose": "Bootstrap empty owned lab databases with the canonical prod/DEMO importer.",
+        "imports": [
+          "argparse",
+          "fcntl",
+          "hashlib",
+          "json",
+          "mongo_replica",
+          "os",
+          "pathlib",
+          "re",
+          "shlex",
+          "subprocess",
+          "tarfile",
+          "tempfile",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "setup-host.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "terraform.sh",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "test_runtime_config.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Project isolation checks; no host/VM/database mutations.",
+        "imports": [
+          "copy",
+          "json",
+          "pathlib",
+          "runtime_config",
+          "tempfile",
+          "unittest",
+          "unittest.mock",
+          "workloads"
+        ]
+      },
+      {
+        "file": "test_seed_staging.py",
+        "owner": "myscoutee-template",
+        "reason": "Product-specific QA scenario, fixture or migration policy",
+        "purpose": "Verify private seed staging without accessing a VM or database.",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "subprocess",
+          "tempfile",
+          "unittest",
+          "unittest.mock",
+          "workloads"
+        ],
+        "reviewStatus": "Project context retained during path migration; shared-mechanism versus hard-coded project-input separation must be resolved before step 1 is accepted"
+      },
+      {
+        "file": "test_transport_usage.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "",
+        "imports": [
+          "pathlib",
+          "transport_usage",
+          "unittest"
+        ]
+      },
+      {
+        "file": "transport_usage.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Shared bean-reference selection for assembly imports, audits and credentials.",
+        "imports": [
+          "json",
+          "pathlib",
+          "re",
+          "sys"
+        ]
+      },
+      {
+        "file": "verify-transport-contracts.mjs",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism"
+      },
+      {
+        "file": "vm.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Explicit, private-state Terraform/KVM lab lifecycle; never enables host boot.",
+        "imports": [
+          "argparse",
+          "base64",
+          "fcntl",
+          "grp",
+          "hashlib",
+          "ipaddress",
+          "json",
+          "os",
+          "pathlib",
+          "pwd",
+          "re",
+          "runtime_config",
+          "select",
+          "shlex",
+          "shutil",
+          "subprocess",
+          "sys",
+          "termios",
+          "time",
+          "urllib.request",
+          "xml.etree.ElementTree"
+        ]
+      },
+      {
+        "file": "workloads.py",
+        "owner": "myscoutee-microservices",
+        "reason": "Configured runtime/build/validation mechanism",
+        "purpose": "Versioned image cache and Kubernetes workloads inside the owned project guest.",
+        "imports": [
+          "argparse",
+          "base64",
+          "fcntl",
+          "hashlib",
+          "json",
+          "mongo_replica",
+          "os",
+          "pathlib",
+          "re",
+          "secrets",
+          "shlex",
+          "subprocess",
+          "sys",
+          "tempfile",
+          "time",
+          "transport_usage",
+          "uuid",
+          "vm"
+        ]
+      }
+    ]
+  },
+  "ownershipRule": "Repository/file presence is not the ownership test; decide from responsibility and actual dependencies; most scripts are candidates for common code plus project configuration.",
+  "verification": {
+    "effectiveSourceSets": "Unchanged for all 10 backend and 6 template assembly/test projects",
+    "focusedJUnit": {
+      "backend": 16,
+      "template": 16
+    },
+    "commonRuntimePython": {
+      "backend": 11,
+      "template": 11
+    },
+    "chartObjectsByteIdentical": {
+      "backend": 65,
+      "template": 45
+    },
+    "oldMicroservicesTreesAbsent": true,
+    "baseRepositoryCorrection": "Resolved default from selected consumer root; explicit overrides preserved; no Java behavior changes."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "scope": "User-requested manual-QA Mongo package boundary correction; unrelated QA reorganization excluded.",
+  "consumer": "myscoutee-backend/server/docker/scripts/manual-qa-checkpoints/manual-qa-checkpoints.sh",
+  "canonicalOwner": "myscoutee-qa/mongo/kvm-fixture.py",
+  "configurationInputs": [
+    "project config/microservices/deploy/runtime.json",
+    "existing private lab vm/workloads.json, SSH key and known_hosts"
+  ],
+  "sourceReferences": [
+    {
+      "path": "myscoutee-microservices/tools/e2e-mongo.py",
+      "sha256": "133b0b410b2ce1d2d36e6e8193be8415403cdae642b88d68786679d88e73ded7"
+    },
+    {
+      "path": "myscoutee-microservices/tools/seed_mongo.py",
+      "sha256": "6dda3b0318e5ee38de973eb52fd07912d836141b42c8c7ede7a4c778260c8bd6"
+    },
+    {
+      "path": "myscoutee-microservices/tools/workloads.py",
+      "sha256": "0fc605c56a3de4ac4fccdef60d19f3b2ca8a1e7d3963c7aaf203db2fc53b9c41"
+    },
+    {
+      "path": "myscoutee-microservices/tools/vm.py",
+      "sha256": "c33754331884803c2d7a1988d99efea1c7b169879e3272c672d064f67ff64ddd"
+    },
+    {
+      "path": "myscoutee-microservices/tools/mongo_replica.py",
+      "sha256": "070ec901642330db536bf1607b6f04ca437db84a0e52b259df63efaaec9aba13"
+    }
+  ],
+  "verification": {
+    "unitCases": 7,
+    "commandTraceParity": {
+      "projects": [
+        "myscoutee-backend",
+        "myscoutee-template"
+      ],
+      "mongoTargets": [
+        "StatefulSet",
+        "Deployment"
+      ],
+      "allArgumentsTimeoutsPayloadsAndResultsIdentical": true
+    },
+    "isolatedPackedPackage": true,
+    "runtimeFixtureExecution": false,
+    "templateCheckpointRunnerChanged": false
+  },
+  "packedVerification": {
+    "archive": "build/mongo-boundary/fssrepository-myscoutee-qa-0.1.0.tgz",
+    "sha256": "eaff7b535db0ff6e6f46c6e12dd5c6082dd25e41e6fe9c18d516b8a95d37b4d2",
+    "integrity": "sha512-u+iXboTbFcJoIKoV8PMTp3+f0pr7C6PAHTxQuGxSGwO7Ef7wq/+zRw+HVEJAG4fw7FgI5/O51SEixNCQZa/jWQ==",
+    "isolatedChecks": {
+      "productConfigurations": 2,
+      "mockedFixture": 1,
+      "testsExcluded": true
+    }
+  }
+}

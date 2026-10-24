@@ -1,0 +1,10 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/administration/api/AdminTelemetryEvent.java'
+    }
+}
+
+dependencies {
+    api 'org.springframework:spring-context'
+}

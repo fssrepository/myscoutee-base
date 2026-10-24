@@ -1,0 +1,26 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/chat/config/ChatMediaIndexInitializer.java'
+        include 'com/raxim/myscoutee/domain/chat/document/Chat.java'
+        include 'com/raxim/myscoutee/domain/chat/document/ChatMessage.java'
+        include 'com/raxim/myscoutee/domain/chat/document/ContactChatAccess.java'
+        include 'com/raxim/myscoutee/domain/chat/repository/ChatMessagesRepository.java'
+        include 'com/raxim/myscoutee/domain/chat/repository/ContactChatAccessRepository.java'
+        include 'com/raxim/myscoutee/domain/chat/service/ChatMediaVisibilityService.java'
+        include 'com/raxim/myscoutee/domain/chat/service/ContactPermissionService.java'
+        include 'com/raxim/myscoutee/domain/chat/websocket/ChatHandshakeInterceptor.java'
+    }
+}
+
+dependencies {
+    api project(':chat-api')
+    api project(':common-mongo')
+    api 'jakarta.annotation:jakarta.annotation-api'
+    api 'org.mongodb:bson'
+    api 'org.mongodb:mongodb-driver-sync'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    api 'org.springframework:spring-websocket'
+}

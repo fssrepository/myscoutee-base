@@ -1,0 +1,1044 @@
+{
+  "date": "2026-10-23",
+  "scope": "Shared multi-domain Java and optional transport batch: unchanged source, modular packaging and consumer rewiring only",
+  "revisions": {
+    "base": "705275840586d7d8e805d7babc2a98940433eb32",
+    "backend": "8ecf37b25f67a9d7566d05cfb4d12a7b2c7b91f0",
+    "template": "d9a0b0d653a655388cb80b15889b86412ae935d4",
+    "frontend": "6eda5881fa78dbfd6047789149b6a981628fece5",
+    "templateFrontend": "d9d31c12f0836422279b3538f24009dfbfe14273",
+    "components": "cefd914c81624786963d4f94c8f1e121899aacf7"
+  },
+  "movedSources": [
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/api/TranslationBundles.java",
+      "sha256": "4d1ad3cc15db2000d2ee228236ba1f1832bbdb9902d85d4b7394e47141ec7275"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/controller/I18nMessageRestController.java",
+      "sha256": "76e0d885099153b71a099e143dbc2967b36ec52e723d9cd8a418c8ed5fd308be"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/document/I18nBundle.java",
+      "sha256": "51f6d37c80247c5d6d3bc319faf353654396e8ea6a2af7e6f6582989179832d8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/document/I18nMessage.java",
+      "sha256": "e0b00a740ec67f6ac218d9754af8cc9c2200e944fe4d4f2f852e612a94e7a2ac"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/dto/I18nBundleResponseDto.java",
+      "sha256": "2233358b175ef8b4fa788c8dd2342c80dcb861c6007133879d7cbeb73d732809"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/repository/I18nBundleRepository.java",
+      "sha256": "759ef831623c58254d10d248d108d690d1dbc2499a52c6292a397b50292c7999"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/repository/I18nMessageRepository.java",
+      "sha256": "3101beb21ab7f2da8bdf770256b689b63f0a70fb3a75224482e4489a0ecb879e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/service/DBMessageSource.java",
+      "sha256": "f0905da73ce005b32f1fc5249b6f1b04d850a1f95ab3b69207996d1c140c8525"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/service/I18nService.java",
+      "sha256": "6b7d72440d17d1f8e88dc4502cf8e7bba16abc94720de93732cceb743b875a8d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoSessionMode.java",
+      "sha256": "7028d79d27eeadf12a9a1ce0fe6c966adae4e8750ca06227fe11c68987303331"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoSessionModeContext.java",
+      "sha256": "36c1c0106f363871f73c78324adb954cf9133f6db9af4a60e071936320acc477"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/ScheduledMongoSessionRunner.java",
+      "sha256": "12e2ba912aa122666af274a1daabbf438a68534ddcc43f8b3f68f8a38d3f0b05"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoChangeStreamService.java",
+      "sha256": "607879ec3626dd72781af614367826e9eb47e1d5ed47b16f1690d27ae3d9d283"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationBundleEndpoint.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationBundleEndpoint.java",
+      "sha256": "e28faca0881528b1a4d9378e914ebb4410ca67294c7d9611e3e051505c8cae8a"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationClientConfiguration.java",
+      "sha256": "a4a96855bd29e5db2d866441afa1be107d31000396fd65dbd0a2b0d3dd5553e5"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationProtocol.java",
+      "sha256": "788efef68a9fe99a38d98ddeef748b03b18ffb33d75e582ab08d280c9abe7406"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationServerConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/LocalizationServerConfiguration.java",
+      "sha256": "b106860ed71eebfb411d9b17c11df3c026d466273a4d77f921dc10688338a492"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/RemoteTranslationBundles.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/localization/transport/src/main/java/com/raxim/myscoutee/microservices/transport/localization/RemoteTranslationBundles.java",
+      "sha256": "1d88c3d3ee11e7c904592fed933db2fe84ef55d82336063722221d46582e1946"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/RemoteReadTransport.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/RemoteReadTransport.java",
+      "sha256": "df46f6c20d4d5327c57126c9554c3b2d7166a947f4958ad7e862a6cccbb4d6d1"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/InternalReadCredentialFilter.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/InternalReadCredentialFilter.java",
+      "sha256": "c9c1ca8409d5e0941dbab4f783f8505b19bb4f4b80c32eaaaa0c993e607b90b9"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/LimitedLines.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/LimitedLines.java",
+      "sha256": "f6e21c35f778bfc6303e45a969f3d0e31976c15f4d2ada8e1be70ddda08129be"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailLinks.java",
+      "sha256": "67c50ff922f7f379d2e733eac724d100dc779b091cf9e79e62a3a6615dfad82c"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailRendering.java",
+      "sha256": "c1f794392f0439bbadb0e09cc03b5db09926cdba52be55429ed339e2317530c4"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailSendRequest.java",
+      "sha256": "fe2adfc7c9370398b12f21f90fd3bbfdc455817bb5b89724a2e88727f49bbde6"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailSendResult.java",
+      "sha256": "ad624139f84082d9304619f66c37374554e4b50a8ab7acf25169a25e32941612"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/api/EmailSending.java",
+      "sha256": "56cfe559bfe8b7bdcf3bb23463d5e6922a04af6e22e9338cd84a66fed8ba89f7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/service/EmailTemplateRenderer.java",
+      "sha256": "4f4c8e82c7dc05e91b9a1c7ee8c4c022d40968d8a2efce836e79bf416b2be22d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/JsonConfig.java",
+      "sha256": "16809d2d57439ac99a284f194c619577ff24212c3f83cd128d7a97fed12a7f7f"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/MongoConverterConfig.java",
+      "sha256": "8db4bdd7696864381b363c37c7c8b46dfa2aa554780f08b5789cc6271859aa0d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/MongoRoutingConfig.java",
+      "sha256": "6bc2a722a9dbd1e8a4d971e07ded6d7f5f5f3186c1578d5bd55de6d491d8e810"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/caching/MessageKeyGenerator.java",
+      "sha256": "731432bd13e9db37ca1a3dc1e9bfc935b4f487d64ec3443be610d701d143f9e1"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/DemoSessionRequestSupport.java",
+      "sha256": "ab92698ea5d5ae255497b4dadf8937a6d2a278a1bc69bd88d305dbac002aa450"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/MongoPrivacyOperations.java",
+      "sha256": "20864f6f186f06b42d1027c7170e75d84dca36598d941baf9aa8d85439d522d6"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/SessionMongoRoutingFilter.java",
+      "sha256": "455ebcbb0c2401179a6df0d58f4a45ab0f20821c08abcaa03e2a37ed47265af0"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/config/mongo/SessionRoutingMongoDatabaseFactory.java",
+      "sha256": "95eae0c5b62d574f8f5e4e029727becf5ac92985fdcdd5789a65c976e2ba3547"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/dto/MediaUrlsQueryDto.java",
+      "sha256": "ce90c64a7470a546676b65bb280a31e756c00047c3696e84b48e6a294c5a013e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/mongo/OwnerScopedQuery.java",
+      "sha256": "ec0e905ac711cf1a623d8a2d893341de043d82e86733e530937686c1fda39237"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/redis/RedisStreamRetentionService.java",
+      "sha256": "724f84e9e9086414086526e3ef14a81b2a3c706723ae697c660da6d91cffa464"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/runtime/RuntimeStatusPublisher.java",
+      "sha256": "f302ee9a4e2f3c46b8e708fabdb0c6c76e866943e6ef35bf23dd20845b5765db"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/crypto/CanonicalValues.java",
+      "sha256": "985271088214a97c62032fb8684965a0740d0c2872e09e32115241c79f4c92ef"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/crypto/Ed25519Signatures.java",
+      "sha256": "4be0952b7f4280dfa25b768756e7fad37916e6a0535184f09a0e5f574cb8cf72"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/http/HttpSecurityContribution.java",
+      "sha256": "aebf5ad628eea63037eec5ce3a8217973ff44481e834d6fabc385aeda3f0b3ba"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/media/MediaSessionAccessService.java",
+      "sha256": "44d34325e36b8a73423ef3f1501ee6385738b945b68b08ac6cfb8a6b6846cb34"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/policy/PolicyExpressionEvaluator.java",
+      "sha256": "12dbdaafdd1b5388631b50ca688c648010da5f6bca2f1ec070015a545b2fb8c2"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/security/policy/RequiresPolicySupport.java",
+      "sha256": "87010c36607bc4461a17141e61611e6966e169d21e4d5c6bae163b2ca7f101c6"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/util/JsonUtil.java",
+      "sha256": "bae3297e7de4a6469be592d20d787e7639f29312245acd1a57880f0c2d5237b7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/util/TextValues.java",
+      "sha256": "f20db791488da55517a87311ba472a5c88b1760f57d48a057db838cdf4c60aaf"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/util/TimeValues.java",
+      "sha256": "cd2fa0b2f5a4f28fb0343b212d3b240853ef5d91593f3e3d34dd102071975af1"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/AccessGrantEffect.java",
+      "sha256": "f4b677ecf85ef237785a84062ee6757b88c14d7e6e87ae33bdd45e7ade3e7743"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/ConsentAuthorization.java",
+      "sha256": "e97f268d5531c444a8f9bf5b36f736f61a5175107342f89c57b36bf5908c513b"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/RegionSecurity.java",
+      "sha256": "cc7e6a188dc42d4f9cd298415991b1e5687c2ce7ab0b2bf1d3b94c5800ab467e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/RequiresPolicies.java",
+      "sha256": "272f57e1b466c1562aba12c03d5c29e000aaf8644912b7116bac791349eb06b9"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/api/RequiresPolicy.java",
+      "sha256": "8504339c3176b5682b364d7cb4da1ae192adcdc0c9979eb15fcdcab57904b6ce"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/config/RegionSecurityProperties.java",
+      "sha256": "094984843402c73f2c4e8c5e2a9ca4c370ca91b64fe4a564cf4a87c4e551a588"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/document/AccessGrant.java",
+      "sha256": "4e44102a821cad48af698fbf17e75b4ca35b827d010f77dc9693e653239da9f7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/document/AccessPolicyDefinition.java",
+      "sha256": "874b9bfa036ca9afb904b0e55b8f7ac3423d2956a60fb6db49b1e22eb24a50e1"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/repository/AccessGrantsRepository.java",
+      "sha256": "0b805298e435fb83f3cf625c9c2f41dbbbee2d1e5610d84e6c7dd481e5f174ef"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/repository/AccessPolicyDefinitionsRepository.java",
+      "sha256": "e7a762a348b425abfddcd405764086d8c0371c19a746ea4284891ff32ff362ac"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/security/AccessPolicyContext.java",
+      "sha256": "624f3b7ac49ceb44464245a33a46011dee9dce3ea72ffbc2c3a6d217731c8b7f"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountConsents.java",
+      "sha256": "98e8b83ae919bfd9694dbb8ee9df1504186785c305c46157bb70fe0fdbf30195"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountDevices.java",
+      "sha256": "eca6fd34f810dd49b8a77e730a97a1f5f1c9b22e2ba47989da5df463faa64ffe"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountIntegrationAccess.java",
+      "sha256": "2267e2cd9a36e4af57839343358da19436713de5532212d9922579c246dfea2c"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountMediaSessions.java",
+      "sha256": "45687fa30515d0a125159945b17a92de085cb5ad8025523c4d7431cc5262819a"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AccountNotifications.java",
+      "sha256": "7e9d49ca2fc00dd844a5e0b7d2b878a954c52bdd91706359ecdbbe6b95f7b488"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AssetAffinityProfile.java",
+      "sha256": "9e447e4b7d28dd39cf2fbf5fe8d7f8b5b873209ebddc7723d25a1262cbe715ce"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/AuthenticatedActor.java",
+      "sha256": "aa71c8183cac13afc55060b0740887895ea1e31c1f5f24f74a09601a7fe90e8d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/BootstrapAccounts.java",
+      "sha256": "021dea485feab687a3a824cdf75ac7a8086c7d64077bd7535a51adba876e2b81"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/BootstrapLoginAudit.java",
+      "sha256": "346e0c817514a20e63c3a2ff29c5e02b099bed07b718f48674a415cf8727f9d8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ChatCounters.java",
+      "sha256": "fc3bffd034c25d927a617e001109e8878868259ea7f93c8162b451e9661cc448"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/EmailProfile.java",
+      "sha256": "14f8a31a883a215e857dc8b77be830353843541a847c42799cc425df0459abac"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/FirebaseCredentialMarker.java",
+      "sha256": "62cc9f9ee1fa9367bef931bc5e405c0d70a3174f2efb0c4f8280c7265a4eba47"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/FriendshipReads.java",
+      "sha256": "a5cfa33e3cf1fcc3a2479f2d38a25a11a70bc3c255d522567be3ac73e1dc4fc8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ProfileStatusObserver.java",
+      "sha256": "e8ccbc469a428d6e325fa40b7e417abba8e7a1a84f4d2b2474aa26a9ed84f238"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/ScoringProfile.java",
+      "sha256": "a0308d6df2421ad6dd96f61eead0aed172ffc68283c194cbd6429bef6351bd3f"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/SelectedProfile.java",
+      "sha256": "d440fc4a5c4f0804157acdfcfb8d14d60076151c0e84af4e47b82c0307ad06ef"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/api/WorkspaceIdentity.java",
+      "sha256": "4e35db94dba874f7a459df3981d22873dd4022501a9d03d192b970c0e27efec0"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/config/FirebaseConfig.java",
+      "sha256": "d23a080c0daf37429aab7ae7f44afb65a9629638a8edf1a0cacaa37d69a83a91"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/AccountPurgeJob.java",
+      "sha256": "a05f5efcc01203e112ebe617d702b408dc33a104c52bc1bce85ca2dbee2365b1"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/PrivacyConsent.java",
+      "sha256": "632e55834c5e31ab16a2c2a0d5ac3b9b02423533722b8edbd3864e837add0853"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserFriendship.java",
+      "sha256": "028198648bcf6fefcec23050e5d6aa53bddc31532f6557c9eec18fa672c16ce3"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserLoginAudit.java",
+      "sha256": "28d69b99ba4eceab594f76ab718c7beebf1d631e23a5613ac8447c1cbcd7569f"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserSessionAction.java",
+      "sha256": "cb2b4278179e2ef361d4f523ea44534f5867a05f68d88896112cf5a9c6999aa2"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/document/UserSessionState.java",
+      "sha256": "69e8aa7c3395d7d2d991d6ce7c94b112779dcb42a454034eb3bcab38333ebc8e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/dto/FeedCountersRecord.java",
+      "sha256": "b5a5276feca9f654df4df1244a82f05e347067b80f345a6f6024f01455e2d6cd"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/dto/HostConfidenceFactsDto.java",
+      "sha256": "3885a3ab679858e4aade3821b5c5a583d805ed3546508fc0dae3cc5e2a3cdbd5"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/dto/ProfileIdentityDto.java",
+      "sha256": "4588a6b4d06acda543bff0ff128137f6609946ab20b4a2d51ff9dba17ec03f1b"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/AccountPurgeJobsRepository.java",
+      "sha256": "10329a492ede2aeb2a232b49c60f05fb322d089ca5f46523d3a99bd08142db73"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/PrivacyConsentsRepository.java",
+      "sha256": "8eb4db5f97b52c0cadef60760f0c82ac3580b17ec32e9f6d3c75cfd25e5d4283"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/UserFriendshipsRepository.java",
+      "sha256": "29a7cdf3ffbf45f1b125a9792b58d304b136ec2296ef9f92e0b21fb7f952330d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/UserLoginAuditsRepository.java",
+      "sha256": "d07daf330062f7d5c3af7763b246fe82ab1fd2467f3349272766c508122509de"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/repository/UserSessionActionsRepository.java",
+      "sha256": "1365e9a8c87cc3a8ecf336b44a71554c569d3e2fbcf29cf42310e268b277230e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/DefaultFirebaseTokenVerifier.java",
+      "sha256": "2e00c44f22423e294ccbef40c36f497facd18f4259b7dbcb9a8e9e1ad88c1e54"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/DevelopmentIdentityEmail.java",
+      "sha256": "d00970b05a091eb31f21aec5f66d267556e10309b5d9d11edcbac387c1239e68"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseTokenVerifier.java",
+      "sha256": "683694273d875b9c1db96e81cb8a6d64aa00027e0eeb1180581b8766fe44692c"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/dto/FirebaseCredential.java",
+      "sha256": "d0930f87df5318d166d08f33ac5eeb0a3337226d9ff54e24ab2c271713aba524"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/security/firebase/exception/FirebaseTokenInvalidException.java",
+      "sha256": "99a59587703cb59b7501d2464f845c2be286ffdf3ccda3e033a6765ca89bca6e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/service/AccountConsentService.java",
+      "sha256": "19a7ece430557f213c5e86201250c53ae361f59e994f70742ef0f7c8edbe39d6"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/administration/api/AdminTelemetryEvent.java",
+      "sha256": "f243fc7ce61a67444758e0f4c5dff0c62ba0c43e5a68b7369825e5c151f0c6c7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/administration/config/AdminStatsProperties.java",
+      "sha256": "b1e397a732202297c643815c6ec3471fd545af8e877ec6086e479635e8beeadf"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatDirectory.java",
+      "sha256": "66b95595a9cd60968e7dd03d74c85a6af805117681864deb956fad8c50f22503"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatMediaVisibility.java",
+      "sha256": "d39e254299007c95b29a4d6886ac6d388815092b988a540608553a6f40e65668"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatPresence.java",
+      "sha256": "ae2fa6a1b61213a808c10495929c07829f2a692946175533f1682ef5e5218210"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatPrivacy.java",
+      "sha256": "484beca4a33ce54409b590b77e78ac21c47a66c386c6d46d0d9810906ee0fbfe"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ChatSessionAttributes.java",
+      "sha256": "091a87392386b894de6420d303088d0e8b89afbcf0f229ccd8959fedddde3c03"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/api/ContactPermissions.java",
+      "sha256": "46cad07485638d73a6034acc4425380d0acac52d84a0e809f95f57169dc93f44"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/config/ChatMediaIndexInitializer.java",
+      "sha256": "88cec5650b825208bd5a5edec2fae757f48031df03780bad05e5a2d541338df7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/document/Chat.java",
+      "sha256": "15736de0b861ca4170dcf31852ad6059a36122a8f651a560bf1d1425ec20d03d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/document/ChatMessage.java",
+      "sha256": "1b24a32b7cfaebb09797f8badc467a7fa73f703a348ed568b8e6baca5a72102c"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/document/ContactChatAccess.java",
+      "sha256": "682a72466fbeeb21c3bcd44616f86fd5f78020de3719de225d1fdcc5b0662949"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatDirectoryEntryDto.java",
+      "sha256": "87b9f57bd8b9cedc3efce8eb009fdecd32cd0cbaed55b3fe34b989f58aba8460"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatMessageMediaVisibilityDto.java",
+      "sha256": "9e09e71695c2cc9e42cc071f33ce2d1d69ed68f4d888223d32326eb12e80106d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatSupportStatusDto.java",
+      "sha256": "37c33857ebf19e7f633aaadb0cdcbec1be3675f8985bd80835f95a7bc64af58d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/dto/ChatUnreadVersionDto.java",
+      "sha256": "abfb39ee08e8c86641d0e6d6099d51fd28dce11b9b8f102149a749a3804b5856"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/repository/ChatMessagesRepository.java",
+      "sha256": "9acf941c7ac010be2a911937d8e6d06b2b40c44d4273824f3cb3f9962f27c22f"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/repository/ContactChatAccessRepository.java",
+      "sha256": "7659b4c80567f2f4d41cb796f6215eb02edfea9e9361f05f2a21399423a71578"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ChatMediaVisibilityService.java",
+      "sha256": "fcb89a6e8b52fa474111787df7e75229afe8696e00ef56c249fa35267c54b846"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/service/ContactPermissionService.java",
+      "sha256": "8e298720cee36b80d4919d603de02970270fed8ec1ada6a27b59736f7d66539e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/websocket/ChatHandshakeInterceptor.java",
+      "sha256": "d1392443e2fca0faa92daee3775a43b42337d16198dcf4a17f2d4b5dd0077dbe"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/api/HelpPrivacy.java",
+      "sha256": "3775750762fec154635a83629fb5a3b91b6401501fec128aaecc7a6e49c805d5"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/document/HelpCenterGuideField.java",
+      "sha256": "9f5b5afe77ab881c6acb87a2027bcbad754a2701d674b4cfa1181db53a90878c"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/document/HelpCenterRevision.java",
+      "sha256": "65e61c27011efa4fab595e56e4f0bae3f666192fed3b7ab5225e7d76a8af3169"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/repository/HelpCenterGuideFieldsRepository.java",
+      "sha256": "4592f615b7351ec23db314b8165c0856b4bde5a873af9ce5c9b94b398dc886a9"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/help/service/HelpPrivacyService.java",
+      "sha256": "540f35e42cbd71b7912f317af2e1d1df80ab036811724ee2f5a5de79a8de511c"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/api/IntegrationClientIdentity.java",
+      "sha256": "2f91af17d67cf59deb0cf6bfe1cd96149889c10bf4613146f5abf8f15707ee64"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/api/IntegrationPrivacy.java",
+      "sha256": "ab68c3644dbb7be0be97e135c521f2318ed07ae9ec9f2f0888704afa4ed60554"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/api/RoleAttentionEvents.java",
+      "sha256": "30bfdf4ab7dda4f0ad0268f51a4116f9255e6028c7cfb96ab473397610f191b6"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/controller/IntegrationReadSupport.java",
+      "sha256": "613fc2cd16c8d6c1337ec224ba3c582866dec66f3832d3c16567e79c9380d635"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/IntegrationToken.java",
+      "sha256": "fdec60fb3d43cbfda06f6149f1a0f6b1dc4b961b4be7aa604a1c86abaa35d00a"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/IntegrationWebhookDelivery.java",
+      "sha256": "a8f87017fd6cad068b5f96f87af4ec8ca00f8993bbe84e8ead39ed9362c319c8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/McpAuthorization.java",
+      "sha256": "530bbc1571c2b487634ee176d45b350246787a8ac06f82f9be3743d463666187"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/McpEventSubscription.java",
+      "sha256": "0779763c17d38c015dabf020977e4e8758c586e1086ec1b25c48aadf8cb152e8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/document/McpOAuthClient.java",
+      "sha256": "b99936016ea0c33eb59cc4fe3e80bca549f0555df3c83375372964e2fd187443"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/dto/IntegrationAccess.java",
+      "sha256": "2bc8816b3d140a3d73791ad2dafb19a14cc25727c47db31c7f7b1731ef636504"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/dto/McpEventDtos.java",
+      "sha256": "710f633f24c19eccb6a1aa15bd55e319fe58ec8e8c3cf9820425c9297b9416e3"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/IntegrationTokensRepository.java",
+      "sha256": "887783e31356d2fca5bf841c943803475635c41bc8e8623e71895f0620708e99"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/IntegrationWebhookDeliveriesRepository.java",
+      "sha256": "32be094f7d33fc33fd0896b0cbad602696ae3da0435a7ab1681e856f691fcf95"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/McpAuthorizationRepository.java",
+      "sha256": "88936ab34081e885dd6213b86dc74c9d332263b3faa634d9c3170a5a1336e9af"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/McpEventSubscriptionsRepository.java",
+      "sha256": "4e544f1cfa42f6b022490e60de24dc7dd690c6d748e69977c0af77da232b0c05"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/repository/McpOAuthClientsRepository.java",
+      "sha256": "5bb67594b3c50eb5a908861a47fc810af62a7a7598a430046a3366010ff07e15"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/integrations/service/McpEventCallbackClient.java",
+      "sha256": "5bb5310a79192deaa982fe213aa7a6bcb35e2f05a39e05968d035b6b6e6208b3"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/ImageUploads.java",
+      "sha256": "5d456f5a5a79b124ac9aacda8aa43091b20caf2c0b3bf5e763d5642b826a52c8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaAccessPaths.java",
+      "sha256": "46eb4036b1bd5b27b0007c3ca07ff1ef8f8721a354cd33d4d659f198a9124ba0"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaCleanup.java",
+      "sha256": "5bc05819a76aa22fcde03dae43981136ac0d716ab868fc9d8e0884bb75873926"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaDeletionQueue.java",
+      "sha256": "b5d14a5febba73903db77c26f8cbc3827fb4d4a41daa12ae42856066dfd336e7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaImageVariant.java",
+      "sha256": "9ba228275fab198b530ccb531d9ba100639e0de2e5d03842c9ef48bea89949b4"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaSessionAccess.java",
+      "sha256": "aba5228fb44ab58fa35f3eca2d1514ece915b8c88c13c47ecc32bef24e75bad7"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/api/MediaStorage.java",
+      "sha256": "ebc2af4e868dc4f7396a64b8b9be64f1d5da658368bacc581a75b087d7d71f73"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/config/MediaSessionConfiguration.java",
+      "sha256": "7db63f0dd6cb9c37ec8f5e101090494f2407e4e9baa78e5157e8bd736f994bd9"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/config/MediaStorageProperties.java",
+      "sha256": "52fbe23d6f45f27bb79f6d5e0a39dea42cab8ae6e824b46114f3216dcb3a0a99"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/dto/MediaDtos.java",
+      "sha256": "b8b4d92480fa2afa97cfd381fce82f649f2ba9c380b5b8c2b4a9e4c798bb22aa"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/service/MediaObjectStoreClient.java",
+      "sha256": "c62aeebaec19f517a8ec08850c7c0059223b37a6e0453a8cce44be71619d1dc9"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/service/MediaStorageService.java",
+      "sha256": "98cb8c68a494eafa4d9049b96fa4e5fe399f6771f07a9d16ca34a47e126e3725"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/media/service/S3CompatibleMediaObjectStoreClient.java",
+      "sha256": "0858d844477d1b86bf514adbcfad34e33404b6f42816abb2b6015aa7c7831abe"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/api/NotificationDelivery.java",
+      "sha256": "dce614fd4427835dc7aeef0ae7c4e1fa8d3937b3ee9fb3eb5d0aca07414f1fb8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/api/NotificationPrivacy.java",
+      "sha256": "fcb3ce98d88476bcd0c414b4b714d9281a00b8f9bee7a7a893e02b5761d4a5be"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/document/NotificationOutboxItem.java",
+      "sha256": "deb63b82aeed11efc314084747141e498bb7681a72149acfb59521425c7747db"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/document/UserNotification.java",
+      "sha256": "cde189d3db50c8dab8d8ef5b6bae9acd7a198ab4c9deb5875f79e5adb23ef03d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/repository/NotificationOutboxRepository.java",
+      "sha256": "fd3d303d3b9f7f373c3dfd6c94bb6896f86155bfe6ea28f7cbf883f6ea8c4f59"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/repository/UserNotificationsRepository.java",
+      "sha256": "2638eb6f5a07c2a1aaa8b7a3c2807f6350d6a0efc074bafd4f035360a8ea3d9a"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/service/NotificationPrivacyService.java",
+      "sha256": "9242a7c1ae10d7baf38176bb3b65e520e3b82cb8fbb72b29bfd02490570c0167"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/AdministratorSettings.java",
+      "sha256": "1861a74f9e602504fe9fcaaef1f938ac8b7c19a1b54f5dada137f7517f0c59aa"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/AuthenticationMode.java",
+      "sha256": "58b29e775a7ce1f2a6ca6375589fb239fc9e783ee8b03e860f863cb055f7c615"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/DeploymentBranding.java",
+      "sha256": "270d5758a69d28f1db5b289254fd070339e1e1dc0dfdb7564bc82c99bc46fed9"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/EmailSecrets.java",
+      "sha256": "87c5974e984c823b3a021ef6ee2b7f0b51b334c1f412c9d1f2b59fb3201d32a8"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/FirebasePushDelivery.java",
+      "sha256": "60dc29e59531ed913165792896057602bc7456d22baf7d667e64e64267d9ec2a"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/FirebaseRuntime.java",
+      "sha256": "e6cb0d815361d7607784383ad87af09b5cbdec5635abeecf695e901db82b16c5"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/JobWorkspaceDirectory.java",
+      "sha256": "6ca56f3b3a38b96b279b3e5b90a95bd35b0396400c485a7387f6e137fe762f0a"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/NotificationPolicy.java",
+      "sha256": "10271484413142061005c22acb16be992d2dcf2f650d1cd9fe558a51fc61bf5d"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/OperatorBootstrapRequestSupport.java",
+      "sha256": "5e292d25e39af7492f9fbc27b32e6ac97ae7ac93208bd524afdd1d054db8789e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/OperatorNotificationSettings.java",
+      "sha256": "0a633594b1bf175aca7b2cb4146aed91470d1eefefb0d4a444f3fc9713299e42"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/ReleaseProtocol.java",
+      "sha256": "82273eb541ea4fb1b09f970362d41659ecde61b9366ad45923ec3535eec2fd99"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/RuntimeConfiguration.java",
+      "sha256": "44b262675ac481d4773639d0e6e9d647b3908ce2a291dddd418c4f8db9137b45"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/api/SecretEncryption.java",
+      "sha256": "6667eda1dce156b19e116f36e3c56f0caffab6cba2da9d39d4aa3d341bdebec5"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/ConfigProperties.java",
+      "sha256": "84173429ceb1a5c55819934f3aaca0ef8d84a47ae5f09706a70603183b8d9124"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/OperatorConfigurationProperties.java",
+      "sha256": "8252c5156f07b68d9001c64b3f4521ac6c2129724bca07f41dee80bdf1958491"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/OperatorTlsProperties.java",
+      "sha256": "1ee2597f8a6f7b16a6c66bfd15242efcdfbf37bb0e7c5c2d23657dce5bdbb612"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/config/OperatorUpdateProperties.java",
+      "sha256": "a8d76d66fc751fdfa84f0db3370f7d4bd89e22c6946552807ba3f25df4e4d92e"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/document/AppSettings.java",
+      "sha256": "b58858169fe7c418c8010592cd8d99c04d16eddc2473333fa2481dc0e838b407"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/EncryptedSecret.java",
+      "sha256": "9a171d40fdaa11f864e0acb36a33159938b3c71b84060c54bcf01ad1c5be8e8b"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/OperatorNotificationRecipientsDto.java",
+      "sha256": "a1e27744fcb1857c8bc500505091f0a865781428c7dde00f52838d5275d08337"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/OperatorTlsDtos.java",
+      "sha256": "aae2ff9fbef7d422f1e00a25c89c70c61cc68bb9a69e301d29c8be8d20aa2dea"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/dto/OperatorUpdateDtos.java",
+      "sha256": "a35e6ab2847bbf2b487abf613feb885416d72a74d31db566d529078709557945"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/mapper/OperatorTlsMapper.java",
+      "sha256": "50f0fb0998a526f2347ce25c86d4b25a698cee4daf2f23660116457ceb961034"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/repository/AppSettingsRepository.java",
+      "sha256": "71518827f0c5001ad19c3a0dae924105e7f0cfc108cf279e6a70afeecdeeb04f"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/repository/OperatorTlsRepository.java",
+      "sha256": "76ada60548d7ee3ff22d8371278e47538e0fe327a0d3956cc2a3717087158eab"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapAuthenticationService.java",
+      "sha256": "d0565a773afa1b8804d70ca4b1b2669c3223cbd80928206434438d216acfe6e0"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTokenInvalidException.java",
+      "sha256": "839d9dd330866fc4caf1739b15319ab454d0ce0a66c47a33a410136ca0afc045"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTransportSecurity.java",
+      "sha256": "fc29a12671c86fbf24a125d58c0a21c0ce46bf729f281c5767b9e00013f9eef6"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/AppSettingsService.java",
+      "sha256": "ea31ff1e6475150229c3b9b7456172b7c2189f6d9adc3c219dd4d716d759c7f5"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DefaultFirebasePushDelivery.java",
+      "sha256": "f034eaab6840111827501de6ce5e924bcaca92f0d4f7f96122d90854e7f20485"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/DefaultOperatorFirebaseCapabilityClient.java",
+      "sha256": "756a792e3e1d8bebbb29bb11ff4a901c1c0cf98bbc3721b3ccd6afe530f4c705"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorFirebaseCapabilityClient.java",
+      "sha256": "905b28c848681a980c3905c8b87b6b9bc23ebd6e49475fa4c101650030159d23"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorTlsService.java",
+      "sha256": "a4a8a0b9977ab9d499ff911db9f16fbbacb27c193d9e8e156c3e8a22461e3217"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorUpdateArtifactDownloader.java",
+      "sha256": "38d4327c9ca37fe6988fab08605053191f0fc4f832c4668d79b02fc525b69d9a"
+    },
+    {
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/service/OperatorUpdateHttpClient.java",
+      "sha256": "a27b0b849bb4d60940ccb504773ebd3e6186fd4cd474ae070fd7e82adc427990"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/PublicAuthorizationProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/PublicAuthorizationProtocol.java",
+      "sha256": "013eea2fd7967fabce43308b945633c1796f32d66ff60361be1da4344f28423f"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/RemotePublicAuthorization.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/access/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/RemotePublicAuthorization.java",
+      "sha256": "cf5751b6d2b0654de115d3f96f65a682b5a10fa41428021060aa21c898731141"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountDevicesProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountDevicesProtocol.java",
+      "sha256": "ca3620a98cd1522e223a6baaa0a1522558c38a17fe79f372f606fa399fb6fa5f"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountMediaSessionsProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountMediaSessionsProtocol.java",
+      "sha256": "1929b5925add917cff16163643ded359230c404738ba291a977e428debdc93a0"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationBrokerProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/accounts/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationBrokerProtocol.java",
+      "sha256": "c515d1724ffb1eb4b4296224abc61d7431887e28f8e3021527dbeb735d8b7207"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryClientConfiguration.java",
+      "sha256": "a47fb235d1ee28349f13d74b8e4be289217a7dd873cebe359fe859f6576e420d"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryProtocol.java",
+      "sha256": "3c24c79abdd92b5d6de6d4d3e063567b7cc464137aaa2142da669d126c2458a5"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatMediaVisibilityProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatMediaVisibilityProtocol.java",
+      "sha256": "70260f1f6823475e4ec4a2cee6d1a577198031b22271195556f50711d76dce71"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/RemoteChatDirectory.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/chat/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/RemoteChatDirectory.java",
+      "sha256": "6016d9f5543a13a369d13f7326545e607986eb8d67860b834d20398f6d486205"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksClientConfiguration.java",
+      "sha256": "4ea9862a2c3048f3951650921130ffb675aaaf1d8c008e9bdcc3a93d0f1c0b5b"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksEndpoint.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksEndpoint.java",
+      "sha256": "db0b250bdeebdfe6ce4e2f2ff127b469a3cd0259aee690e1d53ad01791475b1f"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksProtocol.java",
+      "sha256": "76ade63a9660801afc7f31bae03f66d219c031bde3b423a7e68eee59423d114b"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksServerConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksServerConfiguration.java",
+      "sha256": "831fc889cd3bebe6898d58f38e504b96114fe7eb3d6a124c2bff8422a64aa5fd"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingClientConfiguration.java",
+      "sha256": "5c08711d1607ab239d98ef3a56ff0cabb4ccc801013aa71f1bd38a8232ad464c"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingProtocol.java",
+      "sha256": "82a4b16fa51e8ec6216971a4a5b7c48a778dd0c582053bba268d2892c8c6b51e"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailLinks.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailLinks.java",
+      "sha256": "058157798f889a77b77dafe7ddcf38e12465fc0e4206e97036685935c80e446f"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailRendering.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/email/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailRendering.java",
+      "sha256": "20fc70f93add77a308e2c3bc3381144718a371ab78a6eae02f3af317b9ffc417"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationDeliveryProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/notifications/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationDeliveryProtocol.java",
+      "sha256": "c8e599ed356655c1550e8652803c487f8c945a8d84db48637be87ee92879b4ee"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsClientConfiguration.java",
+      "sha256": "1ebcdad64f314664790f9ae08ec52939fe8d74e275971d14f46d3ec50477bdae"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsProtocol.java",
+      "sha256": "1a82538d2ce639c3082a4a10c157b9a5f668048146de75b6cd2aba6d2c9eb542"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeClientConfiguration.java",
+      "sha256": "fb101aeb11ef9859aee84a071eaf3bcd61313efaf886dea315e44ff5db8dddc6"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeEndpoint.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeEndpoint.java",
+      "sha256": "cd5b856c26693837adc78fb9d5bc982c8c4dd326db358509afdaf0f60a96cfb6"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeProtocol.java",
+      "sha256": "a47ba87afa4ace2c150f35201cbf9e5751d1286813ee7d24d882aaaf94fdafa9"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeServerConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeServerConfiguration.java",
+      "sha256": "92deab1a8af00b67ffeee5e21ae0476dec2ae5b07bfb85af8159aff27ea0ac69"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingClientConfiguration.java",
+      "sha256": "a216261554b7aa3e8d43b9509445f0ee2620fbaaea56735cce56890a4f0f2ce5"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingEndpoint.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingEndpoint.java",
+      "sha256": "9312b68806bf154404d8099ec3023b7c61712089f6dc7a137420ad224598b4ed"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingProtocol.java",
+      "sha256": "7e0e63247d8e619528b5a116060a849d51cb48d62ec2510e5f6d73c6838a80e6"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingServerConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingServerConfiguration.java",
+      "sha256": "19cb2246a17e81eae2519e91ff2baa9fdafdc97b71f00c36265aded5a2008d3e"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsClientConfiguration.java",
+      "sha256": "42f9ed1c6cddb065aca7bcf7b69b4c34db54fcac82910e429959ba915220ac0f"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsProtocol.java",
+      "sha256": "55f0289b6e94a665fb23cdeec13581caee686f416cbeec7a052acf0237cefc8e"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/JobAudienceProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/JobAudienceProtocol.java",
+      "sha256": "c74634221d33164a1ffd02504a717bb085a371563f8cb54e85468b39e04d0067"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsClientConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsClientConfiguration.java",
+      "sha256": "35b11cbc3568968a4202c2c74d96ae03530cae1e6638439a836f19e29583512c"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsEndpoint.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsEndpoint.java",
+      "sha256": "4b58d8a04f45329371faa5ea5878047e3249b342b6e4701c6683c8e638b188d1"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsProtocol.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsProtocol.java",
+      "sha256": "8d9e2989f5a8b3972dba88dda9d2b97318b969b2f232e91101ff249f8fa1d346"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsServerConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsServerConfiguration.java",
+      "sha256": "e5a28adcbf0128241a71139d1fb1b357bcf708654533be3a5133532db63ea532"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteAdministratorSettings.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteAdministratorSettings.java",
+      "sha256": "6cbaefc363445a6acfd2b37152f9c53239af6bf7939ff9ece5989d552003cafb"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteAuthenticationMode.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteAuthenticationMode.java",
+      "sha256": "b478ba87fec98bc8dc1ae9ef9be7f6549ccde9c53889f945e44b6f39284240ef"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteDeploymentBranding.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteDeploymentBranding.java",
+      "sha256": "c2a6cf0a0d2085c9170ec1f7b649bd778e9b5757b5083d8b2bb1ae4f9480ef8d"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteEmailSecrets.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteEmailSecrets.java",
+      "sha256": "6489cb4b82dc86d05f6061475856eca3862f3d4c6fcb3341843142c9096009b7"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteOperatorNotificationSettings.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteOperatorNotificationSettings.java",
+      "sha256": "bacf3d9075daa55aa3b0d53eaf83caac671ab74f0cc6ea4b42e7f6172753979b"
+    },
+    {
+      "sourcePath": "microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/SecretEnvelopeBounds.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/domain/platform/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/SecretEnvelopeBounds.java",
+      "sha256": "d140bbc6b52355efabf058fb532e9747681ee0d26fc4d7d03f6cedd470b52a04"
+    },
+    {
+      "sourcePath": "microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/ServiceSecurityConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/ServiceSecurityConfiguration.java",
+      "sha256": "d5b57e0f6cc58069e3f274104b5af39b5e7d1235e15ad0c7fdc4bc6155f7b08a"
+    },
+    {
+      "sourcePath": "microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/SharedMediaSessionConfiguration.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/SharedMediaSessionConfiguration.java",
+      "sha256": "dc885234ac6ca78927867dd89b0ceb4cee98db22776c8c53053e2704e6e980de"
+    }
+  ],
+  "movedTests": [
+    {
+      "path": "server/projects/profile/src/test/java/com/raxim/myscoutee/domain/localization/controller/I18nMessageRestControllerTest.java",
+      "sha256": "369569eaf638f805bfe6810033bb01a5908a162112260a4964e399cd696d42bd"
+    },
+    {
+      "path": "server/projects/profile/src/test/java/com/raxim/myscoutee/domain/localization/service/I18nServiceTest.java",
+      "sha256": "078cc950e833a28ca18211d32797baeee5d960431eb01eb1827ad11f122ac0fc"
+    },
+    {
+      "path": "server/projects/profile/src/test/java/com/raxim/myscoutee/domain/localization/service/DBMessageSourceTest.java",
+      "sha256": "8fa5c8092cae4da8d840f879fa34e29b857188a4f313cd2e6249427760989bb8"
+    },
+    {
+      "path": "server/projects/profile/src/test/java/com/raxim/myscoutee/common/config/mongo/MongoChangeStreamServiceTest.java",
+      "sha256": "9e217239ed61bbf83dec84332ec3fd188792406a723dec72705c867d2c282664"
+    },
+    {
+      "sourcePath": "microservices/bootstrap-tests/src/test/java/com/raxim/myscoutee/microservices/transport/common/InternalReadCredentialFilterTest.java",
+      "path": "server/projects/profile/src/main/java/com/raxim/myscoutee/common/transport/src/test/java/com/raxim/myscoutee/microservices/transport/common/InternalReadCredentialFilterTest.java",
+      "sha256": "cfad4d89ae656ae0592f6d31816025dd09406a7640f89fce1ad201977a222695"
+    },
+    {
+      "path": "server/projects/profile/src/test/java/com/raxim/myscoutee/domain/email/service/EmailTemplateRendererTest.java",
+      "sha256": "f7d0a2efa493c04510779817eefcdbe69ccf5d7e40b8e4b5ab54500de73dc7d4"
+    }
+  ]
+}

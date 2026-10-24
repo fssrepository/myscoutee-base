@@ -1,0 +1,5 @@
+dependencies {
+    api project(':localization-api')
+    api project(':transport-read')
+    api 'org.springframework.security:spring-security-config'
+}

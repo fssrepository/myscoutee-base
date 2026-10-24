@@ -1,0 +1,331 @@
+{
+  "modules": {
+    "access": {
+      "artifact": "access",
+      "sources": [
+        "com/raxim/myscoutee/domain/access/config/RegionSecurityProperties.java",
+        "com/raxim/myscoutee/domain/access/document/AccessGrant.java",
+        "com/raxim/myscoutee/domain/access/document/AccessPolicyDefinition.java",
+        "com/raxim/myscoutee/domain/access/repository/AccessGrantsRepository.java",
+        "com/raxim/myscoutee/domain/access/repository/AccessPolicyDefinitionsRepository.java",
+        "com/raxim/myscoutee/domain/access/security/AccessPolicyContext.java"
+      ]
+    },
+    "access-api": {
+      "artifact": "access-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/access/api/AccessGrantEffect.java",
+        "com/raxim/myscoutee/domain/access/api/ConsentAuthorization.java",
+        "com/raxim/myscoutee/domain/access/api/RegionSecurity.java",
+        "com/raxim/myscoutee/domain/access/api/RequiresPolicies.java",
+        "com/raxim/myscoutee/domain/access/api/RequiresPolicy.java"
+      ]
+    },
+    "accounts": {
+      "artifact": "accounts",
+      "sources": [
+        "com/raxim/myscoutee/domain/accounts/config/FirebaseConfig.java",
+        "com/raxim/myscoutee/domain/accounts/document/AccountPurgeJob.java",
+        "com/raxim/myscoutee/domain/accounts/document/PrivacyConsent.java",
+        "com/raxim/myscoutee/domain/accounts/document/UserFriendship.java",
+        "com/raxim/myscoutee/domain/accounts/document/UserLoginAudit.java",
+        "com/raxim/myscoutee/domain/accounts/document/UserSessionAction.java",
+        "com/raxim/myscoutee/domain/accounts/document/UserSessionState.java",
+        "com/raxim/myscoutee/domain/accounts/repository/AccountPurgeJobsRepository.java",
+        "com/raxim/myscoutee/domain/accounts/repository/PrivacyConsentsRepository.java",
+        "com/raxim/myscoutee/domain/accounts/repository/UserFriendshipsRepository.java",
+        "com/raxim/myscoutee/domain/accounts/repository/UserLoginAuditsRepository.java",
+        "com/raxim/myscoutee/domain/accounts/repository/UserSessionActionsRepository.java",
+        "com/raxim/myscoutee/domain/accounts/security/firebase/DefaultFirebaseTokenVerifier.java",
+        "com/raxim/myscoutee/domain/accounts/security/firebase/DevelopmentIdentityEmail.java",
+        "com/raxim/myscoutee/domain/accounts/security/firebase/FirebaseTokenVerifier.java",
+        "com/raxim/myscoutee/domain/accounts/security/firebase/dto/FirebaseCredential.java",
+        "com/raxim/myscoutee/domain/accounts/security/firebase/exception/FirebaseTokenInvalidException.java",
+        "com/raxim/myscoutee/domain/accounts/service/AccountConsentService.java"
+      ]
+    },
+    "accounts-api": {
+      "artifact": "accounts-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/accounts/api/AccountConsents.java",
+        "com/raxim/myscoutee/domain/accounts/api/AccountDevices.java",
+        "com/raxim/myscoutee/domain/accounts/api/AccountIntegrationAccess.java",
+        "com/raxim/myscoutee/domain/accounts/api/AccountMediaSessions.java",
+        "com/raxim/myscoutee/domain/accounts/api/AccountNotifications.java",
+        "com/raxim/myscoutee/domain/accounts/api/AssetAffinityProfile.java",
+        "com/raxim/myscoutee/domain/accounts/api/AuthenticatedActor.java",
+        "com/raxim/myscoutee/domain/accounts/api/BootstrapAccounts.java",
+        "com/raxim/myscoutee/domain/accounts/api/BootstrapLoginAudit.java",
+        "com/raxim/myscoutee/domain/accounts/api/ChatCounters.java",
+        "com/raxim/myscoutee/domain/accounts/api/EmailProfile.java",
+        "com/raxim/myscoutee/domain/accounts/api/FirebaseCredentialMarker.java",
+        "com/raxim/myscoutee/domain/accounts/api/FriendshipReads.java",
+        "com/raxim/myscoutee/domain/accounts/api/ProfileStatusObserver.java",
+        "com/raxim/myscoutee/domain/accounts/api/ScoringProfile.java",
+        "com/raxim/myscoutee/domain/accounts/api/SelectedProfile.java",
+        "com/raxim/myscoutee/domain/accounts/api/WorkspaceIdentity.java",
+        "com/raxim/myscoutee/domain/accounts/dto/FeedCountersRecord.java",
+        "com/raxim/myscoutee/domain/accounts/dto/HostConfidenceFactsDto.java",
+        "com/raxim/myscoutee/domain/accounts/dto/ProfileIdentityDto.java"
+      ]
+    },
+    "administration": {
+      "artifact": "administration",
+      "sources": [
+        "com/raxim/myscoutee/domain/administration/config/AdminStatsProperties.java"
+      ]
+    },
+    "administration-api": {
+      "artifact": "administration-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/administration/api/AdminTelemetryEvent.java"
+      ]
+    },
+    "chat": {
+      "artifact": "chat",
+      "sources": [
+        "com/raxim/myscoutee/domain/chat/config/ChatMediaIndexInitializer.java",
+        "com/raxim/myscoutee/domain/chat/document/Chat.java",
+        "com/raxim/myscoutee/domain/chat/document/ChatMessage.java",
+        "com/raxim/myscoutee/domain/chat/document/ContactChatAccess.java",
+        "com/raxim/myscoutee/domain/chat/repository/ChatMessagesRepository.java",
+        "com/raxim/myscoutee/domain/chat/repository/ContactChatAccessRepository.java",
+        "com/raxim/myscoutee/domain/chat/service/ChatMediaVisibilityService.java",
+        "com/raxim/myscoutee/domain/chat/service/ContactPermissionService.java",
+        "com/raxim/myscoutee/domain/chat/websocket/ChatHandshakeInterceptor.java"
+      ]
+    },
+    "chat-api": {
+      "artifact": "chat-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/chat/api/ChatDirectory.java",
+        "com/raxim/myscoutee/domain/chat/api/ChatMediaVisibility.java",
+        "com/raxim/myscoutee/domain/chat/api/ChatPresence.java",
+        "com/raxim/myscoutee/domain/chat/api/ChatPrivacy.java",
+        "com/raxim/myscoutee/domain/chat/api/ChatSessionAttributes.java",
+        "com/raxim/myscoutee/domain/chat/api/ContactPermissions.java",
+        "com/raxim/myscoutee/domain/chat/dto/ChatDirectoryEntryDto.java",
+        "com/raxim/myscoutee/domain/chat/dto/ChatMessageMediaVisibilityDto.java",
+        "com/raxim/myscoutee/domain/chat/dto/ChatSupportStatusDto.java",
+        "com/raxim/myscoutee/domain/chat/dto/ChatUnreadVersionDto.java"
+      ]
+    },
+    "common-api": {
+      "artifact": "common-api",
+      "sources": [
+        "com/raxim/myscoutee/common/dto/MediaUrlsQueryDto.java",
+        "com/raxim/myscoutee/common/security/crypto/CanonicalValues.java",
+        "com/raxim/myscoutee/common/security/crypto/Ed25519Signatures.java",
+        "com/raxim/myscoutee/common/security/http/HttpSecurityContribution.java"
+      ]
+    },
+    "common-core": {
+      "artifact": "common-core",
+      "sources": [
+        "com/raxim/myscoutee/common/config/JsonConfig.java",
+        "com/raxim/myscoutee/common/config/caching/MessageKeyGenerator.java",
+        "com/raxim/myscoutee/common/mongo/OwnerScopedQuery.java",
+        "com/raxim/myscoutee/common/runtime/RuntimeStatusPublisher.java",
+        "com/raxim/myscoutee/common/util/JsonUtil.java",
+        "com/raxim/myscoutee/common/util/TextValues.java",
+        "com/raxim/myscoutee/common/util/TimeValues.java"
+      ]
+    },
+    "common-mongo": {
+      "artifact": "common-mongo",
+      "sources": [
+        "com/raxim/myscoutee/common/config/MongoConverterConfig.java",
+        "com/raxim/myscoutee/common/config/MongoRoutingConfig.java",
+        "com/raxim/myscoutee/common/config/mongo/DemoSessionRequestSupport.java",
+        "com/raxim/myscoutee/common/config/mongo/MongoChangeStreamService.java",
+        "com/raxim/myscoutee/common/config/mongo/MongoPrivacyOperations.java",
+        "com/raxim/myscoutee/common/config/mongo/MongoSessionMode.java",
+        "com/raxim/myscoutee/common/config/mongo/MongoSessionModeContext.java",
+        "com/raxim/myscoutee/common/config/mongo/ScheduledMongoSessionRunner.java",
+        "com/raxim/myscoutee/common/config/mongo/SessionRoutingMongoDatabaseFactory.java"
+      ]
+    },
+    "common-redis": {
+      "artifact": "common-redis",
+      "sources": [
+        "com/raxim/myscoutee/common/redis/RedisStreamRetentionService.java"
+      ]
+    },
+    "common-security": {
+      "artifact": "common-security",
+      "sources": [
+        "com/raxim/myscoutee/common/security/media/MediaSessionAccessService.java",
+        "com/raxim/myscoutee/common/security/policy/PolicyExpressionEvaluator.java",
+        "com/raxim/myscoutee/common/security/policy/RequiresPolicySupport.java"
+      ]
+    },
+    "common-session-web": {
+      "artifact": "common-session-web",
+      "sources": [
+        "com/raxim/myscoutee/common/config/mongo/SessionMongoRoutingFilter.java"
+      ]
+    },
+    "email": {
+      "artifact": "email",
+      "sources": [
+        "com/raxim/myscoutee/domain/email/service/EmailTemplateRenderer.java"
+      ]
+    },
+    "email-api": {
+      "artifact": "email-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/email/api/EmailLinks.java",
+        "com/raxim/myscoutee/domain/email/api/EmailRendering.java",
+        "com/raxim/myscoutee/domain/email/api/EmailSendRequest.java",
+        "com/raxim/myscoutee/domain/email/api/EmailSendResult.java",
+        "com/raxim/myscoutee/domain/email/api/EmailSending.java"
+      ]
+    },
+    "help": {
+      "artifact": "help",
+      "sources": [
+        "com/raxim/myscoutee/domain/help/document/HelpCenterGuideField.java",
+        "com/raxim/myscoutee/domain/help/document/HelpCenterRevision.java",
+        "com/raxim/myscoutee/domain/help/repository/HelpCenterGuideFieldsRepository.java",
+        "com/raxim/myscoutee/domain/help/service/HelpPrivacyService.java"
+      ]
+    },
+    "help-api": {
+      "artifact": "help-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/help/api/HelpPrivacy.java"
+      ]
+    },
+    "integrations": {
+      "artifact": "integrations",
+      "sources": [
+        "com/raxim/myscoutee/domain/integrations/controller/IntegrationReadSupport.java",
+        "com/raxim/myscoutee/domain/integrations/document/IntegrationToken.java",
+        "com/raxim/myscoutee/domain/integrations/document/IntegrationWebhookDelivery.java",
+        "com/raxim/myscoutee/domain/integrations/document/McpAuthorization.java",
+        "com/raxim/myscoutee/domain/integrations/document/McpEventSubscription.java",
+        "com/raxim/myscoutee/domain/integrations/document/McpOAuthClient.java",
+        "com/raxim/myscoutee/domain/integrations/repository/IntegrationTokensRepository.java",
+        "com/raxim/myscoutee/domain/integrations/repository/IntegrationWebhookDeliveriesRepository.java",
+        "com/raxim/myscoutee/domain/integrations/repository/McpAuthorizationRepository.java",
+        "com/raxim/myscoutee/domain/integrations/repository/McpEventSubscriptionsRepository.java",
+        "com/raxim/myscoutee/domain/integrations/repository/McpOAuthClientsRepository.java",
+        "com/raxim/myscoutee/domain/integrations/service/McpEventCallbackClient.java"
+      ]
+    },
+    "integrations-api": {
+      "artifact": "integrations-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/integrations/api/IntegrationClientIdentity.java",
+        "com/raxim/myscoutee/domain/integrations/api/IntegrationPrivacy.java",
+        "com/raxim/myscoutee/domain/integrations/api/RoleAttentionEvents.java",
+        "com/raxim/myscoutee/domain/integrations/dto/IntegrationAccess.java",
+        "com/raxim/myscoutee/domain/integrations/dto/McpEventDtos.java"
+      ]
+    },
+    "localization": {
+      "artifact": "localization",
+      "sources": [
+        "com/raxim/myscoutee/domain/localization/controller/I18nMessageRestController.java",
+        "com/raxim/myscoutee/domain/localization/document/I18nBundle.java",
+        "com/raxim/myscoutee/domain/localization/document/I18nMessage.java",
+        "com/raxim/myscoutee/domain/localization/repository/I18nBundleRepository.java",
+        "com/raxim/myscoutee/domain/localization/repository/I18nMessageRepository.java",
+        "com/raxim/myscoutee/domain/localization/service/DBMessageSource.java",
+        "com/raxim/myscoutee/domain/localization/service/I18nService.java"
+      ]
+    },
+    "localization-api": {
+      "artifact": "localization-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/localization/api/TranslationBundles.java",
+        "com/raxim/myscoutee/domain/localization/dto/I18nBundleResponseDto.java"
+      ]
+    },
+    "media": {
+      "artifact": "media",
+      "sources": [
+        "com/raxim/myscoutee/domain/media/config/MediaSessionConfiguration.java",
+        "com/raxim/myscoutee/domain/media/config/MediaStorageProperties.java",
+        "com/raxim/myscoutee/domain/media/service/MediaObjectStoreClient.java",
+        "com/raxim/myscoutee/domain/media/service/MediaStorageService.java",
+        "com/raxim/myscoutee/domain/media/service/S3CompatibleMediaObjectStoreClient.java"
+      ]
+    },
+    "media-api": {
+      "artifact": "media-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/media/api/ImageUploads.java",
+        "com/raxim/myscoutee/domain/media/api/MediaAccessPaths.java",
+        "com/raxim/myscoutee/domain/media/api/MediaCleanup.java",
+        "com/raxim/myscoutee/domain/media/api/MediaDeletionQueue.java",
+        "com/raxim/myscoutee/domain/media/api/MediaImageVariant.java",
+        "com/raxim/myscoutee/domain/media/api/MediaSessionAccess.java",
+        "com/raxim/myscoutee/domain/media/api/MediaStorage.java",
+        "com/raxim/myscoutee/domain/media/dto/MediaDtos.java"
+      ]
+    },
+    "notifications": {
+      "artifact": "notifications",
+      "sources": [
+        "com/raxim/myscoutee/domain/notifications/document/NotificationOutboxItem.java",
+        "com/raxim/myscoutee/domain/notifications/document/UserNotification.java",
+        "com/raxim/myscoutee/domain/notifications/repository/NotificationOutboxRepository.java",
+        "com/raxim/myscoutee/domain/notifications/repository/UserNotificationsRepository.java",
+        "com/raxim/myscoutee/domain/notifications/service/NotificationPrivacyService.java"
+      ]
+    },
+    "notifications-api": {
+      "artifact": "notifications-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/notifications/api/NotificationDelivery.java",
+        "com/raxim/myscoutee/domain/notifications/api/NotificationPrivacy.java"
+      ]
+    },
+    "platform-api": {
+      "artifact": "platform-api",
+      "sources": [
+        "com/raxim/myscoutee/domain/platform/api/AdministratorSettings.java",
+        "com/raxim/myscoutee/domain/platform/api/AuthenticationMode.java",
+        "com/raxim/myscoutee/domain/platform/api/DeploymentBranding.java",
+        "com/raxim/myscoutee/domain/platform/api/EmailSecrets.java",
+        "com/raxim/myscoutee/domain/platform/api/FirebasePushDelivery.java",
+        "com/raxim/myscoutee/domain/platform/api/FirebaseRuntime.java",
+        "com/raxim/myscoutee/domain/platform/api/JobWorkspaceDirectory.java",
+        "com/raxim/myscoutee/domain/platform/api/NotificationPolicy.java",
+        "com/raxim/myscoutee/domain/platform/api/OperatorBootstrapRequestSupport.java",
+        "com/raxim/myscoutee/domain/platform/api/OperatorNotificationSettings.java",
+        "com/raxim/myscoutee/domain/platform/api/ReleaseProtocol.java",
+        "com/raxim/myscoutee/domain/platform/api/RuntimeConfiguration.java",
+        "com/raxim/myscoutee/domain/platform/api/SecretEncryption.java",
+        "com/raxim/myscoutee/domain/platform/dto/EncryptedSecret.java",
+        "com/raxim/myscoutee/domain/platform/dto/OperatorNotificationRecipientsDto.java",
+        "com/raxim/myscoutee/domain/platform/dto/OperatorTlsDtos.java",
+        "com/raxim/myscoutee/domain/platform/dto/OperatorUpdateDtos.java"
+      ]
+    },
+    "platform-business": {
+      "artifact": "platform-business",
+      "sources": [
+        "com/raxim/myscoutee/domain/platform/config/ConfigProperties.java",
+        "com/raxim/myscoutee/domain/platform/config/OperatorConfigurationProperties.java",
+        "com/raxim/myscoutee/domain/platform/config/OperatorTlsProperties.java",
+        "com/raxim/myscoutee/domain/platform/config/OperatorUpdateProperties.java",
+        "com/raxim/myscoutee/domain/platform/document/AppSettings.java",
+        "com/raxim/myscoutee/domain/platform/mapper/OperatorTlsMapper.java",
+        "com/raxim/myscoutee/domain/platform/repository/AppSettingsRepository.java",
+        "com/raxim/myscoutee/domain/platform/repository/OperatorTlsRepository.java",
+        "com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapAuthenticationService.java",
+        "com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTokenInvalidException.java",
+        "com/raxim/myscoutee/domain/platform/security/bootstrap/OperatorBootstrapTransportSecurity.java",
+        "com/raxim/myscoutee/domain/platform/service/AppSettingsService.java",
+        "com/raxim/myscoutee/domain/platform/service/DefaultFirebasePushDelivery.java",
+        "com/raxim/myscoutee/domain/platform/service/DefaultOperatorFirebaseCapabilityClient.java",
+        "com/raxim/myscoutee/domain/platform/service/OperatorFirebaseCapabilityClient.java",
+        "com/raxim/myscoutee/domain/platform/service/OperatorTlsService.java",
+        "com/raxim/myscoutee/domain/platform/service/OperatorUpdateArtifactDownloader.java",
+        "com/raxim/myscoutee/domain/platform/service/OperatorUpdateHttpClient.java"
+      ]
+    }
+  }
+}

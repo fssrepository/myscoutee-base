@@ -1,0 +1,9 @@
+dependencies {
+    constraints {
+        rootProject.subprojects.findAll { it.name != 'platform' }.each { module ->
+            api("${module.group}:${module.name}:${rootProject.version}") {
+                version { strictly(rootProject.version.toString()) }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+name: Release compatible base modules
+
+on:
+  push:
+    tags: ['v[0-9]*.[0-9]*.[0-9]*']
+
+permissions:
+  contents: write
+  packages: write
+
+concurrency:
+  group: base-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Verify shared version and tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="$(sed -n 's/^version=//p' server/gradle.properties)"
+          [[ "$GITHUB_REF_NAME" == "v$version" ]]
+          printf 'RELEASE_VERSION=%s\n' "$version" >> "$GITHUB_ENV"
+      - name: Verify, stage and publish every compatible module
+        working-directory: server
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew --no-daemon --parallel publishRelease releaseArchive publishAllPublicationsToGitHubPackagesRepository
+      - name: Publish source-tagged release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t jars < <(find server/build/repository -path "*/$RELEASE_VERSION/*.jar" -type f | sort)
+          [[ "${#jars[@]}" -gt 0 ]]
+          manifest="server/build/releases/$RELEASE_VERSION.json"
+          archive="server/build/releases/myscoutee-base-$RELEASE_VERSION-maven.zip"
+          python3 - "$manifest" <<'PY'
+          import hashlib,json,pathlib,sys
+          manifest=json.loads(pathlib.Path(sys.argv[1]).read_text())
+          assert not manifest['sourceDirty'], 'Release source must be clean'
+          for module in manifest['artifacts']:
+              assert module['version'] == manifest['version']
+              for artifact in module['files']:
+                  file=pathlib.Path('server/build/repository')/artifact['path']
+                  assert hashlib.sha256(file.read_bytes()).hexdigest() == artifact['sha256'], file
+          PY
+          {
+            printf 'MSC-127: compatible shared Java modules **%s**.\n\n' "$RELEASE_VERSION"
+            printf 'Source: `%s`; Java 25; Spring Boot 4.0.8.\n\n' "$GITHUB_SHA"
+            printf 'Maven registry: `https://maven.pkg.github.com/fssrepository/myscoutee-base`.\n\n'
+            printf 'Import `com.raxim.myscoutee.base:platform:%s` and select the required modules.\n\n' "$RELEASE_VERSION"
+            printf 'Native module checks passed. The manifest records each coordinate and SHA-256. Runtime qualification remains separate.\n'
+          } > "$RUNNER_TEMP/release-notes.md"
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release edit "$GITHUB_REF_NAME" --title "MyScoutee Base $RELEASE_VERSION" \
+              --notes-file "$RUNNER_TEMP/release-notes.md"
+            gh release upload "$GITHUB_REF_NAME" "${jars[@]}" "$manifest" "$archive" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "${jars[@]}" "$manifest" "$archive" \
+              --verify-tag --title "MyScoutee Base $RELEASE_VERSION" --notes-file "$RUNNER_TEMP/release-notes.md"
+          fi

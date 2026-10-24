@@ -1,0 +1,1168 @@
+{
+  "scope": "Unchanged shared optional Java adapters; depends only on extracted base classes and this closed adapter set",
+  "identical": [
+    "com.raxim.myscoutee.microservices.bootstrap.ChatWebSocketTransportConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.CoreApplication",
+    "com.raxim.myscoutee.microservices.bootstrap.PolicyAuthorizationConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceInfrastructureConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceSecurityConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedMediaSessionConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedProfilePoliciesConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedSchedulingConfiguration",
+    "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsProtocol",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesEndpoint",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsProtocol",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersEndpoint",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersProtocol",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountConsents",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountDevices",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountMediaSessions",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountNotifications",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteChatCounters",
+    "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryEndpoint",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityEndpoint",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyEndpoint",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesEndpoint",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatDirectory",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatMediaVisibility",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatPrivacy",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatQueries",
+    "com.raxim.myscoutee.microservices.transport.common.MediaReferenceQueries",
+    "com.raxim.myscoutee.microservices.transport.common.RemoteCommandTransport",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksEndpoint",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingEndpoint",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingEndpoint",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingProtocol",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailLinks",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailRendering",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailSending",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyEndpoint",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyProtocol",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.help.RemoteHelpPrivacy",
+    "com.raxim.myscoutee.microservices.transport.integrations.RemoteRoleAttentionEvents",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsProtocol",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupEndpoint",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupProtocol",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueEndpoint",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueProtocol",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.media.RemoteMediaCleanup",
+    "com.raxim.myscoutee.microservices.transport.media.RemoteMediaDeletionQueue",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryEndpoint",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyEndpoint",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyProtocol",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsProtocol",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationDelivery",
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationPrivacy",
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationReads",
+    "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAdministratorSettings",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAuthenticationMode",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteDeploymentBranding",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteEmailSecrets",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteFirebasePushDelivery",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteOperatorNotificationSettings",
+    "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerEndpoint",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationIssuerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration",
+    "com.raxim.myscoutee.microservices.transport.security.DelegatedActorContext",
+    "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationOwnerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol",
+    "com.raxim.myscoutee.microservices.transport.security.RemoteActorDelegationSigner",
+    "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization",
+    "com.raxim.myscoutee.microservices.transport.security.SocketAuthorization"
+  ],
+  "dependencyClosed": [
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceSecurityConfiguration",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedMediaSessionConfiguration",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatDirectory",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksEndpoint",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailLinks",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailRendering",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsClientConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsEndpoint",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsServerConfiguration",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAdministratorSettings",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAuthenticationMode",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteDeploymentBranding",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteEmailSecrets",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteOperatorNotificationSettings",
+    "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol",
+    "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization"
+  ],
+  "dependencies": {
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingProtocol": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSending",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountDevices": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountDevices",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.RemoteChatPrivacy"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceSecurityConfiguration": [],
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.platform.RemoteFirebasePushDelivery"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailSending": [
+      "com.raxim.myscoutee.domain.email.api.EmailSendRequest",
+      "com.raxim.myscoutee.domain.email.api.EmailSendResult",
+      "com.raxim.myscoutee.domain.email.api.EmailSending",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.email.EmailSendingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol": [
+      "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret",
+      "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountNotifications"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.RemoteChatMediaVisibility"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationReads": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationReads",
+      "com.raxim.myscoutee.domain.notifications.dto.NotificationDtos",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteChatCounters": [
+      "com.raxim.myscoutee.domain.accounts.api.ChatCounters",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryEndpoint",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.SocketAuthorization": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationDelivery"
+    ],
+    "com.raxim.myscoutee.microservices.transport.common.RemoteCommandTransport": [
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsEndpoint": [
+      "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.media.RemoteMediaDeletionQueue"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatQueries": [
+      "com.raxim.myscoutee.domain.chat.api.ChatQueries",
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersEndpoint": [
+      "com.raxim.myscoutee.domain.accounts.api.ChatCounters",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyEndpoint",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.SharedSchedulingConfiguration": [
+      "com.raxim.myscoutee.common.config.PlatformParametersService"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingEndpoint",
+      "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountMediaSessions",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountConsents": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountConsents",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.email.EmailLinksEndpoint",
+      "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountConsents"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesEndpoint": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountDevices",
+      "com.raxim.myscoutee.domain.accounts.api.SelectedProfile",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsProtocol": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountMediaSessions": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatDirectory": [
+      "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+      "com.raxim.myscoutee.domain.chat.dto.ChatDirectoryEntryDto",
+      "com.raxim.myscoutee.domain.chat.dto.ChatUnreadVersionDto",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationIssuerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsProtocol": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationReads",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.email.EmailRenderingEndpoint",
+      "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAdministratorSettings": [
+      "com.raxim.myscoutee.domain.platform.api.AdministratorSettings",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteOperatorNotificationSettings": [
+      "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings",
+      "com.raxim.myscoutee.domain.platform.dto.OperatorNotificationRecipientsDto",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryProtocol": [
+      "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyProtocol": [
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.help.RemoteHelpPrivacy"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksEndpoint": [
+      "com.raxim.myscoutee.domain.email.api.EmailLinks",
+      "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.email.EmailSendingEndpoint",
+      "com.raxim.myscoutee.microservices.transport.email.EmailSendingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerEndpoint": [
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationPrivacy": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteSelectedProfile",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.RemoteMediaDeletionQueue": [
+      "com.raxim.myscoutee.domain.media.api.MediaDeletionQueue",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.platform.RemoteOperatorNotificationSettings"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.PolicyAuthorizationConfiguration": [
+      "com.raxim.myscoutee.common.security.policy.PolicyExpressionEvaluator",
+      "com.raxim.myscoutee.common.security.policy.RequiresPolicyAdvisor",
+      "com.raxim.myscoutee.common.security.policy.RequiresPolicyMethodInterceptor"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteProfileReadState",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyEndpoint",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryEndpoint": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds": [
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.email.RemoteEmailSending"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.RemoteChatQueries",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyEndpoint": [
+      "com.raxim.myscoutee.domain.chat.api.ChatPrivacy",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryEndpoint",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatMediaVisibility": [
+      "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility",
+      "com.raxim.myscoutee.domain.chat.dto.ChatMessageMediaVisibilityDto",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.MediaReferenceQueries",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.media.MediaCleanupEndpoint",
+      "com.raxim.myscoutee.microservices.transport.media.MediaCleanupProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.ChatWebSocketTransportConfiguration": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization",
+      "com.raxim.myscoutee.microservices.transport.security.SocketAuthorization"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupEndpoint": [
+      "com.raxim.myscoutee.domain.media.api.MediaCleanup",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.media.MediaCleanupProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies": [
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.DelegatedActorContext"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryEndpoint",
+      "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueEndpoint",
+      "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailLinks": [
+      "com.raxim.myscoutee.domain.email.api.EmailLinks",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsProtocol": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountConsents",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.bootstrap.PolicyAuthorizationConfiguration",
+      "com.raxim.myscoutee.microservices.transport.access.RemoteAccessPermissions",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountNotifications": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteChatCounters"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteEmailSecrets": [
+      "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+      "com.raxim.myscoutee.domain.platform.dto.EncryptedSecret",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol",
+      "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationPrivacy"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery",
+      "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.integrations.RemoteRoleAttentionEvents"
+    ],
+    "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryEndpoint",
+      "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAuthenticationMode": [
+      "com.raxim.myscoutee.domain.platform.api.AuthenticationMode",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.platform.RemoteAuthenticationMode"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.administration.RemoteOperationalTelemetry"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailRendering": [
+      "com.raxim.myscoutee.domain.email.api.EmailRendering",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeEndpoint": [
+      "com.raxim.myscoutee.domain.platform.api.AuthenticationMode",
+      "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.CoreApplication": [
+      "com.raxim.myscoutee.microservices.bootstrap.ServiceInfrastructureConfiguration",
+      "com.raxim.myscoutee.microservices.bootstrap.ServiceSecurityConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsEndpoint": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationReads",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyEndpoint": [
+      "com.raxim.myscoutee.domain.help.api.HelpPrivacy",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.help.RemoteHelpPrivacy": [
+      "com.raxim.myscoutee.domain.help.api.HelpPrivacy",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationDelivery": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationDelivery",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteCommandTransport",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol",
+      "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.email.RemoteEmailLinks"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsEndpoint": [
+      "com.raxim.myscoutee.domain.platform.api.AdministratorSettings",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.email.RemoteEmailRendering"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupProtocol": [
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyEndpoint": [
+      "com.raxim.myscoutee.domain.notifications.api.NotificationPrivacy",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.common.MediaReferenceQueries": [
+      "com.raxim.myscoutee.common.dto.MediaUrlsQueryDto",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesEndpoint": [
+      "com.raxim.myscoutee.domain.chat.api.ChatQueries",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerEndpoint",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationIssuerConfiguration",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.RemoteActorDelegationSigner": [
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.RemoteMediaCleanup": [
+      "com.raxim.myscoutee.domain.media.api.MediaCleanup",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.media.MediaCleanupProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatPrivacy": [
+      "com.raxim.myscoutee.domain.chat.api.ChatPrivacy",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingEndpoint": [
+      "com.raxim.myscoutee.domain.email.api.EmailSending",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.email.EmailSendingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol": [],
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationClientConfiguration": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionMode",
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration",
+      "com.raxim.myscoutee.microservices.transport.security.DelegatedActorContext",
+      "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyProtocol": [
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization": [
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsEndpoint": [
+      "com.raxim.myscoutee.domain.platform.api.OperatorNotificationSettings",
+      "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationIssuerConfiguration",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration",
+      "com.raxim.myscoutee.microservices.transport.security.RemoteActorDelegationSigner"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesEndpoint",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsEndpoint": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountConsents",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.bootstrap.PolicyAuthorizationConfiguration",
+      "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsEndpoint": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountMediaSessions",
+      "com.raxim.myscoutee.domain.accounts.api.SelectedProfile",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryEndpoint": [
+      "com.raxim.myscoutee.domain.chat.api.ChatDirectory",
+      "com.raxim.myscoutee.domain.chat.dto.ChatDirectoryEntryDto",
+      "com.raxim.myscoutee.domain.chat.dto.ChatUnreadVersionDto",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.notifications.RemoteRoleNotifications"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityEndpoint",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsEndpoint": [
+      "com.raxim.myscoutee.domain.platform.api.EmailSecrets",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.platform.RemoteDeploymentBranding"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationOwnerConfiguration": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.common.security.http.HttpSecurityContribution",
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol",
+      "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyProtocol": [
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.DelegatedActorContext": [
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteFirebasePushDelivery": [
+      "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationJobs"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueEndpoint": [
+      "com.raxim.myscoutee.domain.media.api.MediaDeletionQueue",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyEndpoint",
+      "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.SharedMediaSessionConfiguration": [
+      "com.raxim.myscoutee.common.security.media.MediaSessionAccessService"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityEndpoint": [
+      "com.raxim.myscoutee.domain.chat.api.ChatMediaVisibility",
+      "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.MediaReferenceQueries",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.platform.RemoteEmailSecrets"
+    ],
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationReads",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.integrations.RemoteRoleAttentionEvents": [
+      "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingEndpoint": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentBranding",
+      "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingEndpoint": [
+      "com.raxim.myscoutee.domain.email.api.EmailRendering",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.platform.RemoteAdministratorSettings"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceInfrastructureConfiguration": [
+      "com.raxim.myscoutee.common.config.CachingConfig",
+      "com.raxim.myscoutee.common.config.JsonConfig",
+      "com.raxim.myscoutee.common.config.MongoConverterConfig",
+      "com.raxim.myscoutee.common.config.MongoRoutingConfig",
+      "com.raxim.myscoutee.common.config.mongo.MongoChangeStreamService",
+      "com.raxim.myscoutee.common.config.mongo.ScheduledMongoSessionRunner",
+      "com.raxim.myscoutee.common.runtime.RuntimeStatusPublisher"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsEndpoint": [
+      "com.raxim.myscoutee.domain.accounts.api.AccountNotifications",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueProtocol": [
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext"
+    ],
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsProtocol": [
+      "com.raxim.myscoutee.domain.integrations.api.RoleAttentionEvents",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegation": [
+      "com.raxim.myscoutee.common.config.mongo.MongoSessionModeContext",
+      "com.raxim.myscoutee.domain.accounts.api.AccountIdentity",
+      "com.raxim.myscoutee.domain.accounts.api.AuthenticatedActor",
+      "com.raxim.myscoutee.domain.accounts.dto.ProfileIdentityDto"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.chat.RemoteChatDirectory"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsEndpoint",
+      "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol",
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteDeploymentBranding": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentBranding",
+      "com.raxim.myscoutee.microservices.transport.common.RemoteReadTransport",
+      "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryEndpoint": [
+      "com.raxim.myscoutee.domain.platform.api.FirebasePushDelivery",
+      "com.raxim.myscoutee.microservices.transport.common.ReadQueryBodies",
+      "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountDevices",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegation",
+      "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol": [
+      "com.raxim.myscoutee.domain.platform.api.DeploymentBranding"
+    ],
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.media.RemoteMediaCleanup"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersProtocol": [
+      "com.raxim.myscoutee.domain.accounts.api.ChatCounters",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ],
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeServerConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.common.InternalReadCredentialFilter",
+      "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeEndpoint",
+      "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol"
+    ],
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesClientConfiguration": [
+      "com.raxim.myscoutee.microservices.transport.accounts.RemoteProfileSummaries"
+    ],
+    "com.raxim.myscoutee.microservices.bootstrap.SharedProfilePoliciesConfiguration": [
+      "com.raxim.myscoutee.domain.administration.api.AdministratorClassification"
+    ],
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesProtocol": [
+      "com.raxim.myscoutee.domain.chat.api.ChatQueries",
+      "com.raxim.myscoutee.domain.chat.dto.ChatDtos",
+      "com.raxim.myscoutee.domain.platform.api.JobGroupContext",
+      "com.raxim.myscoutee.microservices.transport.common.ProtocolFields"
+    ]
+  },
+  "paths": {
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/integrations/RoleAttentionEventsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailSendingProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountDevices": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/RemoteAccountDevices.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountDevicesProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatPrivacyClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceSecurityConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/ServiceSecurityConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/FirebasePushDeliveryClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailSending": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailSending.java",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationVerifierConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationVerifierConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/PublicAuthorizationProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountNotificationsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatMediaVisibilityClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationReads": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/RemoteNotificationReads.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteChatCounters": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/RemoteChatCounters.java",
+    "com.raxim.myscoutee.microservices.transport.platform.JobAudienceProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/JobAudienceProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationDeliveryServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.SocketAuthorization": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/SocketAuthorization.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationDeliveryClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.common.RemoteCommandTransport": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/RemoteCommandTransport.java",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/integrations/RoleAttentionEventsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaDeletionQueueClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatQueries": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/RemoteChatQueries.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ChatCountersEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationPrivacyServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedSchedulingConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/SharedSchedulingConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountMediaSessionsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountConsents": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/RemoteAccountConsents.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountConsentsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountMediaSessionsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountDevicesEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountNotificationsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountMediaSessions": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/RemoteAccountMediaSessions.java",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatDirectory": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/RemoteChatDirectory.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationIssuerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationIssuerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationReadsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAdministratorSettings": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteAdministratorSettings.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatMediaVisibilityProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteOperatorNotificationSettings": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteOperatorNotificationSettings.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ProfileReadStateServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/FirebasePushDeliveryProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationReadsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ProfileSummariesServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatPrivacyProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/help/HelpPrivacyClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailSendingServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationBrokerEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationPrivacy": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/RemoteNotificationPrivacy.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/SelectedProfileClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.media.RemoteMediaDeletionQueue": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/RemoteMediaDeletionQueue.java",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.PolicyAuthorizationConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/PolicyAuthorizationConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileReadStateClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ProfileReadStateClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatPrivacyServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationDeliveryEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.platform.SecretEnvelopeBounds": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/SecretEnvelopeBounds.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailSendingClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationJobsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatQueriesClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatPrivacyEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatPrivacyEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatMediaVisibility": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/RemoteChatMediaVisibility.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaCleanupServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.ChatWebSocketTransportConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/ChatWebSocketTransportConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/RoleNotificationsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaCleanupEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.security.DelegatedRequestBodies": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/DelegatedRequestBodies.java",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/FirebasePushDeliveryServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaDeletionQueueServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailLinks": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailLinks.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountConsentsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/access/AccessPermissionsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.RemoteAccountNotifications": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/RemoteAccountNotifications.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ChatCountersClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationBrokerProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteEmailSecrets": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteEmailSecrets.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationPrivacyClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationDeliveryProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationDeliveryProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/integrations/RoleAttentionEventsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/administration/OperationalTelemetryServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteAuthenticationMode": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteAuthenticationMode.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.administration.OperationalTelemetryClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/administration/OperationalTelemetryClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.email.RemoteEmailRendering": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/RemoteEmailRendering.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeEndpoint.java",
+    "com.raxim.myscoutee.microservices.bootstrap.CoreApplication": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/CoreApplication.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationReadsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/help/HelpPrivacyEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.help.RemoteHelpPrivacy": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/help/RemoteHelpPrivacy.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.RemoteNotificationDelivery": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/RemoteNotificationDelivery.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaCleanupProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationPrivacyEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.common.MediaReferenceQueries": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/common/MediaReferenceQueries.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatQueriesEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationBrokerServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationBrokerServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.RemoteActorDelegationSigner": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/RemoteActorDelegationSigner.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.media.RemoteMediaCleanup": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/RemoteMediaCleanup.java",
+    "com.raxim.myscoutee.microservices.transport.chat.RemoteChatPrivacy": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/RemoteChatPrivacy.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailSendingEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailSendingEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailLinksProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailLinksProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/PublicAuthorizationClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationPrivacyProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationPrivacyProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.RemotePublicAuthorization": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/RemotePublicAuthorization.java",
+    "com.raxim.myscoutee.microservices.transport.platform.OperatorNotificationSettingsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/OperatorNotificationSettingsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegationSignerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegationSignerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatQueriesServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountNotificationsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountConsentsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountDevicesServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.access.AccessPermissionsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/access/AccessPermissionsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountMediaSessionsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.RoleNotificationsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/RoleNotificationsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatMediaVisibilityServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.security.PublicAuthorizationOwnerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/PublicAuthorizationOwnerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/help/HelpPrivacyProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.security.DelegatedActorContext": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/DelegatedActorContext.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.SelectedProfileServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/SelectedProfileServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteFirebasePushDelivery": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteFirebasePushDelivery.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationJobsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationJobsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaDeletionQueueEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.help.HelpPrivacyServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/help/HelpPrivacyServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedMediaSessionConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/SharedMediaSessionConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountConsentsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountConsentsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatMediaVisibilityEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatMediaVisibilityEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ChatCountersServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.EmailSecretsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/EmailSecretsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.notifications.NotificationReadsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/notifications/NotificationReadsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.integrations.RemoteRoleAttentionEvents": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/integrations/RemoteRoleAttentionEvents.java",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.email.EmailRenderingEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/email/EmailRenderingEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AdministratorSettingsClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AdministratorSettingsClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.ServiceInfrastructureConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/ServiceInfrastructureConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountNotificationsEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountNotificationsEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaDeletionQueueProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaDeletionQueueProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.integrations.RoleAttentionEventsProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/integrations/RoleAttentionEventsProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.security.ActorDelegation": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/security/ActorDelegation.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatDirectoryClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatDirectoryClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountMediaSessionsServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountMediaSessionsServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.RemoteDeploymentBranding": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/RemoteDeploymentBranding.java",
+    "com.raxim.myscoutee.microservices.transport.platform.FirebasePushDeliveryEndpoint": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/FirebasePushDeliveryEndpoint.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.AccountDevicesClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/AccountDevicesClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.platform.DeploymentBrandingProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/DeploymentBrandingProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.media.MediaCleanupClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/media/MediaCleanupClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ChatCountersProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ChatCountersProtocol.java",
+    "com.raxim.myscoutee.microservices.transport.platform.AuthenticationModeServerConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/platform/AuthenticationModeServerConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.accounts.ProfileSummariesClientConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/accounts/ProfileSummariesClientConfiguration.java",
+    "com.raxim.myscoutee.microservices.bootstrap.SharedProfilePoliciesConfiguration": "/home/raxim/workspace/myscoutee-backend/microservices/bootstrap/src/main/java/com/raxim/myscoutee/microservices/bootstrap/SharedProfilePoliciesConfiguration.java",
+    "com.raxim.myscoutee.microservices.transport.chat.ChatQueriesProtocol": "/home/raxim/workspace/myscoutee-backend/microservices/transport/src/main/java/com/raxim/myscoutee/microservices/transport/chat/ChatQueriesProtocol.java"
+  }
+}

@@ -1,0 +1,27 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/localization/controller/I18nMessageRestController.java'
+        include 'com/raxim/myscoutee/domain/localization/document/I18nBundle.java'
+        include 'com/raxim/myscoutee/domain/localization/document/I18nMessage.java'
+        include 'com/raxim/myscoutee/domain/localization/repository/I18nBundleRepository.java'
+        include 'com/raxim/myscoutee/domain/localization/repository/I18nMessageRepository.java'
+        include 'com/raxim/myscoutee/domain/localization/service/DBMessageSource.java'
+        include 'com/raxim/myscoutee/domain/localization/service/I18nService.java'
+    }
+    test.java {
+        srcDirs = [rootProject.canonicalTests]
+        include 'com/raxim/myscoutee/domain/localization/**/*.java'
+    }
+}
+
+dependencies {
+    api project(':common-mongo')
+    api project(':localization-api')
+    api 'jakarta.annotation:jakarta.annotation-api'
+    api 'org.slf4j:slf4j-api'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-web'
+}

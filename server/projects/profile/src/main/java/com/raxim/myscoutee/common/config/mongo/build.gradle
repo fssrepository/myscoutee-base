@@ -1,0 +1,31 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/common/config/MongoConverterConfig.java'
+        include 'com/raxim/myscoutee/common/config/MongoRoutingConfig.java'
+        include 'com/raxim/myscoutee/common/config/mongo/DemoSessionRequestSupport.java'
+        include 'com/raxim/myscoutee/common/config/mongo/MongoChangeStreamService.java'
+        include 'com/raxim/myscoutee/common/config/mongo/MongoPrivacyOperations.java'
+        include 'com/raxim/myscoutee/common/config/mongo/MongoSessionMode.java'
+        include 'com/raxim/myscoutee/common/config/mongo/MongoSessionModeContext.java'
+        include 'com/raxim/myscoutee/common/config/mongo/ScheduledMongoSessionRunner.java'
+        include 'com/raxim/myscoutee/common/config/mongo/SessionRoutingMongoDatabaseFactory.java'
+    }
+    test.java {
+        srcDirs = [rootProject.canonicalTests]
+        include 'com/raxim/myscoutee/common/config/mongo/MongoChangeStreamServiceTest.java'
+    }
+}
+
+dependencies {
+    api 'jakarta.annotation:jakarta.annotation-api'
+    api 'org.mongodb:bson'
+    api 'org.mongodb:mongodb-driver-sync'
+    api 'org.slf4j:slf4j-api'
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

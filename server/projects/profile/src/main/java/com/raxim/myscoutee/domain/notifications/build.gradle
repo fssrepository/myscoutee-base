@@ -1,0 +1,17 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/notifications/document/NotificationOutboxItem.java'
+        include 'com/raxim/myscoutee/domain/notifications/document/UserNotification.java'
+        include 'com/raxim/myscoutee/domain/notifications/repository/NotificationOutboxRepository.java'
+        include 'com/raxim/myscoutee/domain/notifications/repository/UserNotificationsRepository.java'
+        include 'com/raxim/myscoutee/domain/notifications/service/NotificationPrivacyService.java'
+    }
+}
+
+dependencies {
+    api project(':notifications-api')
+    api 'org.mongodb:bson'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+}

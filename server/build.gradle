@@ -1,0 +1,177 @@
+plugins {
+    id 'base'
+    id 'jacoco'
+}
+
+group = 'com.raxim.myscoutee.base'
+repositories { mavenCentral() }
+
+ext.canonicalJava = file('projects/profile/src/main/java')
+ext.canonicalTests = file('projects/profile/src/test/java')
+
+subprojects {
+    apply plugin: 'maven-publish'
+    group = rootProject.group
+    version = rootProject.version
+    layout.buildDirectory = rootProject.layout.buildDirectory.dir(name)
+
+    if (name != 'platform') {
+        apply plugin: 'java-library'
+        apply plugin: 'jacoco'
+        java {
+            toolchain { languageVersion = JavaLanguageVersion.of(libs.versions.java.get().toInteger()) }
+            withSourcesJar()
+        }
+        repositories { mavenCentral() }
+        dependencies {
+            api platform("org.springframework.boot:spring-boot-dependencies:${libs.versions.spring.boot.get()}")
+            compileOnly 'org.projectlombok:lombok:1.18.48'
+            annotationProcessor 'org.projectlombok:lombok:1.18.48'
+            testImplementation 'org.springframework.boot:spring-boot-starter-test'
+            testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+        }
+        tasks.withType(JavaCompile).configureEach { options.compilerArgs += ['-parameters'] }
+        tasks.withType(Test).configureEach {
+            useJUnitPlatform { excludeTags 'integration', 'qualification', 'embedded' }
+            maxHeapSize = '512m'
+        }
+    } else {
+        apply plugin: 'java-platform'
+    }
+
+    tasks.withType(AbstractArchiveTask).configureEach {
+        preserveFileTimestamps = false
+        reproducibleFileOrder = true
+    }
+    publishing {
+        publications {
+            library(MavenPublication) {
+                artifactId = project.name
+                from components.getByName(project.name == 'platform' ? 'javaPlatform' : 'java')
+            }
+        }
+        repositories {
+            maven {
+                name = 'staging'
+                url = rootProject.layout.buildDirectory.dir('repository')
+            }
+            maven {
+                name = 'GitHubPackages'
+                url = uri('https://maven.pkg.github.com/fssrepository/myscoutee-base')
+                credentials {
+                    username = providers.gradleProperty('gpr.user')
+                        .orElse(providers.environmentVariable('GITHUB_ACTOR')).orNull
+                    password = providers.gradleProperty('gpr.key')
+                        .orElse(providers.environmentVariable('GITHUB_TOKEN')).orNull
+                }
+            }
+        }
+    }
+    tasks.withType(PublishToMavenRepository).configureEach {
+        dependsOn rootProject.subprojects.collect { it.tasks.named('check') }
+    }
+}
+
+tasks.register('publishRelease') {
+    group = 'publishing'
+    description = 'Verify and stage the entire compatible module set at one version.'
+    dependsOn 'writeReleaseManifest'
+}
+
+tasks.register('writeReleaseManifest') {
+    dependsOn subprojects.collect { it.tasks.named('publishLibraryPublicationToStagingRepository') }
+    def destination = layout.buildDirectory.file("releases/${version}.json")
+    outputs.file destination
+    outputs.upToDateWhen { false }
+    doLast {
+        def checksum = { File artifact ->
+            java.security.MessageDigest.getInstance('SHA-256').digest(artifact.bytes).encodeHex().toString()
+        }
+        def repository = layout.buildDirectory.dir('repository').get().asFile
+        def artifacts = subprojects.sort { it.name }.collect { module ->
+            def publication = module.publishing.publications.library
+            def relative = "${module.group.toString().replace('.', '/')}/${publication.artifactId}/${module.version}"
+            def directory = new File(repository, relative)
+            [module: module.name, group: module.group, artifact: publication.artifactId,
+                compilation: module.name == 'platform' ? 'metadata-only' :
+                    (module.tasks.named('compileJava').get().state.skipMessage ?: 'executed'),
+                version: module.version.toString(), files: directory.listFiles()
+                    .findAll { it.name.endsWith('.jar') || it.name.endsWith('.pom') || it.name.endsWith('.module') }
+                    .sort { it.name }.collect { [path: "${relative}/${it.name}", sha256: checksum(it)] }]
+        }
+        def manifest = [version: version.toString(), scope: 'local staging; runtime qualification recorded separately',
+            sourceRevision: providers.exec { commandLine 'git', 'rev-parse', 'HEAD' }.standardOutput.asText.get().trim(),
+            sourceDirty: !providers.exec { commandLine 'git', 'status', '--porcelain' }.standardOutput.asText.get().isBlank(),
+            java: libs.versions.java.get(), springBoot: libs.versions.spring.boot.get(), artifacts: artifacts]
+        destination.get().asFile.with {
+            parentFile.mkdirs()
+            text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(manifest)) + '\n'
+        }
+    }
+}
+
+tasks.named('check') { dependsOn subprojects.collect { it.tasks.named('check') } }
+tasks.named('assemble') { dependsOn subprojects.collect { it.tasks.named('assemble') } }
+
+tasks.register('releaseArchive', Zip) {
+    group = 'publishing'
+    description = 'Archive the complete versioned Maven release and its provenance.'
+    dependsOn 'writeReleaseManifest'
+    archiveFileName = "myscoutee-base-${version}-maven.zip"
+    destinationDirectory = layout.buildDirectory.dir('releases')
+    from(layout.buildDirectory.dir('repository')) { include "**/${version}/**" }
+    from(layout.buildDirectory.file("releases/${version}.json")) {
+        rename { 'release-manifest.json' }
+    }
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+
+// Explicit preparation only: the central scanner never compiles source or runs tests.
+def javaModules = subprojects.findAll { it.name != 'platform' }
+tasks.register('sonarTestResults', Sync) {
+    group = 'verification'
+    description = 'Collect native JUnit XML reports from the shared library modules.'
+    dependsOn javaModules.collect { it.tasks.named('test') }
+    from javaModules.collect { it.tasks.named('test').get().reports.junitXml.outputLocation.get().asFile }
+    include 'TEST-*.xml'
+    into layout.buildDirectory.dir('sonar-test-results')
+}
+tasks.register('jacocoTestReport', JacocoReport) {
+    group = 'verification'
+    description = 'Aggregate coverage of the shared library modules for Sonar.'
+    dependsOn 'sonarTestResults'
+    sourceDirectories.from javaModules.collect { it.sourceSets.main.allJava.srcDirs }
+    classDirectories.from javaModules.collect { it.sourceSets.main.output.classesDirs }
+    // Resolve after the test dependencies finish; modules without tests have no data file.
+    executionData.from providers.provider {
+        javaModules.collect { it.tasks.named('test').get().jacoco.destinationFile }.findAll { it.isFile() }
+    }
+    reports {
+        xml.required = true
+        xml.outputLocation = layout.buildDirectory.file('reports/jacoco.xml')
+    }
+}
+tasks.register('prepareSonar') {
+    group = 'verification'
+    description = 'Prepare compiled shared sources and their dependencies for the existing Sonar scanner.'
+    dependsOn javaModules.collect { it.tasks.named('classes') }
+    inputs.files javaModules.collect { it.sourceSets.main.allJava }
+    inputs.files javaModules.collect { it.sourceSets.main.output.classesDirs }
+    inputs.files javaModules.collect { it.configurations.compileClasspath }
+    outputs.dir layout.buildDirectory.dir('sonar')
+    doLast {
+        def destination = layout.buildDirectory.dir('sonar').get().asFile
+        delete destination
+        copy {
+            from javaModules.collect { it.sourceSets.main.output.classesDirs }
+            into new File(destination, 'classes')
+        }
+        copy {
+            from javaModules.collectMany { it.configurations.compileClasspath.files.toList() }.unique()
+            include '*.jar'
+            into new File(destination, 'lib')
+        }
+        new File(destination, 'prepared').text = rootProject.version.toString() + '\n'
+    }
+}

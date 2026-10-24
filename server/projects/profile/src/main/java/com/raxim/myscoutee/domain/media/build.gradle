@@ -1,0 +1,21 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/media/config/MediaSessionConfiguration.java'
+        include 'com/raxim/myscoutee/domain/media/config/MediaStorageProperties.java'
+        include 'com/raxim/myscoutee/domain/media/service/MediaObjectStoreClient.java'
+        include 'com/raxim/myscoutee/domain/media/service/MediaStorageService.java'
+        include 'com/raxim/myscoutee/domain/media/service/S3CompatibleMediaObjectStoreClient.java'
+    }
+}
+
+dependencies {
+    api project(':common-mongo')
+    api project(':common-security')
+    api project(':media-api')
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-web'
+    api 'software.amazon.awssdk:s3:2.32.20'
+}

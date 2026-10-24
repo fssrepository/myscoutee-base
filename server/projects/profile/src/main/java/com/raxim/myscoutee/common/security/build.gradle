@@ -1,0 +1,22 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/common/security/media/MediaSessionAccessService.java'
+        include 'com/raxim/myscoutee/common/security/policy/PolicyExpressionEvaluator.java'
+        include 'com/raxim/myscoutee/common/security/policy/RequiresPolicySupport.java'
+    }
+}
+
+dependencies {
+    api project(':access-api')
+    api project(':accounts-api')
+    api project(':common-mongo')
+    api project(':media-api')
+    api 'org.springframework.security:spring-security-core'
+    api 'org.springframework:spring-aop'
+    api 'org.springframework:spring-context'
+    api 'org.springframework:spring-expression'
+    api 'org.springframework:spring-web'
+    compileOnlyApi 'jakarta.servlet:jakarta.servlet-api'
+    testImplementation 'jakarta.servlet:jakarta.servlet-api'
+}

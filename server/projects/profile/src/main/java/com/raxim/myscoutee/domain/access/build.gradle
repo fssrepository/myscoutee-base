@@ -1,0 +1,18 @@
+sourceSets {
+    main.java {
+        srcDirs = [rootProject.canonicalJava]
+        include 'com/raxim/myscoutee/domain/access/config/RegionSecurityProperties.java'
+        include 'com/raxim/myscoutee/domain/access/document/AccessGrant.java'
+        include 'com/raxim/myscoutee/domain/access/document/AccessPolicyDefinition.java'
+        include 'com/raxim/myscoutee/domain/access/repository/AccessGrantsRepository.java'
+        include 'com/raxim/myscoutee/domain/access/repository/AccessPolicyDefinitionsRepository.java'
+        include 'com/raxim/myscoutee/domain/access/security/AccessPolicyContext.java'
+    }
+}
+
+dependencies {
+    api project(':access-api')
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    api 'org.springframework.data:spring-data-mongodb'
+    api 'org.springframework:spring-context'
+}
